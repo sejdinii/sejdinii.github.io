@@ -20,7 +20,7 @@ const CONFIG = {
   ],
    api: {
     endpoint: "https://api.groq.com/openai/v1/chat/completions",
-    key: "PASTE_YOUR_GROQ_KEY_HERE",
+    key: "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",
     model: "llama-3.3-70b-versatile",
   }
 };
