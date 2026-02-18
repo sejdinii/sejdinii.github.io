@@ -18,7 +18,7 @@ const CONFIG = {
     "What work experience do you have?",
     "What are you looking for?",
   ],
-   api: {
+  api: {
     endpoint: "https://api.groq.com/openai/v1/chat/completions",
     key: "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",
     model: "llama-3.3-70b-versatile",
@@ -61,7 +61,7 @@ const PROJECTS = [
 ];
 
 // ═══════════════════════════════════════════════════════════════
-// CV DATA — The AI reads this to answer questions about you
+// CV DATA
 // ═══════════════════════════════════════════════════════════════
 
 const CV_DATA = `
@@ -85,13 +85,13 @@ Data Science Master's student at Lancaster University Leipzig with a background 
 EDUCATION:
 1. MSc Data Science — Lancaster University Leipzig (Oct 2025 – Present)
    Location: Leipzig, Germany
-   • Relevant Coursework: Machine Learning, Statistical Methods, Data Mining, Big Data Analytics, Databases, Data Visualization
-   • Research Interests: Predictive Modeling, Natural Language Processing, Time Series Analysis, Recommender Systems
+   Relevant Coursework: Machine Learning, Statistical Methods, Data Mining, Big Data Analytics, Databases, Data Visualization
+   Research Interests: Predictive Modeling, Natural Language Processing, Time Series Analysis, Recommender Systems
 
 2. BSc Computer Science (Software Engineering) — South East European University (2018 – 2022)
    Location: Tetovo, North Macedonia
-   • Grade: 7.92/10
-   • Focus Areas: Software Engineering, Programming, Databases, Algorithms
+   Grade: 7.92/10
+   Focus Areas: Software Engineering, Programming, Databases, Algorithms
 
 TECHNICAL SKILLS:
 Programming: Python (Pandas, NumPy, scikit-learn, Matplotlib, Seaborn), SQL, Git, R (basic), PHP, Kotlin
@@ -102,54 +102,53 @@ Tools & Platforms: Jupyter Notebook, VS Code, Android Studio, Linux (basic), Pow
 PROJECTS:
 
 1. KNN Classifier: From-Scratch vs Scikit-learn Comparison (Python, scikit-learn, R, pytest)
-   • Built a complete K-Nearest Neighbours classifier from scratch implementing Euclidean/Manhattan distance metrics and uniform/distance-weighted voting schemes
-   • Ran 672 experimental configurations across 5 datasets (Iris, Wine, Digits, Breast Cancer, Nursery) comparing custom implementation against scikit-learn
-   • Achieved near-identical accuracy (92.1% vs 91.5%) while scikit-learn ran 484x faster due to optimized KD-tree data structures
-   • Conducted statistical analysis in R using Wilcoxon signed-rank tests and multiple regression to identify performance predictors
-   • Generated decision boundary visualizations confirming algorithmic correctness across different k-values
+   Built a complete KNN classifier from scratch with Euclidean/Manhattan distance and uniform/distance-weighted voting
+   672 experimental configurations across 5 datasets comparing custom vs scikit-learn
+   92.1% vs 91.5% accuracy; scikit-learn 484x faster due to KD-tree optimization
+   Statistical analysis in R with Wilcoxon signed-rank tests
+   Decision boundary visualizations confirming algorithmic correctness
 
 2. Abalone Age Prediction – Comparative ML Study (Python, scikit-learn, XGBoost, SHAP, Hyperopt)
-   • Compared statistical (Polynomial Regression with Lasso) and algorithmic (XGBoost) models for predicting abalone age from morphological measurements
-   • Engineered biologically-motivated features (meat ratio, viscera ratio) and applied Lasso regularization, reducing 90 polynomial terms to 26 key predictors
-   • Implemented nested k-fold cross-validation and Hyperopt with TPE for hyperparameter tuning
-   • Achieved R² = 0.6151, MAE = 1.54 years with XGBoost; applied SHAP analysis for model interpretability
+   Compared Polynomial Regression with Lasso vs XGBoost for predicting abalone age
+   Engineered biologically-motivated features; Lasso reduced 90 polynomial terms to 26 predictors
+   Nested k-fold CV and Hyperopt with TPE for tuning
+   R² = 0.6151, MAE = 1.54 years; SHAP analysis for interpretability
 
 3. Ripeocado – Avocado Ripeness Detection Android App (Kotlin, Python, CameraX, Random Forest)
-   • Developed Android app that classifies avocado ripeness (not ripe, ripe, overripe) using camera input
-   • Built ML pipeline: synthetic dataset via image augmentation (3 → 120 images), trained Random Forest on color features, exported to pure Kotlin for on-device inference
-   • Implemented CameraX integration with real-time blur detection, auto-flashlight, and precise circular cropping for stem area capture
+   Android app classifying avocado ripeness (not ripe, ripe, overripe) via camera
+   ML pipeline: synthetic dataset (3 to 120 images via augmentation), Random Forest on color features, exported to pure Kotlin
+   CameraX with blur detection, auto-flashlight, circular cropping
 
-4. Si Nshpi Tane – House Maintenance Web Platform (PHP, MySQL, JavaScript, Bootstrap) — Bachelor's Capstone
-   • Full-stack web app connecting diaspora homeowners with service providers in North Macedonia
-   • Three-tier architecture with responsive Bootstrap UI, PHP business logic, secure auth, normalized MySQL database
-   • Deployed on Apache Web Server
+4. Si Nshpi Tane – House Maintenance Web Platform (PHP, MySQL, JavaScript, Bootstrap)
+   Full-stack web app connecting diaspora homeowners with service providers in North Macedonia
+   Three-tier architecture, Bootstrap UI, secure auth, normalized MySQL database
+   Deployed on Apache Web Server
 
 PROFESSIONAL EXPERIENCE:
 
 1. Senior Digital Learning Consultant — LEORON Institute (Dubai, UAE) | Dec 2022 – Jan 2026
-   • Worked with technology-driven learning platforms, translating business requirements into technical specs
-   • Supported solution integration projects with client LMS systems, coordinated with cross-functional teams
-   • Tracked platform performance metrics using data-driven reporting dashboards
-   • Analyzed user engagement data and learner behavior patterns to identify improvement opportunities
+   Technology-driven learning platforms, translating business requirements into technical specs
+   LMS integration, cross-functional coordination
+   Platform performance metrics and data-driven reporting
+   User engagement analysis and learner behavior patterns
 
 2. Volunteer – Youth Resource Center — iCan (Gostivar, North Macedonia) | Oct 2021 – Jul 2022
-   • Coordinated strategic partnerships and supported youth employability programs
-   • Contributed to IT infrastructure management and process improvement
+   Strategic partnerships and youth employability programs
+   IT infrastructure management and process improvement
 
 3. Crew Member — McDonald's (Castle Rock, Colorado, USA) | Jun 2019 – Oct 2019
-   • Fast-paced customer service, food preparation, team coordination
-   • Developed communication and time management skills
+   Customer service, food preparation, team coordination
 
 CERTIFICATIONS:
-• Skills That Set Data Scientists Apart – LinkedIn Learning (Jan 2026)
-• Intercultural Communications in the Workplace – LSE (Jul 2025)
-• Foundations in AI – IBM (Apr 2025)
-• Leadership and Communication – HarvardX (2023)
+Skills That Set Data Scientists Apart – LinkedIn Learning (Jan 2026)
+Intercultural Communications in the Workplace – LSE (Jul 2025)
+Foundations in AI – IBM (Apr 2025)
+Leadership and Communication – HarvardX (2023)
 
 LANGUAGES: Albanian (Native), English (Native), Turkish (Professional), Macedonian (Professional)
 
 HOBBIES & INTERESTS:
-Passionate about cars — spends time playing car dealer simulators and customizing vehicles online. Dreams of working with an automotive brand on racing performance data and building a private car collection. Also loves cooking, trying new recipes, long walks, quality time with loved ones, and brainstorming random side project ideas. Notable personal trait: prefers collaborative work — never likes to work alone on projects, even if the idea is his own.
+Passionate about cars — plays car dealer simulators, customizes vehicles online. Dreams of working with an automotive brand on racing performance data and building a private car collection. Also loves cooking, long walks, quality time with loved ones, and brainstorming side projects. Prefers collaborative work — never likes working alone.
 
 CURRENTLY SEEKING:
 Master's thesis internship or working student position in Data Science, Analytics, or Machine Learning in Germany.

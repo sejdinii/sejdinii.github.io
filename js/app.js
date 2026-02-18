@@ -24,7 +24,7 @@ const savedTheme = localStorage.getItem('cv-theme') || 'light';
 setTheme(savedTheme);
 
 // ═══════════════════════════════════════════════════════════════
-// ACCESSIBILITY — Screen reader announcements
+// ACCESSIBILITY
 // ═══════════════════════════════════════════════════════════════
 function announce(text) {
   const el = document.getElementById('srAnnounce');
@@ -38,14 +38,12 @@ function announce(text) {
 // INIT
 // ═══════════════════════════════════════════════════════════════
 function init() {
-  // Hero
   document.getElementById('heroBrandName').textContent = CONFIG.name;
   document.getElementById('heroBadge').textContent = CONFIG.location + ' · Seeking ML / Data Science Internship';
   document.getElementById('heroTitle').textContent = CONFIG.name;
   document.getElementById('heroSubtitle').textContent = CONFIG.title;
   document.getElementById('heroTagline').textContent = CONFIG.tagline;
 
-  // Hero links
   const heroLinks = document.getElementById('heroLinksContainer');
   CONFIG.links.forEach(l => {
     const a = document.createElement('a');
@@ -55,7 +53,6 @@ function init() {
     heroLinks.appendChild(a);
   });
 
-  // Hero suggestions
   const heroSug = document.getElementById('heroSuggestions');
   CONFIG.suggestions.forEach(q => {
     const b = document.createElement('button');
@@ -65,7 +62,6 @@ function init() {
     heroSug.appendChild(b);
   });
 
-  // Footer
   document.getElementById('footerYear').textContent = new Date().getFullYear();
   const footerLinks = document.getElementById('footerLinks');
   CONFIG.links.forEach(l => {
@@ -75,14 +71,12 @@ function init() {
     footerLinks.appendChild(a);
   });
 
-  // Chat UI
   document.getElementById('sidebarTitle').textContent = firstName + "'s CV";
   document.getElementById('chatModelLabel').textContent = CONFIG.name;
   document.getElementById('chatWelcomeTitle').textContent = "Hi, I'm " + firstName + "'s AI assistant";
   document.getElementById('chatWelcomeSub').textContent = "Ask me anything about " + firstName + "'s professional background";
   document.getElementById('footerName').textContent = firstName;
 
-  // Chat header links
   const chatLinks = document.getElementById('chatHeaderLinks');
   CONFIG.links.forEach(l => {
     const a = document.createElement('a');
@@ -91,7 +85,6 @@ function init() {
     chatLinks.appendChild(a);
   });
 
-  // Chat suggestions
   const chatSug = document.getElementById('chatSuggestions');
   CONFIG.suggestions.forEach(q => {
     const b = document.createElement('button');
@@ -101,7 +94,6 @@ function init() {
     chatSug.appendChild(b);
   });
 
-  // Sidebar info links
   const infoLinks = document.getElementById('sidebarInfoLinks');
   CONFIG.links.forEach(l => {
     const a = document.createElement('a');
@@ -110,21 +102,17 @@ function init() {
     infoLinks.appendChild(a);
   });
 
-  // Sidebar LinkedIn
   if (CONFIG.links[1]) {
     document.getElementById('sidebarLinkedIn').onclick = () => window.open(CONFIG.links[1].url);
   }
 
-  // Chat input
   const inp = document.getElementById('chatInput');
   inp.addEventListener('input', () => {
     document.getElementById('sendBtn').disabled = !inp.value.trim();
   });
 
-  // Render projects
   renderProjects();
 
-  // Keyboard: Enter on sidebar items
   document.querySelectorAll('.sidebar-item').forEach(item => {
     item.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') {
@@ -157,27 +145,10 @@ function renderProjects() {
   });
 }
 
-function openProjects() {
-  document.getElementById('heroSection').classList.add('hidden');
-  document.getElementById('chatApp').classList.remove('active');
-  document.getElementById('projectsView').classList.add('active');
-  document.body.style.overflow = '';
-  announce('Viewing projects');
-  window.scrollTo(0, 0);
-}
-
-function closeProjects() {
-  document.getElementById('projectsView').classList.remove('active');
-  document.getElementById('heroSection').classList.remove('hidden');
-  document.body.style.overflow = '';
-  announce('Back to homepage');
-  window.scrollTo(0, 0);
-}
-
 // ═══════════════════════════════════════════════════════════════
 // NAVIGATION
 // ═══════════════════════════════════════════════════════════════
-let projectsReturnTo = 'hero'; // tracks where to go back from projects
+let projectsReturnTo = 'hero';
 
 function openProjects(from) {
   projectsReturnTo = from || 'hero';
@@ -252,12 +223,14 @@ async function sendMessage(text) {
   announce('Thinking...');
 
   try {
-     const res = await fetch(CONFIG.api.endpoint, {
+    const headers = { 'Content-Type': 'application/json' };
+    if (CONFIG.api.key) {
+      headers['Authorization'] = 'Bearer ' + CONFIG.api.key;
+    }
+
+    const res = await fetch(CONFIG.api.endpoint, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + CONFIG.api.key
-      },
+      headers: headers,
       body: JSON.stringify({
         model: CONFIG.api.model,
         messages: [{ role: 'system', content: CV_DATA }, ...conversationHistory],
@@ -278,7 +251,7 @@ async function sendMessage(text) {
     console.error(err);
     hideTyping();
     addMsg('assistant',
-      "⚠️ Couldn't connect to the AI service.\n\nTo activate this chat:\n1. Get a free API key at console.groq.com\n2. Replace YOUR_API_KEY_HERE in js/config.js\n\nThat's it!"
+      "⚠️ Couldn't connect to the AI service.\n\nTo activate this chat:\n1. Get a free API key at console.groq.com\n2. Replace PASTE_YOUR_GROQ_KEY_HERE in js/config.js\n\nThat's it!"
     );
     announce('Error connecting to AI');
   } finally {
@@ -378,10 +351,9 @@ function closeSidebar() {
 }
 
 // ═══════════════════════════════════════════════════════════════
-// KEYBOARD NAVIGATION
+// KEYBOARD
 // ═══════════════════════════════════════════════════════════════
 document.addEventListener('keydown', e => {
-  // Escape closes sidebar or goes back
   if (e.key === 'Escape') {
     if (document.getElementById('sidebar').classList.contains('open')) {
       closeSidebar();
