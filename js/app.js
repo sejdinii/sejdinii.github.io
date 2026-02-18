@@ -252,10 +252,11 @@ async function sendMessage(text) {
   announce('Thinking...');
 
   try {
-    const res = await fetch(CONFIG.api.endpoint, {
+     const res = await fetch(CONFIG.api.endpoint, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + CONFIG.api.key
       },
       body: JSON.stringify({
         model: CONFIG.api.model,

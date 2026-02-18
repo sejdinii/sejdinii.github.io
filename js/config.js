@@ -18,10 +18,9 @@ const CONFIG = {
     "What work experience do you have?",
     "What are you looking for?",
   ],
-  api: {
-    // Points to your Cloudflare Worker proxy (no API key needed in frontend!)
-    // Replace with your actual worker URL after deploying
-    endpoint: "https://cv-chat-proxy.angrymosquitt00.workers.dev",
+   api: {
+    endpoint: "https://api.groq.com/openai/v1/chat/completions",
+    key: "PASTE_YOUR_GROQ_KEY_HERE",
     model: "llama-3.3-70b-versatile",
   }
 };
