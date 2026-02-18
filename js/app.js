@@ -223,14 +223,9 @@ async function sendMessage(text) {
   announce('Thinking...');
 
   try {
-    const headers = { 'Content-Type': 'application/json' };
-    if (CONFIG.api.key) {
-      headers['Authorization'] = 'Bearer ' + CONFIG.api.key;
-    }
-
     const res = await fetch(CONFIG.api.endpoint, {
       method: 'POST',
-      headers: headers,
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         model: CONFIG.api.model,
         messages: [{ role: 'system', content: CV_DATA }, ...conversationHistory],
@@ -251,7 +246,7 @@ async function sendMessage(text) {
     console.error(err);
     hideTyping();
     addMsg('assistant',
-      "⚠️ Couldn't connect to the AI service.\n\nTo activate this chat:\n1. Get a free API key at console.groq.com\n2. Replace PASTE_YOUR_GROQ_KEY_HERE in js/config.js\n\nThat's it!"
+      "⚠️ Couldn't connect to the AI service.\n\nTo activate this chat:\n1. Get a free API key at console.groq.com\n2. Set up a Cloudflare Worker proxy (see README)\n3. Update the endpoint in js/config.js\n\nThat's it!"
     );
     announce('Error connecting to AI');
   } finally {

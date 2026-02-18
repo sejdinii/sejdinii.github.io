@@ -19,8 +19,8 @@ const CONFIG = {
     "What are you looking for?",
   ],
   api: {
-    endpoint: "https://api.groq.com/openai/v1/chat/completions",
-    key: "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",
+    // Cloudflare Worker proxy — API key is stored securely there
+    endpoint: "https://cv-proxy.enessejdini.workers.dev",
     model: "llama-3.3-70b-versatile",
   }
 };
