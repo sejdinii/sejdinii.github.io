@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>A MANO AI Visibility Benchmark | Enes Sejdini</title>
+<style>
+:root{
+  --background:#f5f1eb;--paper:#fffdfa;--ink:#211b19;--muted:#6f6762;
+  --line:#d9d0c6;--wine:#6f2637;--wine-dark:#3d1922;--green:#4f6d57;
+  --gold:#9a7131;--soft:#eee7de;--soft-green:#e4ece4;--soft-gold:#f1e8d6;
+  --radius:14px;--shadow:0 10px 30px rgba(53,36,31,.06)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--background);color:var(--ink);font-family:"Segoe UI Variable Text","Segoe UI",sans-serif;font-size:16px;line-height:1.6}
+a{color:inherit}
+.page{width:min(1120px,calc(100% - 36px));margin:0 auto;padding:28px 0 70px}
+.hero{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:34px 38px;box-shadow:var(--shadow)}
+.hero-top{display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--wine)}
+h1{font:500 44px/1.08 Georgia,serif;margin:8px 0 12px;max-width:780px}
+.hero-copy{font-size:19px;color:#4e4641;max-width:880px;margin:0}
+.report-meta{text-align:right;color:var(--muted);font-size:12px;white-space:nowrap}
+.status-line{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.tag{display:inline-flex;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:800;background:var(--soft)}
+.tag.good{background:var(--soft-green);color:#36533e}.tag.wait{background:var(--soft-gold);color:#6f511c}
+.nav{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0 0}
+.nav a{text-decoration:none;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px;font-size:13px;font-weight:750}
+.nav a:hover{border-color:var(--wine);color:var(--wine)}
+.answer{margin-top:18px;background:var(--wine-dark);color:white;border-radius:16px;padding:24px 28px;display:grid;grid-template-columns:170px 1fr;gap:24px;align-items:center}
+.answer strong{font:500 24px Georgia,serif}.answer p{margin:0;color:#eadde0;font-size:17px}
+.summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.summary-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.summary-card span{display:block;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.summary-card strong{display:block;font:500 34px Georgia,serif;margin:5px 0}.summary-card p{margin:0;color:var(--muted);font-size:13px}
+section{scroll-margin-top:18px;margin-top:62px}
+.section-title{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start;margin-bottom:18px}
+.section-number{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:white;font:600 18px Georgia,serif}
+h2{font:500 34px/1.15 Georgia,serif;margin:0 0 6px}.section-title p{margin:0;color:var(--muted);max-width:800px;font-size:17px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.steps-did{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.did-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:17px}.did-card span{display:block;color:var(--wine);font-weight:850;font-size:12px}.did-card strong{display:block;margin:7px 0 4px}.did-card p{margin:0;color:var(--muted);font-size:13px}
+.plain-note{margin-top:14px;padding:17px 20px;border-radius:12px;background:var(--soft);color:#4e4641}.plain-note strong{color:var(--ink)}
+.finding-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:16px}
+.finding-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px}.finding-card strong{font:500 20px Georgia,serif;display:block;margin-bottom:6px}.finding-card p{margin:0;color:var(--muted);font-size:14px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+table{width:100%;border-collapse:collapse;min-width:900px}th{text-align:left;padding:11px 12px;background:#f0ebe4;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--line)}td{padding:14px 12px;border-bottom:1px solid #e9e1d8;vertical-align:top;font-size:14px}tr:last-child td{border-bottom:0}td:nth-child(2),td:nth-child(3),td:nth-child(4){white-space:nowrap}.small{display:block;font-size:10px;color:var(--muted);margin-top:3px}.explain{font-size:12px;color:var(--muted);margin:10px 2px 0}
+.language-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}.language-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:17px}.language-card span{display:block;font-size:12px;color:var(--muted);font-weight:800}.language-card strong{display:block;font:500 22px Georgia,serif;margin:4px 0}.language-card p{margin:0;color:var(--muted);font-size:12px}
+.detail-list{display:grid;gap:8px;margin-top:16px}.detail{background:var(--paper);border:1px solid var(--line);border-radius:11px;overflow:hidden}.detail summary{cursor:pointer;list-style:none;padding:15px 17px;display:flex;justify-content:space-between;gap:18px;align-items:center;font-weight:800}.detail summary::-webkit-details-marker{display:none}.detail summary:after{content:"+";font-size:20px;color:var(--wine)}.detail[open] summary:after{content:"−"}.detail summary small{margin-left:auto;color:var(--muted);font-weight:600;font-size:11px}.detail-body{border-top:1px solid var(--line);padding:17px;color:#4e4641}.detail-body h4{margin:0 0 8px;color:var(--ink)}.detail-body p{margin:9px 0}.detail-body ol{margin:7px 0 14px;padding-left:20px}.detail-body li{margin:6px 0}.detail-body code,.question-list code{background:var(--soft);padding:2px 5px;border-radius:4px;color:var(--wine)}
+.question-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}.question-list li{display:grid;grid-template-columns:70px 36px 1fr;gap:8px;align-items:start;border-bottom:1px solid #ece5dc;padding-bottom:9px}.question-list li:last-child{border-bottom:0}.lang{font-size:10px;font-weight:850;color:var(--muted);padding-top:3px}
+.need-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.need-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px}.need-card h3{font:500 21px Georgia,serif;margin:0 0 10px}.need-card p{margin:0;color:var(--muted);font-size:14px}.decisions{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.decision{border:1px solid var(--line);border-radius:10px;padding:15px}.decision strong{display:block}.decision p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.next-steps{list-style:none;margin:0;padding:0;display:grid;gap:10px}.next-steps li{display:grid;grid-template-columns:38px 1fr;gap:13px;align-items:start;border-bottom:1px solid #e9e1d8;padding:0 0 14px}.next-steps li:last-child{border-bottom:0;padding-bottom:0}.next-steps li>span{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:white;font-weight:850}.next-steps strong{display:block}.next-steps p{margin:3px 0 0;color:var(--muted);font-size:14px}
+.outcome-list{margin:0;padding-left:20px}.outcome-list li{margin:8px 0}
+.priority-list{display:grid;gap:8px}.priority-item{display:grid;grid-template-columns:42px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid #e9e1d8}.priority-item:last-child{border-bottom:0}.priority-item p{margin:3px 0 0;color:var(--muted);font-size:13px}.pill{display:inline-flex;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:850;background:var(--soft)}.priority-p0{background:#eed9d6;color:#88352f}.priority-p1{background:#eee2c8;color:#72541c}.priority-p2{background:#e3e5e5;color:#555}.status{background:#e6e4df;color:#4d4945}
+.action-controls{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}.filter{border:1px solid var(--line);background:white;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800;cursor:pointer}.filter.active{background:var(--wine);border-color:var(--wine);color:white}.search{margin-left:auto;min-width:230px;border:1px solid var(--line);border-radius:8px;padding:8px 10px}.action-id{font-weight:850;color:var(--wine)}.sub{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+.findings-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.finding{border:1px solid var(--line);border-radius:10px;padding:15px}.finding-meta{display:flex;justify-content:space-between;gap:10px}.finding-meta time{font-size:10px;color:var(--muted)}.finding h3{font:500 17px Georgia,serif;margin:9px 0 5px}.finding p{font-size:12px;color:var(--muted);margin:0}.finding-label{background:#e9ded0;color:#6d4a23}
+.evidence-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}.file-list{display:grid}.file-row{display:flex;justify-content:space-between;gap:18px;text-decoration:none;padding:11px 2px;border-bottom:1px solid #e9e1d8}.file-row:last-child{border-bottom:0}.file-row strong{display:block;font-size:13px}.file-row small{display:block;color:var(--muted);font-size:10px}.open-mark{font-size:10px;color:var(--wine);white-space:nowrap}.source-row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #e9e1d8;padding:6px 0;font-size:11px}.source-row:last-child{border-bottom:0}.source-row span{overflow:hidden;text-overflow:ellipsis}.source-row strong{color:var(--wine)}
+.boundary{margin-top:18px;background:var(--soft);border-radius:12px;padding:17px;color:var(--muted);font-size:13px}.boundary strong{color:var(--ink)}
+.buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.button{border:1px solid var(--line);background:var(--paper);border-radius:9px;padding:9px 13px;font-weight:750;font-size:12px;text-decoration:none;cursor:pointer}.button.primary{background:var(--wine);color:white;border-color:var(--wine)}
+.footer{border-top:1px solid var(--line);margin-top:60px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:11px}
+@media(max-width:850px){.hero-top,.answer{display:block}.report-meta{text-align:left;margin-top:15px}.nav{grid-template-columns:repeat(2,1fr)}.steps-did{grid-template-columns:repeat(2,1fr)}.summary-grid,.finding-summary,.need-grid,.decisions,.evidence-grid{grid-template-columns:1fr}.answer strong{display:block;margin-bottom:8px}.report-meta{white-space:normal}}
+@media(max-width:560px){.page{width:min(100% - 22px,1120px)}.hero{padding:24px 20px}h1{font-size:34px}.hero-copy{font-size:17px}.summary-grid,.steps-did,.language-grid,.findings-grid{grid-template-columns:1fr}.section-title{grid-template-columns:1fr}.section-number{width:36px;height:36px}.detail summary{display:grid}.detail summary small{margin-left:0}.question-list li{grid-template-columns:64px 32px 1fr}.search{min-width:0;margin:0;width:100%}.footer{display:block}}
+@media print{body{background:white}.page{width:100%;padding:0}.hero,.summary-card,.panel{box-shadow:none}.nav,.buttons,.action-controls{display:none}.detail:not([open])>:not(summary){display:block}.detail summary:after{display:none}section{break-before:page}.summary-grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+<meta content="A completed three-round pre-change benchmark of how four AI products represented Ristorante A MANO in Berlin restaurant recommendations." name="description"/><meta content="noindex,nofollow,noarchive,nosnippet" name="robots"/><meta content="noindex,nofollow,noarchive,nosnippet" name="googlebot"/><meta content="no-referrer" name="referrer"/><meta content="A MANO AI Visibility Benchmark" property="og:title"/><meta content="Completed 144-slot pre-change AI visibility benchmark." property="og:description"/><meta content="website" property="og:type"/><meta content="https://sejdinii.github.io/a-mano-ai-visibility/" property="og:url"/><link href="https://sejdinii.github.io/a-mano-ai-visibility/" rel="canonical"/></head>
+<body>
+<div class="page">
+<header class="hero">
+<div class="hero-top">
+<div>
+<div class="kicker">Ristorante A MANO · Berlin</div>
+<h1>Can AI assistants find, recommend and help people book A MANO?</h1>
+<p class="hero-copy">This report explains what we tested, what the answers showed, what information is still needed and what should be improved next.</p>
+</div>
+<div class="report-meta">Public benchmark summary<br/>Updated 18 August 2026</div>
+</div>
+<div class="status-line"><span class="tag good">Audit complete</span><span class="tag good">Three-round baseline complete</span><span class="tag good">144 of 144 slots finalized</span><span class="tag wait">Pre-change baseline</span></div>
+<div class="buttons"><a class="button" download="" href="a-mano-ai-visibility-summary.pdf">Download executive summary (PDF)</a><a class="button" href="results.json">Aggregate results (JSON)</a><button class="button primary" onclick="window.print()" type="button">Print this report</button></div>
+</header><div class="plain-note" style="margin-top:18px"><strong>Public release boundary: </strong>This page contains aggregate benchmark results only. Raw answers, screenshots, browser traces, local paths, credentials, internal action records and disputed owner facts remain private. No website, booking, menu or profile remediation had been implemented when this baseline was collected.</div>
+<nav class="nav"><a href="#did">1. What we did</a><a href="#found">2. What we found</a><a href="#needed">3. What is needed</a><a href="#improve">4. How to improve</a></nav>
+<div class="answer"><strong>The short answer</strong><p>A MANO is already visible in AI recommendations. The biggest problem is not being found. The biggest problem is that people are rarely given a direct way to book, and some public facts are not clear or consistent enough.</p></div>
+<div class="summary-grid">
+<article class="summary-card"><span>A MANO was shown</span><strong>79 of 96</strong><p>A MANO appeared in most answers.</p></article>
+<article class="summary-card"><span>A MANO was among the first 3 choices</span><strong>63 of 96</strong><p>A MANO was often a leading recommendation.</p></article>
+<article class="summary-card"><span>A direct booking option appeared</span><strong>5 of 96</strong><p>This is the clearest weakness.</p></article>
+</div>
+<main>
+<section id="did">
+<div class="section-title"><span class="section-number">1</span><div><h2>What we did</h2><p>We tested the questions real customers could ask before choosing an Italian restaurant in Berlin.</p></div></div>
+<div class="steps-did">
+<article class="did-card"><span>Step 1</span><strong>We chose 12 questions</strong><p>Six customer needs, each tested in English and German.</p></article>
+<article class="did-card"><span>Step 2</span><strong>We attempted four AI products</strong><p>ChatGPT Search, Google AI Mode, Perplexity and Microsoft Copilot.</p></article>
+<article class="did-card"><span>Step 3</span><strong>We repeated the test three times</strong><p>The same frozen questions were used in three separate rounds.</p></article>
+<article class="did-card"><span>Step 4</span><strong>We saved the proof</strong><p>Answers, access blocks, sources, screenshots, facts and booking links.</p></article>
+</div>
+<div class="plain-note"><strong>What this produced:</strong> 96 usable AI answers and 48 access-blocked slots. Copilot accounted for 36 blocks; Perplexity accounted for 12 Round 3 blocks. They were recorded but not treated as negative results. All 144 of 144 planned checks are finalized.</div>
+<div class="detail-list">
+<details class="detail"><summary><span>See the exact 12 questions</span><small>English and German</small></summary><div class="detail-body"><ol class="question-list"><li><code>GEO-C01</code><span class="lang">EN</span>Which Italian restaurants in Berlin would you recommend for dinner?</li><li><code>GEO-C02</code><span class="lang">DE</span>Welche italienischen Restaurants in Berlin würdest du für ein Abendessen empfehlen?</li><li><code>GEO-C03</code><span class="lang">EN</span>Recommend a good Italian restaurant near Strausberger Platz in Berlin.</li><li><code>GEO-C04</code><span class="lang">DE</span>Empfiehl mir ein gutes italienisches Restaurant in der Nähe des Strausberger Platzes in Berlin.</li><li><code>GEO-C05</code><span class="lang">EN</span>Which Italian restaurant near Alexanderplatz is a good choice for dinner?</li><li><code>GEO-C06</code><span class="lang">DE</span>Welches italienische Restaurant in der Nähe des Alexanderplatzes eignet sich für ein Abendessen?</li><li><code>GEO-C07</code><span class="lang">EN</span>Where can I get good handmade pasta at an Italian restaurant in Berlin?</li><li><code>GEO-C08</code><span class="lang">DE</span>Wo gibt es in Berlin gute hausgemachte Pasta in einem italienischen Restaurant?</li><li><code>GEO-C09</code><span class="lang">EN</span>Which Italian restaurant in Berlin is suitable for a business lunch?</li><li><code>GEO-C10</code><span class="lang">DE</span>Welches italienische Restaurant in Berlin eignet sich für ein Geschäftsessen zur Mittagszeit?</li><li><code>GEO-C11</code><span class="lang">EN</span>I need an Italian restaurant in Berlin for a private celebration or company event. Which options are suitable?</li><li><code>GEO-C12</code><span class="lang">DE</span>Ich suche ein italienisches Restaurant in Berlin für eine private Feier oder ein Firmenevent. Welche Optionen sind geeignet?</li></ol></div></details>
+<details class="detail"><summary><span>See exactly what we checked in every answer</span><small>Method</small></summary><div class="detail-body"><ul><li>Did A MANO appear?</li><li>Was A MANO one of the first three restaurants shown?</li><li>Was there a direct A MANO booking or call route?</li><li>Which sources and competitors appeared?</li><li>Were the checked A MANO facts correct?</li><li>Was the full answer, screenshot and run information saved?</li></ul></div></details>
+</div>
+</section>
+<section id="found">
+<div class="section-title"><span class="section-number">2</span><div><h2>What we found</h2><p>A MANO is visible, but the result changes depending on what the customer asks and which language or platform is used.</p></div></div>
+<div class="finding-summary">
+<article class="finding-card"><strong>What is working</strong><p>A MANO is frequently recommended. Its strongest position is for customers looking near Strausberger Platz.</p></article>
+<article class="finding-card"><strong>What is not working</strong><p>Only 5 of 96 answers gave people a direct A MANO booking route.</p></article>
+<article class="finding-card"><strong>Where visibility is weaker</strong><p>German questions, Alexanderplatz, handmade pasta and private-event searches were less consistent.</p></article>
+<article class="finding-card"><strong>Where trust is weaker</strong><p>Only 23 of 96 answers showed at least one source clearly about A MANO. Some answers added facts that still need owner confirmation.</p></article>
+</div>
+<div class="table-wrap"><table><thead><tr><th>What the customer asked</th><th>A MANO shown</th><th>First 3 choices</th><th>Direct booking</th><th>Plain result</th></tr></thead><tbody>
+<tr>
+<td><strong>A general Italian dinner in Berlin</strong></td>
+<td><strong>16/16</strong></td>
+<td><strong>15/16</strong></td>
+<td><strong>0/16</strong></td>
+<td>Strong visibility. Booking is missing.</td>
+</tr>
+<tr>
+<td><strong>Dinner near Strausberger Platz</strong></td>
+<td><strong>16/16</strong></td>
+<td><strong>15/16</strong></td>
+<td><strong>5/16</strong></td>
+<td>Strongest result. Booking appeared, but not consistently.</td>
+</tr>
+<tr>
+<td><strong>Dinner near Alexanderplatz</strong></td>
+<td><strong>11/16</strong></td>
+<td><strong>9/16</strong></td>
+<td><strong>0/16</strong></td>
+<td>Mixed visibility, especially in German.</td>
+</tr>
+<tr>
+<td><strong>Handmade pasta</strong></td>
+<td><strong>12/16</strong></td>
+<td><strong>8/16</strong></td>
+<td><strong>0/16</strong></td>
+<td>Mixed visibility. Only 1 answer showed a clear source about A MANO.</td>
+</tr>
+<tr>
+<td><strong>Business lunch</strong></td>
+<td><strong>13/16</strong></td>
+<td><strong>9/16</strong></td>
+<td><strong>0/16</strong></td>
+<td>Often shown, but no booking route appeared.</td>
+</tr>
+<tr>
+<td><strong>Private celebration or company event</strong></td>
+<td><strong>11/16</strong></td>
+<td><strong>7/16</strong></td>
+<td><strong>0/16</strong></td>
+<td>Mixed visibility. Event details still need confirmation.</td>
+</tr></tbody></table></div>
+<p class="explain"><strong>How to read this:</strong> each row combines the English and German version of one customer need. Across the accessible products and rounds, each row contains 16 usable answers. Access-blocked slots are excluded.</p>
+<div class="language-grid">
+<article class="language-card"><span>English</span><strong>43/48 shown</strong><p>33/48 top three · 4/48 booking</p></article>
+<article class="language-card"><span>German</span><strong>36/48 shown</strong><p>30/48 top three · 1/48 booking</p></article></div>
+<div class="detail-list">
+<details class="detail"><summary><span>See each customer need, exact questions and main competitors</span><small>Questions and competitors</small></summary><div class="detail-body"><div class="detail-list">
+<details class="detail">
+<summary><span>A general Italian dinner in Berlin</span><small>16/16 shown · 15/16 top three · 0/16 booking</small></summary>
+<div class="detail-body">
+<h4>Questions tested</h4>
+<ol><li><code>GEO-C01</code> Which Italian restaurants in Berlin would you recommend for dinner?</li><li><code>GEO-C02</code> Welche italienischen Restaurants in Berlin würdest du für ein Abendessen empfehlen?</li></ol>
+<p><strong>What we found:</strong> A MANO appeared in 16 of 16 answers and was top three in 15. No answer offered a direct booking route.</p>
+<p><strong>Main competitors:</strong> Bocca Felice (12), Coccodrillo (10), Trattoria Portofino (9)</p>
+<p><strong>What is needed:</strong> Keep broad discovery strong and make the booking route visible.</p>
+</div>
+</details>
+<details class="detail">
+<summary><span>Dinner near Strausberger Platz</span><small>16/16 shown · 15/16 top three · 5/16 booking</small></summary>
+<div class="detail-body">
+<h4>Questions tested</h4>
+<ol><li><code>GEO-C03</code> Recommend a good Italian restaurant near Strausberger Platz in Berlin.</li><li><code>GEO-C04</code> Empfiehl mir ein gutes italienisches Restaurant in der Nähe des Strausberger Platzes in Berlin.</li></ol>
+<p><strong>What we found:</strong> This was the strongest need: 16 of 16 mentions, 15 top-three appearances and all 5 booking routes.</p>
+<p><strong>Main competitors:</strong> Vesuvio (16), La Bruschetta (9), Trattoria Portofino (9)</p>
+<p><strong>What is needed:</strong> Protect this strongest position and show the same booking route every time.</p>
+</div>
+</details>
+<details class="detail">
+<summary><span>Dinner near Alexanderplatz</span><small>11/16 shown · 9/16 top three · 0/16 booking</small></summary>
+<div class="detail-body">
+<h4>Questions tested</h4>
+<ol><li><code>GEO-C05</code> Which Italian restaurant near Alexanderplatz is a good choice for dinner?</li><li><code>GEO-C06</code> Welches italienische Restaurant in der Nähe des Alexanderplatzes eignet sich für ein Abendessen?</li></ol>
+<p><strong>What we found:</strong> Visibility was mixed: 11 of 16 mentions. German answers were weaker, and Piazza Rossa and Vincenzo appeared often.</p>
+<p><strong>Main competitors:</strong> Piazza Rossa (13), Vincenzo (10), Eataly Inn (8)</p>
+<p><strong>What is needed:</strong> Clarify the location relationship and strengthen German-language evidence.</p>
+</div>
+</details>
+<details class="detail">
+<summary><span>Handmade pasta</span><small>12/16 shown · 8/16 top three · 0/16 booking</small></summary>
+<div class="detail-body">
+<h4>Questions tested</h4>
+<ol><li><code>GEO-C07</code> Where can I get good handmade pasta at an Italian restaurant in Berlin?</li><li><code>GEO-C08</code> Wo gibt es in Berlin gute hausgemachte Pasta in einem italienischen Restaurant?</li></ol>
+<p><strong>What we found:</strong> A MANO appeared in 12 of 16 answers, but only 1 answer had a clear source supporting A MANO.</p>
+<p><strong>Main competitors:</strong> Luardi (10), Pasta Pls! (9), Bocca Felice (9)</p>
+<p><strong>What is needed:</strong> Publish clear, owner-approved proof of the pasta claim in German and English.</p>
+</div>
+</details>
+<details class="detail">
+<summary><span>Business lunch</span><small>13/16 shown · 9/16 top three · 0/16 booking</small></summary>
+<div class="detail-body">
+<h4>Questions tested</h4>
+<ol><li><code>GEO-C09</code> Which Italian restaurant in Berlin is suitable for a business lunch?</li><li><code>GEO-C10</code> Welches italienische Restaurant in Berlin eignet sich für ein Geschäftsessen zur Mittagszeit?</li></ol>
+<p><strong>What we found:</strong> A MANO appeared in 13 of 16 answers, but clear source support appeared only 1 time and booking never appeared.</p>
+<p><strong>Main competitors:</strong> Ristorante Cinque (14), Ristorante Nuova Italia (11), Dolcini (5)</p>
+<p><strong>What is needed:</strong> Confirm lunch hours and policy, then connect the recommendation to booking.</p>
+</div>
+</details>
+<details class="detail">
+<summary><span>Private celebration or company event</span><small>11/16 shown · 7/16 top three · 0/16 booking</small></summary>
+<div class="detail-body">
+<h4>Questions tested</h4>
+<ol><li><code>GEO-C11</code> I need an Italian restaurant in Berlin for a private celebration or company event. Which options are suitable?</li><li><code>GEO-C12</code> Ich suche ein italienisches Restaurant in Berlin für eine private Feier oder ein Firmenevent. Welche Optionen sind geeignet?</li></ol>
+<p><strong>What we found:</strong> A MANO appeared in 11 of 16 answers and was top three in 7. Event claims still need owner confirmation.</p>
+<p><strong>Main competitors:</strong> Bocca Felice (10), Ristorante Nuova Italia (7), Bellucci (6)</p>
+<p><strong>What is needed:</strong> Confirm event facts and create one clear event enquiry or booking route.</p>
+</div>
+</details></div></div></details>
+<details class="detail"><summary><span>See the results by AI platform and round</span><small>Full numbers</small></summary><div class="detail-body"><div class="table-wrap"><table><thead><tr><th>AI product</th><th>A MANO shown</th><th>First 3 choices</th><th>Direct booking</th></tr></thead><tbody>
+<tr>
+<td><strong>ChatGPT Search</strong><span class="sub">36 valid · 0 blocked</span></td>
+<td><span class="cell-metric">75.0%</span><span class="bar-track"><span class="bar-fill wine" style="width:75.0%"></span></span></td>
+<td><span class="cell-metric">41.7%</span><span class="bar-track"><span class="bar-fill gold" style="width:41.7%"></span></span></td>
+<td><span class="cell-metric">5.6%</span><span class="bar-track"><span class="bar-fill sage" style="width:5.6%"></span></span></td>
+</tr>
+<tr>
+<td><strong>Google AI Mode</strong><span class="sub">36 valid · 0 blocked</span></td>
+<td><span class="cell-metric">88.9%</span><span class="bar-track"><span class="bar-fill wine" style="width:88.9%"></span></span></td>
+<td><span class="cell-metric">80.6%</span><span class="bar-track"><span class="bar-fill gold" style="width:80.6%"></span></span></td>
+<td><span class="cell-metric">5.6%</span><span class="bar-track"><span class="bar-fill sage" style="width:5.6%"></span></span></td>
+</tr>
+<tr>
+<td><strong>Perplexity</strong><span class="sub">24 valid · 12 blocked</span></td>
+<td><span class="cell-metric">83.3%</span><span class="bar-track"><span class="bar-fill wine" style="width:83.3%"></span></span></td>
+<td><span class="cell-metric">79.2%</span><span class="bar-track"><span class="bar-fill gold" style="width:79.2%"></span></span></td>
+<td><span class="cell-metric">4.2%</span><span class="bar-track"><span class="bar-fill sage" style="width:4.2%"></span></span></td>
+</tr>
+<tr>
+<td><strong>Microsoft Copilot</strong><span class="sub">0 valid · 36 blocked</span></td>
+<td><span class="cell-metric">N/A</span><span class="bar-track"><span class="bar-fill wine" style="width:0%"></span></span></td>
+<td><span class="cell-metric">N/A</span><span class="bar-track"><span class="bar-fill gold" style="width:0%"></span></span></td>
+<td><span class="cell-metric">N/A</span><span class="bar-track"><span class="bar-fill sage" style="width:0%"></span></span></td>
+</tr></tbody></table></div><div class="round-detail">
+<article class="round-card">
+<div class="round-number">Round 1<span class="sub">36 valid · 12 blocked</span></div>
+<div class="round-grid">
+<div><span>Mention</span><strong>83.3%</strong><span class="bar-track"><span class="bar-fill wine" style="width:83.3%"></span></span></div>
+<div><span>Top three</span><strong>61.1%</strong><span class="bar-track"><span class="bar-fill gold" style="width:61.1%"></span></span></div>
+<div><span>Booking</span><strong>8.3%</strong><span class="bar-track"><span class="bar-fill sage" style="width:8.3%"></span></span></div>
+</div>
+</article>
+<article class="round-card">
+<div class="round-number">Round 2<span class="sub">36 valid · 12 blocked</span></div>
+<div class="round-grid">
+<div><span>Mention</span><strong>77.8%</strong><span class="bar-track"><span class="bar-fill wine" style="width:77.8%"></span></span></div>
+<div><span>Top three</span><strong>69.4%</strong><span class="bar-track"><span class="bar-fill gold" style="width:69.4%"></span></span></div>
+<div><span>Booking</span><strong>2.8%</strong><span class="bar-track"><span class="bar-fill sage" style="width:2.8%"></span></span></div>
+</div>
+</article>
+<article class="round-card">
+<div class="round-number">Round 3<span class="sub">24 valid · 24 blocked</span></div>
+<div class="round-grid">
+<div><span>Mention</span><strong>87.5%</strong><span class="bar-track"><span class="bar-fill wine" style="width:87.5%"></span></span></div>
+<div><span>Top three</span><strong>66.7%</strong><span class="bar-track"><span class="bar-fill gold" style="width:66.7%"></span></span></div>
+<div><span>Booking</span><strong>4.2%</strong><span class="bar-track"><span class="bar-fill sage" style="width:4.2%"></span></span></div>
+</div>
+</article></div><p><strong>Important:</strong> Copilot was access-blocked in all three rounds, and Perplexity required sign-up in Round 3. These slots are shown as unavailable, not as failed recommendations. Round 3 has a smaller valid denominator and must not be read as a direct improvement or decline.</p></div></details>
+
+</div>
+</section>
+<section id="needed">
+<div class="section-title"><span class="section-number">3</span><div><h2>What is needed</h2><p>The baseline is complete. Before changing public information, the owner must approve one fact sheet and one official booking route.</p></div></div>
+<div class="need-grid">
+<article class="need-card"><h3>Use the completed baseline</h3><p>The 144-slot pre-change measurement is frozen. It can now be used for the later like-for-like comparison.</p></article>
+<article class="need-card"><h3>Approve facts and booking</h3><p>The website and public profiles should not be updated until the owner confirms the exact facts below and selects one A MANO-specific reservation destination.</p></article>
+</div>
+<div class="panel" style="margin-top:12px"><div class="decisions"><article class="decision"><strong>Official business details</strong><p>Confirm the official name, address, phone number, website and how the location should be described.</p></article><article class="decision"><strong>Hours, prices and payment</strong><p>Confirm service hours, kitchen closing time, exceptions, price range and accepted payment methods.</p></article><article class="decision"><strong>Restaurant features</strong><p>Confirm outdoor seating, accessibility, takeaway, parking, handmade pasta and private-event options.</p></article><article class="decision"><strong>How customers book</strong><p>Choose one official booking link, explain how confirmation works and provide a phone fallback.</p></article></div></div>
+<div class="plain-note"><strong>Why this matters:</strong> AI answers currently mix correct information with unconfirmed claims about prices, hours, accessibility, pasta, private events and other details. One approved fact sheet prevents new contradictions.</div>
+<div class="detail-list"></div>
+</section>
+<section id="improve">
+<div class="section-title"><span class="section-number">4</span><div><h2>What we can do to make it better</h2><p>The work should follow this order so the final before-and-after comparison is fair.</p></div></div>
+<div class="need-grid">
+<article class="panel"><ol class="next-steps"><li><span>1</span><div><strong>Confirm the correct facts</strong><p>The owner confirms the official name, hours, prices, services, event facts and one booking route.</p></div></li><li><span>2</span><div><strong>Choose one official booking route</strong><p>Use one A MANO-specific destination across the website and important profiles.</p></div></li><li><span>3</span><div><strong>Fix the biggest blockers</strong><p>Repair the broken booking and menu links, then correct unclear business information.</p></div></li><li><span>4</span><div><strong>Update the website and public profiles</strong><p>Make the website, maps and major profiles show the same clear facts in German and English.</p></div></li><li><span>5</span><div><strong>Measure and test again</strong><p>Track reservation clicks where possible, then repeat the same questions and compare with this baseline.</p></div></li></ol></article>
+<article class="panel"><h3 style="margin-top:0">What should improve</h3><ul class="outcome-list"><li>The same A MANO name and business details everywhere.</li><li>A direct booking route people can use from an AI answer.</li><li>Stronger German visibility.</li><li>Clear proof for pasta, business lunch and events.</li><li>The same facts on the website, maps and directory profiles.</li><li>A clear before-and-after comparison using the same questions.</li></ul></article>
+</div>
+<div class="detail-list">
+
+
+</div>
+<div class="boundary"><strong>Important limitation:</strong> AI answers change over time. These results came from real public AI search products on recorded dates. They are the completed starting point before improvements; they do not guarantee the same answer every time or prove booking growth, revenue impact or causal change. No website or public-profile changes have been applied yet.</div>
+</section>
+</main>
+<footer class="footer"><span>Evidence current to 18 August 2026</span><span>Public aggregate results · raw evidence retained privately</span></footer>
+</div>
+<script>
+(function(){
+  var filters=document.querySelectorAll('.filter');
+  var rows=Array.from(document.querySelectorAll('.action-row'));
+  var search=document.getElementById('actionSearch');
+  var active='all';
+  function apply(){if(!search)return;var q=(search.value||'').toLowerCase();rows.forEach(function(row){var p=active==='all'||row.dataset.priority===active;var s=!q||row.dataset.search.indexOf(q)>-1;row.style.display=p&&s?'':'none';});}
+  filters.forEach(function(btn){btn.addEventListener('click',function(){filters.forEach(function(b){b.classList.remove('active');});btn.classList.add('active');active=btn.dataset.filter;apply();});});
+  if(search)search.addEventListener('input',apply);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+{
+  "schema": "a-mano-ai-visibility-public-v1",
+  "title": "A MANO AI Visibility Benchmark",
+  "public_url": "https://sejdinii.github.io/a-mano-ai-visibility/",
+  "updated": "2026-08-18",
+  "status": "completed pre-change baseline",
+  "coverage": {
+    "planned_slots": 144,
+    "finalized_slots": 144,
+    "valid_generated_answers": 96,
+    "access_blocked_slots": 48
+  },
+  "headline_metrics": {
+    "a_mano_mentioned": {
+      "numerator": 79,
+      "denominator": 96,
+      "percentage": "82.3%"
+    },
+    "observable_top_three": {
+      "numerator": 63,
+      "denominator": 96,
+      "percentage": "65.6%"
+    },
+    "immediately_usable_booking_route": {
+      "numerator": 5,
+      "denominator": 96,
+      "percentage": "5.2%"
+    },
+    "checked_fact_accuracy": {
+      "numerator": 161,
+      "denominator": 161,
+      "percentage": "100.0%"
+    },
+    "mean_repeated_source_overlap": 0.315
+  },
+  "access_notes": {
+    "microsoft_copilot_blocked_slots": 36,
+    "perplexity_blocked_slots": 12,
+    "scoring_rule": "Access-blocked slots are retained for coverage accountability and excluded from scored KPI denominators."
+  },
+  "by_customer_need": [
+    {
+      "intent": "broad_berlin",
+      "label": "A general Italian dinner in Berlin",
+      "prompt_ids": [
+        "GEO-C01",
+        "GEO-C02"
+      ],
+      "questions": [
+        "Which Italian restaurants in Berlin would you recommend for dinner?",
+        "Welche italienischen Restaurants in Berlin würdest du für ein Abendessen empfehlen?"
+      ],
+      "meaning": "A MANO appeared in 16 of 16 answers and was top three in 15. No answer offered a direct booking route.",
+      "plain_result": "Strong visibility. Booking is missing.",
+      "needed": "Keep broad discovery strong and make the booking route visible.",
+      "valid": 16,
+      "mention": 16,
+      "top_three": 15,
+      "booking": 0,
+      "supported": 7
+    },
+    {
+      "intent": "near_strausberger",
+      "label": "Dinner near Strausberger Platz",
+      "prompt_ids": [
+        "GEO-C03",
+        "GEO-C04"
+      ],
+      "questions": [
+        "Recommend a good Italian restaurant near Strausberger Platz in Berlin.",
+        "Empfiehl mir ein gutes italienisches Restaurant in der Nähe des Strausberger Platzes in Berlin."
+      ],
+      "meaning": "This was the strongest need: 16 of 16 mentions, 15 top-three appearances and all 5 booking routes.",
+      "plain_result": "Strongest result. Booking appeared, but not consistently.",
+      "needed": "Protect this strongest position and show the same booking route every time.",
+      "valid": 16,
+      "mention": 16,
+      "top_three": 15,
+      "booking": 5,
+      "supported": 10
+    },
+    {
+      "intent": "near_alexanderplatz",
+      "label": "Dinner near Alexanderplatz",
+      "prompt_ids": [
+        "GEO-C05",
+        "GEO-C06"
+      ],
+      "questions": [
+        "Which Italian restaurant near Alexanderplatz is a good choice for dinner?",
+        "Welches italienische Restaurant in der Nähe des Alexanderplatzes eignet sich für ein Abendessen?"
+      ],
+      "meaning": "Visibility was mixed: 11 of 16 mentions. German answers were weaker, and Piazza Rossa and Vincenzo appeared often.",
+      "plain_result": "Mixed visibility, especially in German.",
+      "needed": "Clarify the location relationship and strengthen German-language evidence.",
+      "valid": 16,
+      "mention": 11,
+      "top_three": 9,
+      "booking": 0,
+      "supported": 3
+    },
+    {
+      "intent": "handmade_pasta",
+      "label": "Handmade pasta",
+      "prompt_ids": [
+        "GEO-C07",
+        "GEO-C08"
+      ],
+      "questions": [
+        "Where can I get good handmade pasta at an Italian restaurant in Berlin?",
+        "Wo gibt es in Berlin gute hausgemachte Pasta in einem italienischen Restaurant?"
+      ],
+      "meaning": "A MANO appeared in 12 of 16 answers, but only 1 answer had a clear source supporting A MANO.",
+      "plain_result": "Mixed visibility. Only 1 answer showed a clear source about A MANO.",
+      "needed": "Publish clear, owner-approved proof of the pasta claim in German and English.",
+      "valid": 16,
+      "mention": 12,
+      "top_three": 8,
+      "booking": 0,
+      "supported": 1
+    },
+    {
+      "intent": "business_lunch",
+      "label": "Business lunch",
+      "prompt_ids": [
+        "GEO-C09",
+        "GEO-C10"
+      ],
+      "questions": [
+        "Which Italian restaurant in Berlin is suitable for a business lunch?",
+        "Welches italienische Restaurant in Berlin eignet sich für ein Geschäftsessen zur Mittagszeit?"
+      ],
+      "meaning": "A MANO appeared in 13 of 16 answers, but clear source support appeared only 1 time and booking never appeared.",
+      "plain_result": "Often shown, but no booking route appeared.",
+      "needed": "Confirm lunch hours and policy, then connect the recommendation to booking.",
+      "valid": 16,
+      "mention": 13,
+      "top_three": 9,
+      "booking": 0,
+      "supported": 1
+    },
+    {
+      "intent": "private_group",
+      "label": "Private celebration or company event",
+      "prompt_ids": [
+        "GEO-C11",
+        "GEO-C12"
+      ],
+      "questions": [
+        "I need an Italian restaurant in Berlin for a private celebration or company event. Which options are suitable?",
+        "Ich suche ein italienisches Restaurant in Berlin für eine private Feier oder ein Firmenevent. Welche Optionen sind geeignet?"
+      ],
+      "meaning": "A MANO appeared in 11 of 16 answers and was top three in 7. Event claims still need owner confirmation.",
+      "plain_result": "Mixed visibility. Event details still need confirmation.",
+      "needed": "Confirm event facts and create one clear event enquiry or booking route.",
+      "valid": 16,
+      "mention": 11,
+      "top_three": 7,
+      "booking": 0,
+      "supported": 1
+    }
+  ],
+  "by_language": [
+    {
+      "language": "en",
+      "label": "English",
+      "valid": 48,
+      "mention": 43,
+      "top_three": 33,
+      "booking": 4,
+      "supported": 13
+    },
+    {
+      "language": "de",
+      "label": "German",
+      "valid": 48,
+      "mention": 36,
+      "top_three": 30,
+      "booking": 1,
+      "supported": 10
+    }
+  ],
+  "by_ai_product": [
+    {
+      "key": "chatgpt_search",
+      "name": "ChatGPT Search",
+      "valid": 36,
+      "blocked": 0,
+      "mention": {
+        "numerator": 27,
+        "denominator": 36,
+        "value": 0.75,
+        "display": "75.0%"
+      },
+      "top_three": {
+        "numerator": 15,
+        "denominator": 36,
+        "value": 0.4166666666666667,
+        "display": "41.7%"
+      },
+      "booking": {
+        "numerator": 2,
+        "denominator": 36,
+        "value": 0.05555555555555555,
+        "display": "5.6%"
+      }
+    },
+    {
+      "key": "google_ai_mode",
+      "name": "Google AI Mode",
+      "valid": 36,
+      "blocked": 0,
+      "mention": {
+        "numerator": 32,
+        "denominator": 36,
+        "value": 0.8888888888888888,
+        "display": "88.9%"
+      },
+      "top_three": {
+        "numerator": 29,
+        "denominator": 36,
+        "value": 0.8055555555555556,
+        "display": "80.6%"
+      },
+      "booking": {
+        "numerator": 2,
+        "denominator": 36,
+        "value": 0.05555555555555555,
+        "display": "5.6%"
+      }
+    },
+    {
+      "key": "perplexity",
+      "name": "Perplexity",
+      "valid": 24,
+      "blocked": 12,
+      "mention": {
+        "numerator": 20,
+        "denominator": 24,
+        "value": 0.8333333333333334,
+        "display": "83.3%"
+      },
+      "top_three": {
+        "numerator": 19,
+        "denominator": 24,
+        "value": 0.7916666666666666,
+        "display": "79.2%"
+      },
+      "booking": {
+        "numerator": 1,
+        "denominator": 24,
+        "value": 0.041666666666666664,
+        "display": "4.2%"
+      }
+    },
+    {
+      "key": "microsoft_copilot",
+      "name": "Microsoft Copilot",
+      "valid": 0,
+      "blocked": 36,
+      "mention": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "display": "N/A"
+      },
+      "top_three": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "display": "N/A"
+      },
+      "booking": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "display": "N/A"
+      }
+    }
+  ],
+  "by_round": [
+    {
+      "number": 1,
+      "valid": 36,
+      "blocked": 12,
+      "mention": {
+        "numerator": 30,
+        "denominator": 36,
+        "value": 0.8333333333333334,
+        "display": "83.3%"
+      },
+      "top_three": {
+        "numerator": 22,
+        "denominator": 36,
+        "value": 0.6111111111111112,
+        "display": "61.1%"
+      },
+      "booking": {
+        "numerator": 3,
+        "denominator": 36,
+        "value": 0.08333333333333333,
+        "display": "8.3%"
+      }
+    },
+    {
+      "number": 2,
+      "valid": 36,
+      "blocked": 12,
+      "mention": {
+        "numerator": 28,
+        "denominator": 36,
+        "value": 0.7777777777777778,
+        "display": "77.8%"
+      },
+      "top_three": {
+        "numerator": 25,
+        "denominator": 36,
+        "value": 0.6944444444444444,
+        "display": "69.4%"
+      },
+      "booking": {
+        "numerator": 1,
+        "denominator": 36,
+        "value": 0.027777777777777776,
+        "display": "2.8%"
+      }
+    },
+    {
+      "number": 3,
+      "valid": 24,
+      "blocked": 24,
+      "mention": {
+        "numerator": 21,
+        "denominator": 24,
+        "value": 0.875,
+        "display": "87.5%"
+      },
+      "top_three": {
+        "numerator": 16,
+        "denominator": 24,
+        "value": 0.6666666666666666,
+        "display": "66.7%"
+      },
+      "booking": {
+        "numerator": 1,
+        "denominator": 24,
+        "value": 0.041666666666666664,
+        "display": "4.2%"
+      }
+    }
+  ],
+  "methodology": {
+    "design": "12 frozen prompts × 4 AI products × 3 rounds = 144 planned slots.",
+    "prompt_languages": [
+      "English",
+      "German"
+    ],
+    "submission_rule": "Each valid submission used a fresh conversation with verified prompt readback.",
+    "booking_rule": "Booking counted only when the answer exposed an immediately usable A MANO-specific reservation or call route.",
+    "interpretation": "Differences between rounds show generated-answer and access variability, not business improvement or decline."
+  },
+  "publication_boundary": "Aggregate results only. Raw answers, screenshots, browser traces, local file paths, credentials, internal action records and disputed owner facts are not published."
+}
