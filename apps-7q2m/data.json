@@ -1,6 +1,123 @@
 {
- "generated": "2026-09-25T18:30:00+00:00",
+ "generated": "2026-09-25T22:41:44+00:00",
  "rows": [
+  {
+   "date": "2026-09-26",
+   "company": "TK Elevator",
+   "role": "Working Student Project Management and Business Analytics",
+   "method": "TK Elevator portal",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "TK Home Solutions",
+   "role": "Working Student Digital Operations & Data Analytics",
+   "method": "TK Elevator portal",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "USU Solutions",
+   "role": "Working Student Developer Relations & Integrations",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Knauf Digital",
+   "role": "Working Student Customer Experience & Insights",
+   "method": "Teamtailor",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Intershop Communications AG",
+   "role": "Working Student, Product Management",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Intershop Communications AG",
+   "role": "Working Student, Marketing (Data Research and Analysis)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Intershop Communications AG",
+   "role": "Working Student, Engineering Reporting Tools / Software Development",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "COBACK",
+   "role": "Working Student Full Stack Engineering",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "COBACK",
+   "role": "Working Student AI Engineering",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "PERGOLUX",
+   "role": "Working Student Analytics Engineer",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "DSA Daten- und Systemtechnik",
+   "role": "Student Assistant, Operation and Automation of AI Infrastructure",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "TU Berlin (DIMA)",
+   "role": "Student Assistant, Database Systems and Information Management (IV-SB-0015-2026D)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "TU Berlin (Aerodynamics, CityWind)",
+   "role": "Student Assistant, CityWind project (V-SB-0116-2026)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
   {
    "date": "2026-09-25",
    "company": "n8n",
