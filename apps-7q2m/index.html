@@ -72,10 +72,11 @@
   .st.Waiting::before { background: #ffff00; }
   .st.Rejected::before { background: #808080; }
   .st.Assessment::before, .st.Interview::before { background: #00ff00; }
+  .st.Replied::before { background: #00ffff; }
   .st.Action::before { background: #ff0000; }
   ul.todo { margin: 0; padding: 0; list-style: none; }
   ul.todo li { padding: 4px 6px; border-bottom: 1px solid #e4e4e4; display: flex; gap: 10px; }
-  ul.todo .due { font-family: "Courier New", monospace; white-space: nowrap; min-width: 84px; }
+  ul.todo .due { font-family: "Courier New", monospace; white-space: nowrap; min-width: 56px; }
   ul.todo .sub { color: #444; }
   tr:hover td .sub { color: inherit; }
   .status {
@@ -98,8 +99,8 @@
 </div>
 
 <div class="win">
-  <div class="bar"><span>To do</span><span class="x" aria-hidden="true">×</span></div>
-  <div class="body"><div class="sunken" style="max-height:none"><ul class="todo" id="todo"></ul></div></div>
+  <div class="bar"><span>Responses</span><span class="x" aria-hidden="true">×</span></div>
+  <div class="body"><div class="sunken" style="max-height:40vh"><ul class="todo" id="todo"></ul></div></div>
 </div>
 
 <div class="win">
@@ -109,7 +110,7 @@
       <button data-f="all" aria-pressed="true">All</button>
       <button data-f="Waiting">Waiting</button>
       <button data-f="Rejected">Rejected</button>
-      <button data-f="open">Tests &amp; actions</button>
+      <button data-f="open">Tests &amp; interviews</button>
       <input type="search" id="q" placeholder="Search company or role" aria-label="Search">
     </div>
     <div class="sunken">
@@ -142,14 +143,14 @@
     r.forEach(function (x) { c[x.state] = (c[x.state] || 0) + 1; });
     var items = [
       ["Applications", r.length], ["Waiting", c.Waiting || 0], ["Rejected", c.Rejected || 0],
-      ["Tests & interviews", (c.Interview || 0) + (c.Assessment || 0)], ["To do", data.todo.length]
+      ["Tests & interviews", (c.Interview || 0) + (c.Assessment || 0)], ["Responses", data.responses.length]
     ];
     $("stats").innerHTML = items.map(function (i) { return '<div class="stat">' + esc(i[0]) + '<b>' + i[1] + '</b></div>'; }).join("");
   }
 
   function todo() {
-    $("todo").innerHTML = data.todo.map(function (t) {
-      return '<li><span class="due">' + (t.due ? "Due " + esc(fmt(t.due)) : "Anytime") + '</span><span><b>' + esc(t.item) + '</b><br><span class="sub">' + esc(t.detail) + '</span></span></li>';
+    $("todo").innerHTML = data.responses.map(function (t) {
+      return '<li><span class="due">' + esc(fmt(t.date)) + '</span><span class="st ' + esc(cls(t.state)) + '" style="min-width:90px">' + esc(t.state) + '</span><span><b>' + esc(t.company) + '</b> · ' + esc(t.role) + '<br><span class="sub">' + esc(t.note) + '</span></span></li>';
     }).join("");
   }
 
