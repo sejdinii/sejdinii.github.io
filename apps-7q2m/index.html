@@ -99,7 +99,7 @@
 </div>
 
 <div class="win">
-  <div class="bar"><span>Responses</span><span class="x" aria-hidden="true">×</span></div>
+  <div class="bar"><span>Further Stages</span><span class="x" aria-hidden="true">×</span></div>
   <div class="body"><div class="sunken" style="max-height:40vh"><ul class="todo" id="todo"></ul></div></div>
 </div>
 
@@ -110,7 +110,7 @@
       <button data-f="all" aria-pressed="true">All</button>
       <button data-f="Waiting">Waiting</button>
       <button data-f="Rejected">Rejected</button>
-      <button data-f="open">Tests &amp; interviews</button>
+      <button data-f="open">Further stages</button>
       <input type="search" id="q" placeholder="Search company or role" aria-label="Search">
     </div>
     <div class="sunken">
@@ -143,15 +143,16 @@
     r.forEach(function (x) { c[x.state] = (c[x.state] || 0) + 1; });
     var items = [
       ["Applications", r.length], ["Waiting", c.Waiting || 0], ["Rejected", c.Rejected || 0],
-      ["Tests & interviews", (c.Interview || 0) + (c.Assessment || 0)], ["Responses", data.responses.length]
+      ["Further stages", (c.Interview || 0) + (c.Assessment || 0)]
     ];
     $("stats").innerHTML = items.map(function (i) { return '<div class="stat">' + esc(i[0]) + '<b>' + i[1] + '</b></div>'; }).join("");
   }
 
   function todo() {
-    $("todo").innerHTML = data.responses.map(function (t) {
-      return '<li><span class="due">' + esc(fmt(t.date)) + '</span><span class="st ' + esc(cls(t.state)) + '" style="min-width:90px">' + esc(t.state) + '</span><span><b>' + esc(t.company) + '</b> · ' + esc(t.role) + '<br><span class="sub">' + esc(t.note) + '</span></span></li>';
-    }).join("");
+    var f = data.rows.filter(function (x) { return x.state === "Assessment" || x.state === "Interview"; });
+    $("todo").innerHTML = f.length ? f.map(function (t) {
+      return '<li><span class="due">' + esc(fmt(t.last || t.date)) + '</span><span class="st ' + esc(cls(t.state)) + '" style="min-width:90px">' + esc(t.state) + '</span><span><b>' + esc(t.company) + '</b> · ' + esc(t.role) + '<br><span class="sub">' + esc(t.note) + '</span></span></li>';
+    }).join("") : '<li>No applications in a further stage yet.</li>';
   }
 
   function table() {
