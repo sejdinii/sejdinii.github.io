@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Applications</title>
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --face: #c0c0c0; --hi: #ffffff; --lo: #808080; --dark: #000000;
+    --desk: #008080; --title: #000080; --title2: #1084d0; --field: #ffffff;
+    --text: #000000; --sel: #000080; --seltext: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--desk); color: var(--text);
+    font: 12px/1.35 Tahoma, "MS Sans Serif", "Segoe UI", Verdana, sans-serif;
+    padding: 16px; min-height: 100vh;
+  }
+  .win {
+    background: var(--face); max-width: 1100px; margin: 0 auto 16px;
+    border: 2px solid; border-color: var(--hi) var(--dark) var(--dark) var(--hi);
+    box-shadow: inset -1px -1px var(--lo), inset 1px 1px #dfdfdf; padding: 3px;
+  }
+  .bar {
+    background: linear-gradient(90deg, var(--title), var(--title2));
+    color: #fff; font-weight: bold; padding: 3px 4px 3px 6px;
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  }
+  .bar .x {
+    width: 16px; height: 14px; background: var(--face); color: #000; font: bold 10px/12px Tahoma, sans-serif;
+    text-align: center; border: 1px solid; border-color: var(--hi) var(--dark) var(--dark) var(--hi);
+  }
+  .body { padding: 10px 8px 8px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .stat {
+    flex: 1 1 120px; background: var(--field); padding: 6px 8px;
+    border: 2px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo);
+  }
+  .stat b { display: block; font-size: 22px; line-height: 1.1; font-weight: normal; font-family: "Courier New", monospace; }
+  button, .btn {
+    font: inherit; color: #000; background: var(--face); padding: 3px 12px; min-width: 64px; cursor: pointer;
+    border: 2px solid; border-color: var(--hi) var(--dark) var(--dark) var(--hi);
+    box-shadow: inset -1px -1px var(--lo);
+  }
+  button:active, button[aria-pressed="true"] {
+    border-color: var(--dark) var(--hi) var(--hi) var(--dark); box-shadow: inset 1px 1px var(--lo);
+  }
+  button:focus-visible { outline: 1px dotted #000; outline-offset: -5px; }
+  input[type=search] {
+    font: inherit; padding: 3px 4px; background: var(--field); min-width: 180px; flex: 1 1 180px;
+    border: 2px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo);
+  }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; }
+  .sunken {
+    background: var(--field); border: 2px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo);
+    overflow: auto; max-height: 60vh;
+  }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; }
+  th {
+    position: sticky; top: 0; background: var(--face); text-align: left; font-weight: normal;
+    padding: 2px 6px; white-space: nowrap; cursor: pointer; user-select: none;
+    border: 1px solid; border-color: var(--hi) var(--lo) var(--lo) var(--hi);
+  }
+  td { padding: 2px 6px; vertical-align: top; border-bottom: 1px solid #e4e4e4; }
+  tr:hover td { background: var(--sel); color: var(--seltext); }
+  td.d { white-space: nowrap; font-family: "Courier New", monospace; }
+  .st { white-space: nowrap; }
+  .st::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 5px; border: 1px solid #000; vertical-align: 0; }
+  .st.Waiting::before { background: #ffff00; }
+  .st.Rejected::before { background: #808080; }
+  .st.Assessment::before, .st.Interview::before { background: #00ff00; }
+  .st.Action::before { background: #ff0000; }
+  ul.todo { margin: 0; padding: 0; list-style: none; }
+  ul.todo li { padding: 4px 6px; border-bottom: 1px solid #e4e4e4; display: flex; gap: 10px; }
+  ul.todo .due { font-family: "Courier New", monospace; white-space: nowrap; min-width: 84px; }
+  ul.todo .sub { color: #444; }
+  tr:hover td .sub { color: inherit; }
+  .status {
+    display: flex; gap: 2px; margin-top: 6px;
+  }
+  .status span {
+    padding: 1px 6px; flex: 1; border: 1px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .status span:first-child { flex: 3; }
+  @media (max-width: 600px) { body { padding: 8px; } .stat b { font-size: 18px; } }
+</style>
+</head>
+<body>
+
+<div class="win">
+  <div class="bar"><span>Applications.exe</span><span class="x" aria-hidden="true">×</span></div>
+  <div class="body">
+    <div class="row" id="stats"></div>
+  </div>
+</div>
+
+<div class="win">
+  <div class="bar"><span>To do</span><span class="x" aria-hidden="true">×</span></div>
+  <div class="body"><div class="sunken" style="max-height:none"><ul class="todo" id="todo"></ul></div></div>
+</div>
+
+<div class="win">
+  <div class="bar"><span>All applications</span><span class="x" aria-hidden="true">×</span></div>
+  <div class="body">
+    <div class="toolbar" id="filters">
+      <button data-f="all" aria-pressed="true">All</button>
+      <button data-f="Waiting">Waiting</button>
+      <button data-f="Rejected">Rejected</button>
+      <button data-f="open">Tests &amp; actions</button>
+      <input type="search" id="q" placeholder="Search company or role" aria-label="Search">
+    </div>
+    <div class="sunken">
+      <table>
+        <thead><tr>
+          <th data-k="date">Applied</th><th data-k="company">Company</th><th data-k="role">Role</th>
+          <th data-k="state">Status</th><th data-k="last">Last reply</th><th data-k="note">Note</th><th data-k="method">Channel</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div class="status"><span id="sb1">Loading…</span><span id="sb2"></span></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var data = null, filter = "all", sortKey = "date", asc = false;
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); };
+  var fmt = function (d) {
+    if (!d) return "";
+    var p = d.split("-"); var m = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    return p.length === 3 ? (+p[2]) + " " + m[+p[1] - 1] : d;
+  };
+  var cls = function (s) { return s === "Action needed" ? "Action" : s; };
+
+  function stats() {
+    var r = data.rows, c = {};
+    r.forEach(function (x) { c[x.state] = (c[x.state] || 0) + 1; });
+    var items = [
+      ["Applications", r.length], ["Waiting", c.Waiting || 0], ["Rejected", c.Rejected || 0],
+      ["Tests & interviews", (c.Interview || 0) + (c.Assessment || 0)], ["To do", data.todo.length]
+    ];
+    $("stats").innerHTML = items.map(function (i) { return '<div class="stat">' + esc(i[0]) + '<b>' + i[1] + '</b></div>'; }).join("");
+  }
+
+  function todo() {
+    $("todo").innerHTML = data.todo.map(function (t) {
+      return '<li><span class="due">' + (t.due ? "Due " + esc(fmt(t.due)) : "Anytime") + '</span><span><b>' + esc(t.item) + '</b><br><span class="sub">' + esc(t.detail) + '</span></span></li>';
+    }).join("");
+  }
+
+  function table() {
+    var q = $("q").value.trim().toLowerCase();
+    var r = data.rows.filter(function (x) {
+      if (filter === "open" && !(x.state === "Action needed" || x.state === "Assessment" || x.state === "Interview")) return false;
+      if (filter !== "all" && filter !== "open" && x.state !== filter) return false;
+      return !q || (x.company + " " + x.role).toLowerCase().indexOf(q) > -1;
+    }).sort(function (a, b) {
+      var A = a[sortKey] || "", B = b[sortKey] || "";
+      return (A < B ? -1 : A > B ? 1 : 0) * (asc ? 1 : -1);
+    });
+    $("rows").innerHTML = r.map(function (x) {
+      return "<tr><td class=d>" + esc(fmt(x.date)) + "</td><td>" + esc(x.company) + "</td><td>" + esc(x.role) +
+        '</td><td class="st ' + esc(cls(x.state)) + '">' + esc(x.state) + "</td><td class=d>" + esc(fmt(x.last)) +
+        "</td><td>" + esc(x.note) + "</td><td>" + esc(x.method) + "</td></tr>";
+    }).join("");
+    $("sb1").textContent = r.length + " of " + data.rows.length + " shown";
+  }
+
+  document.querySelectorAll("#filters button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      filter = b.getAttribute("data-f");
+      document.querySelectorAll("#filters button").forEach(function (o) { o.setAttribute("aria-pressed", o === b); });
+      table();
+    });
+  });
+  document.querySelectorAll("th").forEach(function (th) {
+    th.addEventListener("click", function () {
+      var k = th.getAttribute("data-k"); asc = sortKey === k ? !asc : k !== "date" && k !== "last"; sortKey = k; table();
+    });
+  });
+  $("q").addEventListener("input", table);
+
+  fetch("data.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
+    data = d; stats(); todo(); table();
+    var g = new Date(d.generated);
+    $("sb2").textContent = "Updated " + g.toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  }).catch(function () { $("sb1").textContent = "Could not load data.json"; });
+})();
+</script>
+</body>
+</html>
