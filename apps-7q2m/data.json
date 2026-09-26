@@ -1,6 +1,51 @@
 {
- "generated": "2026-09-26T00:41:04+00:00",
+ "generated": "2026-09-26T23:09:00+00:00",
  "rows": [
+  {
+   "date": "2026-09-27",
+   "company": "THRYVE",
+   "role": "Working Student Developer Experience Engineer",
+   "method": "LinkedIn Easy Apply",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "KUGU Home",
+   "role": "Working Student Energy Management",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Fraunhofer SIT",
+   "role": "Working Student in the Field of NLP (Ref. 81228)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Chaos",
+   "role": "Working Student, Growth & Strategy",
+   "method": "Recruitee",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Bettermile",
+   "role": "Working Student User Operations & Insights",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
   {
    "date": "2026-09-26",
    "company": "n8n",
@@ -534,15 +579,6 @@
   },
   {
    "date": "2026-09-25",
-   "company": "NewRocket",
-   "role": "AI Engineer - Anthropic (Graduate)",
-   "method": "(outside tracker)",
-   "state": "Action needed",
-   "last": "2026-09-25",
-   "note": "Greenhouse security code emailed; application not yet submitted"
-  },
-  {
-   "date": "2026-09-25",
    "company": "NXP Semiconductors",
    "role": "Working Student (f/m/d) AI-Enabled Knowledge and Work Systems (R-10064063)",
    "method": "Workday",
@@ -654,15 +690,6 @@
    "company": "Haensel AMS",
    "role": "Data Quality Engineer Working Student (f/m/d)",
    "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Fraunhofer SIT",
-   "role": "Working Student in the Field of NLP (Ref. 81228)",
-   "method": "Web form",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -957,12 +984,12 @@
   },
   {
    "date": "2026-09-20",
-   "company": "OpenHealth Technologies",
-   "role": "LinkedIn Easy Apply (role not named)",
-   "method": "(outside tracker)",
+   "company": "Open Health Technologies",
+   "role": "Data Analyst (Analytics Engineering)",
+   "method": "LinkedIn Easy Apply",
    "state": "Waiting",
-   "last": "2026-09-20",
-   "note": "LinkedIn: application sent; no company reply yet"
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-20",
@@ -1462,11 +1489,11 @@
   {
    "date": "2026-09-17",
    "company": "TNG Technology Consulting",
-   "role": "Robotics AI Intern (role inferred from CV file name)",
-   "method": "(outside tracker)",
+   "role": "Robotics AI Intern",
+   "method": "Web form",
    "state": "Waiting",
-   "last": "2026-09-17",
-   "note": "Recruiter asked for transcripts; Enes sent documents 17 Sep; no reply since"
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-17",
@@ -1517,19 +1544,19 @@
    "date": "2026-09-16",
    "company": "Munich Electrification",
    "role": "Working Student - Battery Algorithm Development",
-   "method": "(outside tracker)",
+   "method": "Ashby",
    "state": "Waiting",
    "last": "2026-09-16",
    "note": "Ashby receipt; no decision yet"
   },
   {
    "date": "2026-09-16",
-   "company": "Manex AI GmbH",
+   "company": "Manex AI",
    "role": "AI Quality Engineer - Working Student",
-   "method": "(outside tracker)",
+   "method": "Ashby",
    "state": "Waiting",
-   "last": "2026-09-16",
-   "note": "Ashby receipt; no decision yet"
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-15",
