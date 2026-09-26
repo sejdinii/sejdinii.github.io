@@ -2,196 +2,341 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Applications">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <title>Applications</title>
-<link rel="icon" href="data:,">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <style>
   :root {
-    --face: #c0c0c0; --hi: #ffffff; --lo: #808080; --dark: #000000;
-    --desk: #008080; --title: #000080; --title2: #1084d0; --field: #ffffff;
-    --text: #000000; --sel: #000080; --seltext: #ffffff;
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --sub: #6e6e73;
+    --faint: #aeaeb2;
+    --line: rgba(60, 60, 67, 0.12);
+    --fill: rgba(118, 118, 128, 0.12);
+    --accent: #0071e3;
+    --wait: #ff9f0a;
+    --no: #aeaeb2;
+    --go: #34c759;
+    --act: #ff3b30;
+    --bar: rgba(245, 245, 247, 0.72);
+    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04);
+    --segsel: #ffffff;
   }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card: #1c1c1e;
+      --text: #f5f5f7;
+      --sub: #98989d;
+      --faint: #636366;
+      --line: rgba(84, 84, 88, 0.55);
+      --fill: rgba(118, 118, 128, 0.24);
+      --accent: #2997ff;
+      --wait: #ff9f0a;
+      --no: #636366;
+      --go: #30d158;
+      --act: #ff453a;
+      --bar: rgba(0, 0, 0, 0.72);
+      --shadow: none;
+      --segsel: #636366;
+    }
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
-    background: var(--desk); color: var(--text);
-    font: 12px/1.35 Tahoma, "MS Sans Serif", "Segoe UI", Verdana, sans-serif;
-    padding: 16px; min-height: 100vh;
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Inter, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px; line-height: 1.35; letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
   }
-  .win {
-    background: var(--face); max-width: 1100px; margin: 0 auto 16px;
-    border: 2px solid; border-color: var(--hi) var(--dark) var(--dark) var(--hi);
-    box-shadow: inset -1px -1px var(--lo), inset 1px 1px #dfdfdf; padding: 3px;
+  .app { max-width: 480px; margin: 0 auto; padding: 0 16px calc(40px + env(safe-area-inset-bottom)); }
+
+  /* compact bar that fades in on scroll */
+  .nav {
+    position: sticky; top: 0; z-index: 10; margin: 0 -16px;
+    padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
+    background: var(--bar); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 0.5px solid transparent; text-align: center;
+    font-weight: 600; font-size: 17px;
+    transition: border-color .2s;
   }
-  .bar {
-    background: linear-gradient(90deg, var(--title), var(--title2));
-    color: #fff; font-weight: bold; padding: 3px 4px 3px 6px;
-    display: flex; align-items: center; justify-content: space-between; gap: 8px;
-  }
-  .bar .x {
-    width: 16px; height: 14px; background: var(--face); color: #000; font: bold 10px/12px Tahoma, sans-serif;
-    text-align: center; border: 1px solid; border-color: var(--hi) var(--dark) var(--dark) var(--hi);
-  }
-  .body { padding: 10px 8px 8px; }
-  .row { display: flex; flex-wrap: wrap; gap: 8px; }
-  .stat {
-    flex: 1 1 120px; background: var(--field); padding: 6px 8px;
-    border: 2px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo);
-  }
-  .stat b { display: block; font-size: 22px; line-height: 1.1; font-weight: normal; font-family: "Courier New", monospace; }
-  button, .btn {
-    font: inherit; color: #000; background: var(--face); padding: 3px 12px; min-width: 64px; cursor: pointer;
-    border: 2px solid; border-color: var(--hi) var(--dark) var(--dark) var(--hi);
-    box-shadow: inset -1px -1px var(--lo);
-  }
-  button:active, button[aria-pressed="true"] {
-    border-color: var(--dark) var(--hi) var(--hi) var(--dark); box-shadow: inset 1px 1px var(--lo);
-  }
-  button:focus-visible { outline: 1px dotted #000; outline-offset: -5px; }
-  input[type=search] {
-    font: inherit; padding: 3px 4px; background: var(--field); min-width: 180px; flex: 1 1 180px;
-    border: 2px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo);
-  }
-  .toolbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; }
-  .sunken {
-    background: var(--field); border: 2px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo);
-    overflow: auto; max-height: 60vh;
-  }
-  table { border-collapse: collapse; width: 100%; min-width: 760px; }
-  th {
-    position: sticky; top: 0; background: var(--face); text-align: left; font-weight: normal;
-    padding: 2px 6px; white-space: nowrap; cursor: pointer; user-select: none;
-    border: 1px solid; border-color: var(--hi) var(--lo) var(--lo) var(--hi);
-  }
-  td { padding: 2px 6px; vertical-align: top; border-bottom: 1px solid #e4e4e4; }
-  tr:hover td { background: var(--sel); color: var(--seltext); }
-  td.d { white-space: nowrap; font-family: "Courier New", monospace; }
-  .st { white-space: nowrap; }
-  .st::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 5px; border: 1px solid #000; vertical-align: 0; }
-  .st.Waiting::before { background: #ffff00; }
-  .st.Rejected::before { background: #808080; }
-  .st.Assessment::before, .st.Interview::before { background: #00ff00; }
-  .st.Replied::before { background: #00ffff; }
-  .st.Action::before { background: #ff0000; }
-  ul.todo { margin: 0; padding: 0; list-style: none; }
-  ul.todo li { padding: 4px 6px; border-bottom: 1px solid #e4e4e4; display: flex; gap: 10px; }
-  ul.todo .due { font-family: "Courier New", monospace; white-space: nowrap; min-width: 56px; }
-  ul.todo .sub { color: #444; }
-  tr:hover td .sub { color: inherit; }
-  .status {
-    display: flex; gap: 2px; margin-top: 6px;
-  }
-  .status span {
-    padding: 1px 6px; flex: 1; border: 1px solid; border-color: var(--lo) var(--hi) var(--hi) var(--lo); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
-  .status span:first-child { flex: 3; }
-  @media (max-width: 600px) { body { padding: 8px; } .stat b { font-size: 18px; } }
+  .nav span { opacity: 0; transition: opacity .2s; }
+  .nav.on { border-bottom-color: var(--line); }
+  .nav.on span { opacity: 1; }
+
+  header { padding: 8px 0 24px; }
+  .eyebrow { color: var(--sub); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em; }
+  h1 { margin: 2px 0 0; font-size: 34px; line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; }
+
+  .hero { text-align: center; padding: 20px 0 8px; }
+  .ring { position: relative; width: 208px; height: 208px; margin: 0 auto; }
+  .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .ring .track { stroke: var(--fill); }
+  .ring .prog { stroke: var(--text); stroke-linecap: round; transition: stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1); }
+  .ring .mid { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .big { font-size: 64px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .of { color: var(--sub); font-size: 15px; margin-top: 6px; }
+  .today { color: var(--sub); font-size: 15px; margin-top: 18px; }
+  .today b { color: var(--text); font-weight: 600; }
+
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 28px 0 0; }
+  .stat { background: var(--card); border-radius: 18px; padding: 14px 14px 12px; box-shadow: var(--shadow); text-align: left; border: 0; font: inherit; color: inherit; cursor: pointer; }
+  .stat .n { font-size: 28px; font-weight: 600; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .stat .l { font-size: 13px; color: var(--sub); margin-top: 2px; display: flex; align-items: center; gap: 6px; }
+
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; background: var(--wait); }
+  .dot.Rejected { background: var(--no); }
+  .dot.Assessment, .dot.Interview { background: var(--go); }
+  .dot.Action { background: var(--act); }
+
+  h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; margin: 40px 0 12px; }
+  .card { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
+
+  .next { padding: 16px; display: flex; gap: 14px; align-items: flex-start; }
+  .next + .next { border-top: 0.5px solid var(--line); }
+  .when { flex: none; width: 52px; text-align: center; }
+  .when .m { font-size: 12px; font-weight: 600; color: var(--act); text-transform: uppercase; letter-spacing: 0.02em; }
+  .when .d { font-size: 26px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1; }
+  .next .t { font-weight: 600; }
+  .next .s { color: var(--sub); font-size: 15px; margin-top: 2px; }
+  .next .k { font-size: 13px; color: var(--sub); margin-top: 6px; display: flex; align-items: center; gap: 6px; }
+
+  .chart { padding: 18px 16px 12px; }
+  .bars { display: flex; align-items: flex-end; gap: 6px; height: 96px; }
+  .bars div { flex: 1; background: var(--text); opacity: .18; border-radius: 4px; min-height: 3px; transition: height .8s cubic-bezier(.2,.8,.2,1); }
+  .bars div.hot { opacity: 1; }
+  .axis { display: flex; justify-content: space-between; color: var(--faint); font-size: 12px; margin-top: 8px; }
+  .chart .cap { color: var(--sub); font-size: 15px; margin-bottom: 14px; }
+  .chart .cap b { color: var(--text); font-weight: 600; }
+
+  .seg { display: grid; grid-template-columns: repeat(4, 1fr); background: var(--fill); border-radius: 9px; padding: 2px; margin-bottom: 12px; }
+  .seg button { font: inherit; font-size: 13px; font-weight: 500; color: var(--text); border: 0; background: none; padding: 7px 0; border-radius: 7px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--segsel); box-shadow: 0 3px 8px rgba(0,0,0,.12), 0 3px 1px rgba(0,0,0,.04); font-weight: 600; }
+
+  .search { position: relative; margin-bottom: 16px; }
+  .search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; fill: var(--sub); }
+  .search input { width: 100%; font: inherit; font-size: 17px; color: var(--text); background: var(--fill); border: 0; border-radius: 10px; padding: 8px 12px 8px 34px; outline: none; -webkit-appearance: none; appearance: none; }
+  .search input::placeholder { color: var(--sub); }
+
+  .day { font-size: 13px; font-weight: 600; color: var(--sub); text-transform: uppercase; letter-spacing: 0.02em; margin: 22px 4px 8px; display: flex; justify-content: space-between; }
+  .day:first-child { margin-top: 0; }
+  .row { display: block; width: 100%; text-align: left; font: inherit; color: inherit; background: none; border: 0; padding: 12px 16px; cursor: pointer; position: relative; }
+  .row + .row::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; border-top: 0.5px solid var(--line); }
+  .row .top { display: flex; align-items: center; gap: 10px; }
+  .row .c { font-weight: 600; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row .r { color: var(--sub); font-size: 15px; margin-top: 1px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; padding-right: 18px; }
+  .row .more { display: none; margin-top: 10px; font-size: 15px; }
+  .row.open .more { display: block; }
+  .row.open .r { -webkit-line-clamp: unset; }
+  .kv { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-top: 0.5px solid var(--line); }
+  .kv span:first-child { color: var(--sub); }
+  .kv span:last-child { text-align: right; }
+  .note { color: var(--sub); padding: 8px 0 2px; border-top: 0.5px solid var(--line); }
+  .empty { text-align: center; color: var(--sub); padding: 40px 16px; }
+  .count { text-align: center; color: var(--faint); font-size: 13px; margin-top: 20px; }
+  footer { text-align: center; color: var(--faint); font-size: 12px; margin-top: 8px; }
+
+  @media (min-width: 900px) { .app { max-width: 520px; } }
+  #seg { scroll-margin-top: 64px; }
+  .moreBtn { display: block; width: 100%; margin-top: 12px; font: inherit; font-size: 17px; color: var(--accent); background: var(--card); border: 0; border-radius: 14px; padding: 13px; cursor: pointer; box-shadow: var(--shadow); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
 <body>
+<div class="app">
+  <div class="nav" id="nav"><span>Applications</span></div>
 
-<div class="win">
-  <div class="bar"><span>Applications.exe</span><span class="x" aria-hidden="true">×</span></div>
-  <div class="body">
-    <div class="row" id="stats"></div>
-  </div>
-</div>
+  <header>
+    <div class="eyebrow" id="date">&nbsp;</div>
+    <h1>Applications</h1>
+  </header>
 
-<div class="win">
-  <div class="bar"><span>Further Stages</span><span class="x" aria-hidden="true">×</span></div>
-  <div class="body"><div class="sunken" style="max-height:40vh"><ul class="todo" id="todo"></ul></div></div>
-</div>
-
-<div class="win">
-  <div class="bar"><span>All applications</span><span class="x" aria-hidden="true">×</span></div>
-  <div class="body">
-    <div class="toolbar" id="filters">
-      <button data-f="all" aria-pressed="true">All</button>
-      <button data-f="Waiting">Waiting</button>
-      <button data-f="Rejected">Rejected</button>
-      <button data-f="open">Further stages</button>
-      <input type="search" id="q" placeholder="Search company or role" aria-label="Search">
+  <section class="hero">
+    <div class="ring">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle class="track" cx="100" cy="100" r="92" fill="none" stroke-width="8"/>
+        <circle class="prog" id="prog" cx="100" cy="100" r="92" fill="none" stroke-width="8" stroke-dasharray="578.05" stroke-dashoffset="578.05"/>
+      </svg>
+      <div class="mid"><div class="big" id="total">0</div><div class="of" id="of">&nbsp;</div></div>
     </div>
-    <div class="sunken">
-      <table>
-        <thead><tr>
-          <th data-k="date">Applied</th><th data-k="company">Company</th><th data-k="role">Role</th>
-          <th data-k="state">Status</th><th data-k="last">Last reply</th><th data-k="note">Note</th><th data-k="method">Channel</th>
-        </tr></thead>
-        <tbody id="rows"></tbody>
-      </table>
-    </div>
-    <div class="status"><span id="sb1">Loading…</span><span id="sb2"></span></div>
+    <div class="today" id="today">&nbsp;</div>
+
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <h2 id="nextH" hidden>Up next</h2>
+  <div class="card" id="next" hidden></div>
+
+  <h2>Activity</h2>
+  <div class="card chart">
+    <div class="cap" id="cap">&nbsp;</div>
+    <div class="bars" id="bars"></div>
+    <div class="axis"><span id="a0"></span><span>Today</span></div>
   </div>
+
+  <h2>All applications</h2>
+  <div class="seg" id="seg" role="group" aria-label="Filter">
+    <button data-f="all" aria-pressed="true">All</button>
+    <button data-f="Waiting" aria-pressed="false">Waiting</button>
+    <button data-f="open" aria-pressed="false">Next steps</button>
+    <button data-f="Rejected" aria-pressed="false">Closed</button>
+  </div>
+  <div class="search">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.8 1.5a5.3 5.3 0 1 0 3.2 9.5l3.4 3.4a.8.8 0 1 0 1.1-1.1L11.1 10A5.3 5.3 0 0 0 6.8 1.5Zm0 1.6a3.7 3.7 0 1 1 0 7.4 3.7 3.7 0 0 1 0-7.4Z"/></svg>
+    <input type="search" id="q" placeholder="Search" aria-label="Search company or role" autocomplete="off">
+  </div>
+  <div id="list"></div>
+  <div class="count" id="count"></div>
+
+  <footer id="updated">&nbsp;</footer>
 </div>
 
 <script>
 (function () {
-  var data = null, filter = "all", sortKey = "date", asc = false;
+  var TARGET = 500;
+  var data = null, filter = "all", limit = 30;
   var $ = function (id) { return document.getElementById(id); };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]; }); };
-  var fmt = function (d) {
-    if (!d) return "";
-    var p = d.split("-"); var m = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    return p.length === 3 ? (+p[2]) + " " + m[+p[1] - 1] : d;
-  };
+  var M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var MF = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var iso = function (d) { return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); };
+  var parse = function (s) { var p = (s || "").split("-"); return p.length === 3 ? new Date(+p[0], +p[1] - 1, +p[2]) : null; };
+  var short = function (s) { var d = parse(s); return d ? d.getDate() + " " + M[d.getMonth()] : ""; };
   var cls = function (s) { return s === "Action needed" ? "Action" : s; };
+  var label = function (s) { return s === "Rejected" ? "Closed" : s === "Action needed" ? "Action needed" : s; };
+  var isOpen = function (x) { return x.state === "Assessment" || x.state === "Interview" || x.state === "Action needed"; };
 
-  function stats() {
+  var now = new Date(), todayIso = iso(now);
+  var yd = new Date(now); yd.setDate(now.getDate() - 1); var yIso = iso(yd);
+  $("date").textContent = now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
+
+  function count(to, el) {
+    var t0 = null, dur = 900;
+    function step(t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / dur); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  function hero() {
     var r = data.rows, c = {};
     r.forEach(function (x) { c[x.state] = (c[x.state] || 0) + 1; });
-    var items = [
-      ["Applications", r.length], ["Waiting", c.Waiting || 0], ["Rejected", c.Rejected || 0],
-      ["Further stages", (c.Interview || 0) + (c.Assessment || 0)]
-    ];
-    $("stats").innerHTML = items.map(function (i) { return '<div class="stat">' + esc(i[0]) + '<b>' + i[1] + '</b></div>'; }).join("");
+    count(r.length, $("total"));
+    $("of").textContent = "of " + TARGET + " goal";
+    var circ = 578.05;
+    requestAnimationFrame(function () { $("prog").style.strokeDashoffset = circ * (1 - Math.min(1, r.length / TARGET)); });
+    var t = r.filter(function (x) { return x.date === todayIso; }).length;
+    var w = r.filter(function (x) { var d = parse(x.date); return d && (now - d) / 864e5 < 7; }).length;
+    $("today").innerHTML = t ? "<b>" + t + "</b> sent today · <b>" + w + "</b> this week" : "<b>" + w + "</b> sent this week";
+    var open = r.filter(isOpen).length;
+    var s = [["Waiting", c.Waiting || 0, "Waiting", "Waiting"], ["Next steps", open, "Assessment", "open"], ["Closed", c.Rejected || 0, "Rejected", "Rejected"]];
+    $("stats").innerHTML = s.map(function (i) {
+      return '<button class="stat" data-go="' + i[3] + '"><div class="n">' + i[1] + '</div><div class="l"><span class="dot ' + i[2] + '"></span>' + i[0] + "</div></button>";
+    }).join("");
+    document.querySelectorAll(".stat").forEach(function (b) {
+      b.addEventListener("click", function () { setFilter(b.getAttribute("data-go")); $("seg").scrollIntoView({ behavior: "smooth", block: "start" }); });
+    });
   }
 
-  function todo() {
-    var f = data.rows.filter(function (x) { return x.state === "Assessment" || x.state === "Interview"; });
-    $("todo").innerHTML = f.length ? f.map(function (t) {
-      return '<li><span class="due">' + esc(fmt(t.last || t.date)) + '</span><span class="st ' + esc(cls(t.state)) + '" style="min-width:90px">' + esc(t.state) + '</span><span><b>' + esc(t.company) + '</b> · ' + esc(t.role) + '<br><span class="sub">' + esc(t.note) + '</span></span></li>';
-    }).join("") : '<li>No applications in a further stage yet.</li>';
+  function dueFrom(x) {
+    var m = (x.note || "").match(/by (\d{1,2}) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/);
+    if (m) return { d: m[1], m: m[2] };
+    var d = parse(x.last || x.date); return d ? { d: d.getDate(), m: M[d.getMonth()] } : { d: "", m: "" };
   }
 
-  function table() {
+  function next() {
+    var n = data.rows.filter(isOpen);
+    if (!n.length) return;
+    $("nextH").hidden = false; $("next").hidden = false;
+    $("next").innerHTML = n.map(function (x) {
+      var d = dueFrom(x);
+      return '<div class="next"><div class="when"><div class="m">' + esc(d.m) + '</div><div class="d">' + esc(d.d) + "</div></div>" +
+        '<div><div class="t">' + esc(x.company) + '</div><div class="s">' + esc(x.note || x.role) + '</div>' +
+        '<div class="k"><span class="dot ' + esc(cls(x.state)) + '"></span>' + esc(label(x.state)) + " · " + esc(x.role) + "</div></div></div>";
+    }).join("");
+  }
+
+  function chart() {
+    var days = 14, byDay = {}, max = 1, tot = 0;
+    data.rows.forEach(function (x) { byDay[x.date] = (byDay[x.date] || 0) + 1; });
+    var cells = [];
+    for (var i = days - 1; i >= 0; i--) {
+      var d = new Date(now); d.setDate(now.getDate() - i);
+      var k = iso(d), v = byDay[k] || 0; tot += v; if (v > max) max = v;
+      cells.push({ k: k, v: v, d: d });
+    }
+    $("bars").innerHTML = cells.map(function (c, i) {
+      return '<div title="' + c.d.getDate() + " " + M[c.d.getMonth()] + ": " + c.v + '" style="height:3px" data-h="' + Math.max(3, Math.round(c.v / max * 96)) + '"' + (i === days - 1 ? ' class="hot"' : "") + "></div>";
+    }).join("");
+    requestAnimationFrame(function () { document.querySelectorAll("#bars div").forEach(function (b) { b.style.height = b.getAttribute("data-h") + "px"; }); });
+    $("a0").textContent = cells[0].d.getDate() + " " + M[cells[0].d.getMonth()];
+    $("cap").innerHTML = "<b>" + tot + "</b> applications in the last two weeks";
+  }
+
+  function dayLabel(k) {
+    if (k === todayIso) return "Today";
+    if (k === yIso) return "Yesterday";
+    var d = parse(k); return d ? d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) : k;
+  }
+
+  function list() {
     var q = $("q").value.trim().toLowerCase();
     var r = data.rows.filter(function (x) {
-      if (filter === "open" && !(x.state === "Action needed" || x.state === "Assessment" || x.state === "Interview")) return false;
-      if (filter !== "all" && filter !== "open" && x.state !== filter) return false;
-      return !q || (x.company + " " + x.role).toLowerCase().indexOf(q) > -1;
-    }).sort(function (a, b) {
-      var A = a[sortKey] || "", B = b[sortKey] || "";
-      return (A < B ? -1 : A > B ? 1 : 0) * (asc ? 1 : -1);
-    });
-    $("rows").innerHTML = r.map(function (x) {
-      return "<tr><td class=d>" + esc(fmt(x.date)) + "</td><td>" + esc(x.company) + "</td><td>" + esc(x.role) +
-        '</td><td class="st ' + esc(cls(x.state)) + '">' + esc(x.state) + "</td><td class=d>" + esc(fmt(x.last)) +
-        "</td><td>" + esc(x.note) + "</td><td>" + esc(x.method) + "</td></tr>";
-    }).join("");
-    $("sb1").textContent = r.length + " of " + data.rows.length + " shown";
+      if (filter === "open" && !isOpen(x)) return false;
+      if (filter === "Waiting" && x.state !== "Waiting") return false;
+      if (filter === "Rejected" && x.state !== "Rejected") return false;
+      return !q || (x.company + " " + x.role + " " + (x.note || "")).toLowerCase().indexOf(q) > -1;
+    }).sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : a.company.localeCompare(b.company); });
+
+    var total = r.length, perDay = {};
+    r.forEach(function (x) { perDay[x.date] = (perDay[x.date] || 0) + 1; });
+    r = r.slice(0, limit);
+    var groups = [], cur = null;
+    r.forEach(function (x) { if (!cur || cur.k !== x.date) { cur = { k: x.date, items: [] }; groups.push(cur); } cur.items.push(x); });
+
+    $("list").innerHTML = r.length ? groups.map(function (g) {
+      return '<div class="day"><span>' + esc(dayLabel(g.k)) + "</span><span>" + perDay[g.k] + '</span></div><div class="card">' +
+        g.items.map(function (x) {
+          var method = x.method === "(outside tracker)" ? "Not in tracker" : x.method;
+          return '<button class="row"><div class="top"><span class="c">' + esc(x.company) + '</span><span class="dot ' + esc(cls(x.state)) + '" aria-label="' + esc(label(x.state)) + '"></span></div>' +
+            '<div class="r">' + esc(x.role) + '</div><div class="more">' +
+            '<div class="kv"><span>Status</span><span>' + esc(label(x.state)) + "</span></div>" +
+            '<div class="kv"><span>Applied</span><span>' + esc(short(x.date)) + "</span></div>" +
+            (x.last && x.last >= x.date ? '<div class="kv"><span>Last update</span><span>' + esc(short(x.last)) + "</span></div>" : "") +
+            '<div class="kv"><span>Channel</span><span>' + esc(method) + "</span></div>" +
+            (x.note ? '<div class="note">' + esc(x.note) + "</div>" : "") +
+            "</div></button>";
+        }).join("") + "</div>";
+    }).join("") : '<div class="card empty">No matches</div>';
+    if (total > r.length) $("list").insertAdjacentHTML("beforeend", '<button class="moreBtn" id="more">Show ' + Math.min(30, total - r.length) + ' more</button>');
+    $("count").textContent = total === data.rows.length ? total + " applications" : total + " of " + data.rows.length;
+    var mb = $("more"); if (mb) mb.addEventListener("click", function () { limit += 30; list(); });
+    document.querySelectorAll(".row").forEach(function (b) { b.addEventListener("click", function () { b.classList.toggle("open"); }); });
   }
 
-  document.querySelectorAll("#filters button").forEach(function (b) {
-    b.addEventListener("click", function () {
-      filter = b.getAttribute("data-f");
-      document.querySelectorAll("#filters button").forEach(function (o) { o.setAttribute("aria-pressed", o === b); });
-      table();
-    });
-  });
-  document.querySelectorAll("th").forEach(function (th) {
-    th.addEventListener("click", function () {
-      var k = th.getAttribute("data-k"); asc = sortKey === k ? !asc : k !== "date" && k !== "last"; sortKey = k; table();
-    });
-  });
-  $("q").addEventListener("input", table);
+  function setFilter(f) {
+    filter = f; limit = 30;
+    document.querySelectorAll("#seg button").forEach(function (o) { o.setAttribute("aria-pressed", String(o.getAttribute("data-f") === f)); });
+    list();
+  }
+  document.querySelectorAll("#seg button").forEach(function (b) { b.addEventListener("click", function () { setFilter(b.getAttribute("data-f")); }); });
+  $("q").addEventListener("input", function () { limit = 30; list(); });
+
+  var nav = $("nav"), h1 = document.querySelector("h1");
+  window.addEventListener("scroll", function () { nav.classList.toggle("on", h1.getBoundingClientRect().bottom < nav.offsetHeight); }, { passive: true });
 
   fetch("data.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
-    data = d; stats(); todo(); table();
+    data = d; hero(); next(); chart(); list();
     var g = new Date(d.generated);
-    $("sb2").textContent = "Updated " + g.toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
-  }).catch(function () { $("sb1").textContent = "Could not load data.json"; });
+    $("updated").textContent = "Updated " + g.toLocaleString("en-GB", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+  }).catch(function () { $("list").innerHTML = '<div class="card empty">Could not load data</div>'; });
 })();
 </script>
 </body>
