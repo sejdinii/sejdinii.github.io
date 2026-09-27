@@ -240,6 +240,8 @@
   function next() {
     var n = data.rows.filter(isOpen);
     if (!n.length) { $("next").innerHTML = '<div class="empty">No next steps right now</div>'; return; }
+    var mi = function (x) { var d = dueFrom(x); return M.indexOf(d.m) * 100 + (+d.d || 0); };
+    n.sort(function (a, b) { return mi(a) - mi(b); });
     $("next").innerHTML = n.map(function (x) {
       var d = dueFrom(x);
       return '<div class="next"><div class="when"><div class="m">' + esc(d.m) + '</div><div class="d">' + esc(d.d) + "</div></div>" +
