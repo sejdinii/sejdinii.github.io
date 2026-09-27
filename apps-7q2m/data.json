@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T15:06:08+00:00",
+ "generated": "2026-09-27T16:00:13Z",
  "rows": [
   {
    "date": "2026-09-27",
@@ -30,6 +30,15 @@
   },
   {
    "date": "2026-09-27",
+   "company": "Perplexity",
+   "role": "Internship - Machine Learning Research Engineer (Berlin)",
+   "method": "Web form (Ashby)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
    "company": "Oviva",
    "role": "Working Student - AI & Operations",
    "method": "Ashby",
@@ -42,6 +51,15 @@
    "company": "NinjaOne",
    "role": "Solutions Engineering Intern - EMEA",
    "method": "Jobvite",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "MAVIANCE PLC",
+   "role": "Web Designers and Developers Internship (Leipzig)",
+   "method": "Email",
    "state": "Waiting",
    "last": "",
    "note": ""
