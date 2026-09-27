@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T16:00:13Z",
+ "generated": "2026-09-27T16:07:31Z",
  "rows": [
   {
    "date": "2026-09-27",
@@ -303,9 +303,9 @@
    "company": "Pandata",
    "role": "Software Development Intern",
    "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Application received by Pandata"
+   "state": "Action needed",
+   "last": "2026-09-26",
+   "note": "Record a 60-second intro video (personal link in email); link open 4 weeks, by 24 Oct"
   },
   {
    "date": "2026-09-26",
@@ -897,9 +897,9 @@
    "company": "EKFZ for Digital Health, TU Dresden",
    "role": "Student Assistant (HiWi), Clinical Artificial Intelligence group",
    "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
+   "state": "Rejected",
+   "last": "2026-09-27",
+   "note": "No positions available anymore; flyer was older"
   },
   {
    "date": "2026-09-24",

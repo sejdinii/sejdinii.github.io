@@ -88,7 +88,7 @@
   .today { color: var(--sub); font-size: 15px; margin-top: 18px; }
   .today b { color: var(--text); font-weight: 600; }
 
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 28px 0 0; }
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 28px 0 0; }
   .stat { background: var(--card); border-radius: 18px; padding: 14px 14px 12px; box-shadow: var(--shadow); text-align: left; border: 0; font: inherit; color: inherit; cursor: pointer; }
   .stat .n { font-size: 28px; font-weight: 600; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
   .stat .l { font-size: 13px; color: var(--sub); margin-top: 2px; display: flex; align-items: center; gap: 6px; }
@@ -146,7 +146,7 @@
   footer { text-align: center; color: var(--faint); font-size: 12px; margin-top: 8px; }
 
   @media (min-width: 900px) { .app { max-width: 520px; } }
-  #seg { scroll-margin-top: 64px; }
+  #nextH { scroll-margin-top: 64px; }
   .moreBtn { display: block; width: 100%; margin-top: 12px; font: inherit; font-size: 17px; color: var(--accent); background: var(--card); border: 0; border-radius: 14px; padding: 13px; cursor: pointer; box-shadow: var(--shadow); }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
@@ -173,8 +173,8 @@
     <div class="stats" id="stats"></div>
   </section>
 
-  <h2 id="nextH" hidden>Up next</h2>
-  <div class="card" id="next" hidden></div>
+  <h2 id="nextH">Next steps</h2>
+  <div class="card" id="next"></div>
 
   <h2>Activity</h2>
   <div class="card chart">
@@ -182,20 +182,6 @@
     <div class="bars" id="bars"></div>
     <div class="axis"><span id="a0"></span><span>Today</span></div>
   </div>
-
-  <h2>All applications</h2>
-  <div class="seg" id="seg" role="group" aria-label="Filter">
-    <button data-f="all" aria-pressed="true">All</button>
-    <button data-f="Waiting" aria-pressed="false">Waiting</button>
-    <button data-f="open" aria-pressed="false">Next steps</button>
-    <button data-f="Rejected" aria-pressed="false">Closed</button>
-  </div>
-  <div class="search">
-    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.8 1.5a5.3 5.3 0 1 0 3.2 9.5l3.4 3.4a.8.8 0 1 0 1.1-1.1L11.1 10A5.3 5.3 0 0 0 6.8 1.5Zm0 1.6a3.7 3.7 0 1 1 0 7.4 3.7 3.7 0 0 1 0-7.4Z"/></svg>
-    <input type="search" id="q" placeholder="Search" aria-label="Search company or role" autocomplete="off">
-  </div>
-  <div id="list"></div>
-  <div class="count" id="count"></div>
 
   <footer id="updated">&nbsp;</footer>
 </div>
@@ -236,12 +222,12 @@
     var w = r.filter(function (x) { var d = parse(x.date); return d && (now - d) / 864e5 < 7; }).length;
     $("today").innerHTML = t ? "<b>" + t + "</b> sent today · <b>" + w + "</b> this week" : "<b>" + w + "</b> sent this week";
     var open = r.filter(isOpen).length;
-    var s = [["Waiting", c.Waiting || 0, "Waiting", "Waiting"], ["Next steps", open, "Assessment", "open"], ["Closed", c.Rejected || 0, "Rejected", "Rejected"]];
+    var s = [["Next steps", open, "Assessment", "open"], ["Waiting", c.Waiting || 0, "Waiting", "Waiting"]];
     $("stats").innerHTML = s.map(function (i) {
       return '<button class="stat" data-go="' + i[3] + '"><div class="n">' + i[1] + '</div><div class="l"><span class="dot ' + i[2] + '"></span>' + i[0] + "</div></button>";
     }).join("");
     document.querySelectorAll(".stat").forEach(function (b) {
-      b.addEventListener("click", function () { setFilter(b.getAttribute("data-go")); $("seg").scrollIntoView({ behavior: "smooth", block: "start" }); });
+      b.addEventListener("click", function () { $("nextH").scrollIntoView({ behavior: "smooth", block: "start" }); });
     });
   }
 
@@ -253,8 +239,7 @@
 
   function next() {
     var n = data.rows.filter(isOpen);
-    if (!n.length) return;
-    $("nextH").hidden = false; $("next").hidden = false;
+    if (!n.length) { $("next").innerHTML = '<div class="empty">No next steps right now</div>'; return; }
     $("next").innerHTML = n.map(function (x) {
       var d = dueFrom(x);
       return '<div class="next"><div class="when"><div class="m">' + esc(d.m) + '</div><div class="d">' + esc(d.d) + "</div></div>" +
@@ -280,63 +265,14 @@
     $("cap").innerHTML = "<b>" + tot + "</b> applications in the last two weeks";
   }
 
-  function dayLabel(k) {
-    if (k === todayIso) return "Today";
-    if (k === yIso) return "Yesterday";
-    var d = parse(k); return d ? d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) : k;
-  }
-
-  function list() {
-    var q = $("q").value.trim().toLowerCase();
-    var r = data.rows.filter(function (x) {
-      if (filter === "open" && !isOpen(x)) return false;
-      if (filter === "Waiting" && x.state !== "Waiting") return false;
-      if (filter === "Rejected" && x.state !== "Rejected") return false;
-      return !q || (x.company + " " + x.role + " " + (x.note || "")).toLowerCase().indexOf(q) > -1;
-    }).sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : a.company.localeCompare(b.company); });
-
-    var total = r.length, perDay = {};
-    r.forEach(function (x) { perDay[x.date] = (perDay[x.date] || 0) + 1; });
-    r = r.slice(0, limit);
-    var groups = [], cur = null;
-    r.forEach(function (x) { if (!cur || cur.k !== x.date) { cur = { k: x.date, items: [] }; groups.push(cur); } cur.items.push(x); });
-
-    $("list").innerHTML = r.length ? groups.map(function (g) {
-      return '<div class="day"><span>' + esc(dayLabel(g.k)) + "</span><span>" + perDay[g.k] + '</span></div><div class="card">' +
-        g.items.map(function (x) {
-          var method = x.method === "(outside tracker)" ? "Not in tracker" : x.method;
-          return '<button class="row"><div class="top"><span class="c">' + esc(x.company) + '</span><span class="dot ' + esc(cls(x.state)) + '" aria-label="' + esc(label(x.state)) + '"></span></div>' +
-            '<div class="r">' + esc(x.role) + '</div><div class="more">' +
-            '<div class="kv"><span>Status</span><span>' + esc(label(x.state)) + "</span></div>" +
-            '<div class="kv"><span>Applied</span><span>' + esc(short(x.date)) + "</span></div>" +
-            (x.last && x.last >= x.date ? '<div class="kv"><span>Last update</span><span>' + esc(short(x.last)) + "</span></div>" : "") +
-            '<div class="kv"><span>Channel</span><span>' + esc(method) + "</span></div>" +
-            (x.note ? '<div class="note">' + esc(x.note) + "</div>" : "") +
-            "</div></button>";
-        }).join("") + "</div>";
-    }).join("") : '<div class="card empty">No matches</div>';
-    if (total > r.length) $("list").insertAdjacentHTML("beforeend", '<button class="moreBtn" id="more">Show ' + Math.min(30, total - r.length) + ' more</button>');
-    $("count").textContent = total === data.rows.length ? total + " applications" : total + " of " + data.rows.length;
-    var mb = $("more"); if (mb) mb.addEventListener("click", function () { limit += 30; list(); });
-    document.querySelectorAll(".row").forEach(function (b) { b.addEventListener("click", function () { b.classList.toggle("open"); }); });
-  }
-
-  function setFilter(f) {
-    filter = f; limit = 30;
-    document.querySelectorAll("#seg button").forEach(function (o) { o.setAttribute("aria-pressed", String(o.getAttribute("data-f") === f)); });
-    list();
-  }
-  document.querySelectorAll("#seg button").forEach(function (b) { b.addEventListener("click", function () { setFilter(b.getAttribute("data-f")); }); });
-  $("q").addEventListener("input", function () { limit = 30; list(); });
-
   var nav = $("nav"), h1 = document.querySelector("h1");
   window.addEventListener("scroll", function () { nav.classList.toggle("on", h1.getBoundingClientRect().bottom < nav.offsetHeight); }, { passive: true });
 
   fetch("data.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
-    data = d; hero(); next(); chart(); list();
+    data = d; hero(); next(); chart();
     var g = new Date(d.generated);
     $("updated").textContent = "Updated " + g.toLocaleString("en-GB", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
-  }).catch(function () { $("list").innerHTML = '<div class="card empty">Could not load data</div>'; });
+  }).catch(function () { $("next").innerHTML = '<div class="empty">Could not load data</div>'; });
 })();
 </script>
 </body>
