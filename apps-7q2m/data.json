@@ -1,6 +1,96 @@
 {
-"generated": "2026-09-27T22:45:07Z",
+"generated": "2026-09-27T23:08:17Z",
 "rows": [
+{
+"date": "2026-09-28",
+"company": "planqc",
+"role": "Working Student - IT Support & Systems",
+"method": "Personio",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "ilert GmbH",
+"role": "Working Student / Intern: Offensive Security Engineer (Red Team & AppSec) (f/m/x)",
+"method": "JOIN",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "STARK",
+"role": "Working Student - Flight Software Engineering (PX4 / Autopilot) (all genders)",
+"method": "Personio",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "Preventis GmbH",
+"role": "Working Student Product Management (m/f/d)",
+"method": "JOIN",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "NavVis",
+"role": "Working Student - Product Analytics (F/M/D)",
+"method": "Greenhouse",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "Keyfactor",
+"role": "Student QA Engineer (Working Student)",
+"method": "Greenhouse",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "Front Row Group",
+"role": "Working Student Technology Specialist (f/m/d)",
+"method": "Teamtailor",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "DocuWare",
+"role": "Working Student (m/f/d) - Data Labeling (Vietnamese)",
+"method": "Personio",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "Constructor TECH",
+"role": "Frontend Engineer (Intern)",
+"method": "Greenhouse",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
+{
+"date": "2026-09-28",
+"company": "Constructor TECH",
+"role": "QA Intern",
+"method": "Greenhouse",
+"state": "Waiting",
+"last": "",
+"note": ""
+},
 {
 "date": "2026-09-27",
 "company": "voize",
