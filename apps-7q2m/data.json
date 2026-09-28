@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T00:00:31Z",
+ "generated": "2026-09-28T00:42:38Z",
  "rows": [
   {
    "date": "2026-09-28",
@@ -66,6 +66,15 @@
   },
   {
    "date": "2026-09-28",
+   "company": "Scalable Capital",
+   "role": "Working Student Product Management (m/f/x)",
+   "method": "SmartRecruiters",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
    "company": "STARK",
    "role": "Working Student - Flight Software Engineering (PX4 / Autopilot) (all genders)",
    "method": "Personio",
@@ -75,9 +84,27 @@
   },
   {
    "date": "2026-09-28",
+   "company": "Reonic",
+   "role": "Go-to-Market AI & Data Intern (AI x Greentech) (m/f/d)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
    "company": "Preventis GmbH",
    "role": "Working Student Product Management (m/f/d)",
    "method": "JOIN",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Over99",
+   "role": "Working Student - Web3 Ventures & Product",
+   "method": "Teamtailor",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -147,6 +174,15 @@
   },
   {
    "date": "2026-09-28",
+   "company": "Continental",
+   "role": "Internship - Data Management of Chemical Tire Test Results / Material Development (REF99687I)",
+   "method": "SmartRecruiters",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
    "company": "Constructor TECH",
    "role": "Frontend Engineer (Intern)",
    "method": "Greenhouse",
@@ -174,8 +210,26 @@
   },
   {
    "date": "2026-09-28",
+   "company": "Aqarios",
+   "role": "Optimization Engineer, Working Student (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
    "company": "ACCURE Battery Intelligence",
    "role": "Internship Platform Engineering (all genders)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "1KOMMA5°",
+   "role": "Internship Global Product Management Hardware & AI Enablement (m/w/d)",
    "method": "Personio",
    "state": "Waiting",
    "last": "",
