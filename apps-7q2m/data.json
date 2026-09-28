@@ -1,6 +1,33 @@
 {
- "generated": "2026-09-28T21:41:20Z",
+ "generated": "2026-09-28T22:23:53Z",
  "rows": [
+  {
+   "date": "2026-09-29",
+   "company": "ZEISS",
+   "role": "Internship - Next-Generation System Interaction with Eye-Tracking and Robotics (f/m/x)",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "Stryker",
+   "role": "Internship Data Analytics & Process Improvement - 6 Months, Start Spring 2027",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "Infineon Technologies",
+   "role": "Internship - Digital Functional Verification (f/m/div)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
   {
    "date": "2026-09-28",
    "company": "planqc",
@@ -267,6 +294,15 @@
    "company": "Climate Analytics",
    "role": "Student Assistant - IT Administration (f/m/d)",
    "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "BMW Group",
+   "role": "Thesis Machine Learning for Automated Driving (f/m/x)",
+   "method": "SuccessFactors",
    "state": "Waiting",
    "last": "",
    "note": ""
