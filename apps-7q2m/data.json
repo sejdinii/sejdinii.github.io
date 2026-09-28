@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28T21:18:45Z",
+ "generated": "2026-09-28T21:41:20Z",
  "rows": [
   {
    "date": "2026-09-28",
@@ -267,6 +267,51 @@
    "company": "Climate Analytics",
    "role": "Student Assistant - IT Administration (f/m/d)",
    "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "BMW Group",
+   "role": "Working Student Corporate IT Support (f/m/x)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "BMW Group",
+   "role": "Thesis Causal ML for Prescriptive Decision Support in Automotive Goodwill (f/m/x)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "BMW Group",
+   "role": "Thesis AI Assisted Fault Injection (f/m/x)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "BMW Group",
+   "role": "Intern LLM-enhanced in-vehicle personal assistants (f/m/x)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "BMW Group",
+   "role": "Intern AI for CAD Data & Engineering Intelligence (f/m/x)",
+   "method": "SuccessFactors",
    "state": "Waiting",
    "last": "",
    "note": ""
