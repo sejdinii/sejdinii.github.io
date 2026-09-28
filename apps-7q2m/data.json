@@ -1,11 +1,20 @@
 {
- "generated": "2026-09-28T01:44:54Z",
+ "generated": "2026-09-28T21:18:45Z",
  "rows": [
   {
    "date": "2026-09-28",
    "company": "planqc",
    "role": "Working Student - IT Support & Systems",
    "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "over99",
+   "role": "Working Student - Web3 Product & Tech",
+   "method": "Teamtailor",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -60,7 +69,7 @@
    "company": "Terra One",
    "role": "Working Student - Data & Analytics",
    "method": "Factorial",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -68,6 +77,15 @@
    "date": "2026-09-28",
    "company": "Snke",
    "role": "Working Student - Release Support and Automation",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Scaled Asset Services",
+   "role": "Intern - Fund Operations & Technology (m/f/d)",
    "method": "Personio",
    "state": "Waiting",
    "last": "",
@@ -114,7 +132,7 @@
    "company": "Preventis GmbH",
    "role": "Working Student Product Management (m/f/d)",
    "method": "JOIN",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -156,6 +174,15 @@
   },
   {
    "date": "2026-09-28",
+   "company": "KINEXON",
+   "role": "Internship Product Management & AI Automation",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
    "company": "Helsing",
    "role": "AI Research Intern (PhD) - 3D Computer Vision",
    "method": "Web form",
@@ -177,7 +204,7 @@
    "company": "Front Row Group",
    "role": "Working Student Technology Specialist (f/m/d)",
    "method": "Teamtailor",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -375,7 +402,7 @@
    "company": "Knowunity",
    "role": "Engineering Intern",
    "method": "Ashby",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
