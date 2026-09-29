@@ -1,11 +1,29 @@
 {
- "generated": "2026-09-30 00:32",
+ "generated": "2026-09-30 01:01",
  "rows": [
   {
    "date": "2026-09-30",
    "company": "dormakaba",
    "role": "Working Student (w/m/d) IT Service Integration, Ennepetal or Villingen-Schwenningen",
    "method": "Career portal",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "cargovibe",
+   "role": "Software Development Intern (all genders)",
+   "method": "Notion form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "Vattenfall",
+   "role": "Working Student in Renewables Customer and Contract Management (f/m/d), Hamburg",
+   "method": "SmartRecruiters",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -42,6 +60,15 @@
    "company": "Airbus Defence and Space",
    "role": "Working student (d/f/m) in the area of Flight Dynamics, Manching",
    "method": "Workday",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "ATOSS Software SE",
+   "role": "Working Student Software Engineer m/f/d",
+   "method": "Greenhouse",
    "state": "Waiting",
    "last": "",
    "note": ""
