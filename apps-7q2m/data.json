@@ -1,11 +1,47 @@
 {
- "generated": "2026-09-30 00:05",
+ "generated": "2026-09-30 00:32",
  "rows": [
   {
    "date": "2026-09-30",
    "company": "dormakaba",
    "role": "Working Student (w/m/d) IT Service Integration, Ennepetal or Villingen-Schwenningen",
    "method": "Career portal",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "HBK (Hottinger Bruel and Kjaer)",
+   "role": "Student Worker R and D (Student Software Engineer), Goettingen",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "HBK (Hottinger Bruel and Kjaer)",
+   "role": "Student Internship R and D (Generative AI and Digital Customer Experience), Goettingen",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "Bayer",
+   "role": "Internship Analytics Advisory and Data Democratization / SC&L Analytics (all genders), Leverkusen",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "Airbus Defence and Space",
+   "role": "Working student (d/f/m) in the area of Flight Dynamics, Manching",
+   "method": "Workday",
    "state": "Waiting",
    "last": "",
    "note": ""
