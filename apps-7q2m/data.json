@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30 01:01",
+ "generated": "2026-09-30 01:32",
  "rows": [
   {
    "date": "2026-09-30",
@@ -21,9 +21,27 @@
   },
   {
    "date": "2026-09-30",
+   "company": "Volkswagen Group (CARIAD)",
+   "role": "Internship - Development of Innovative Driving Dynamics Functions (29366)",
+   "method": "VW SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
    "company": "Vattenfall",
    "role": "Working Student in Renewables Customer and Contract Management (f/m/d), Hamburg",
    "method": "SmartRecruiters",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "Procter and Gamble",
+   "role": "Working Student IT (m/f/d)",
+   "method": "Workday",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -48,9 +66,36 @@
   },
   {
    "date": "2026-09-30",
+   "company": "CARIAD",
+   "role": "Internship - AI-Based Semantic Mapping for Autonomous Driving (29017)",
+   "method": "VW SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "CARIAD",
+   "role": "Intern - Learning-based Radar-Camera Fusion for SLAM (29016)",
+   "method": "VW SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
    "company": "Bayer",
    "role": "Internship Analytics Advisory and Data Democratization / SC&L Analytics (all genders), Leverkusen",
    "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "BCG",
+   "role": "Working Student - BCG Vantage, Industrial Goods (Duesseldorf)",
+   "method": "BCG career portal",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -492,7 +537,7 @@
    "company": "STARK",
    "role": "Working Student - Flight Software Engineering (PX4 / Autopilot) (all genders)",
    "method": "Personio",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -510,7 +555,7 @@
    "company": "Reonic",
    "role": "Go-to-Market AI & Data Intern (AI x Greentech) (m/f/d)",
    "method": "Ashby",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -654,7 +699,7 @@
    "company": "Climate Analytics",
    "role": "Student Assistant - IT Administration (f/m/d)",
    "method": "Personio",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -780,7 +825,7 @@
    "company": "THRYVE",
    "role": "Working Student Developer Experience Engineer",
    "method": "LinkedIn Easy Apply",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -924,7 +969,7 @@
    "company": "Almetra",
    "role": "Applied AI Intern",
    "method": "Ashby",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -942,9 +987,9 @@
    "company": "n8n",
    "role": "Forward Deployed Engineer - EMEA",
    "method": "Ashby",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Ashby receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-26",
@@ -1095,9 +1140,9 @@
    "company": "Picnic",
    "role": "Analytics - Future Leaders Graduate Program (Hamburg)",
    "method": "Greenhouse",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Greenhouse receipt for graduate program application"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-26",
@@ -1176,7 +1221,7 @@
    "company": "Intershop Communications AG",
    "role": "Working Student, Engineering Reporting Tools / Software Development",
    "method": "Web form",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -1185,7 +1230,7 @@
    "company": "Intershop Communications AG",
    "role": "Working Student, Marketing (Data Research and Analysis)",
    "method": "Web form",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -1194,7 +1239,7 @@
    "company": "Intershop Communications AG",
    "role": "Working Student, Product Management",
    "method": "Web form",
-   "state": "Waiting",
+   "state": "Rejected",
    "last": "",
    "note": ""
   },
@@ -1347,9 +1392,9 @@
    "company": "Almedia",
    "role": "AI Operations Specialist",
    "method": "Ashby",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Ashby receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-26",
@@ -1374,9 +1419,9 @@
    "company": "ellamind",
    "role": "Member of Technical Staff - Agent Engineer",
    "method": "Ashby",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Ashby receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-25",
@@ -1455,18 +1500,18 @@
    "company": "Reonic",
    "role": "Software Engineering Intern (AI x Greentech)",
    "method": "Ashby",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Ashby receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-25",
    "company": "QuantCo",
    "role": "AI Engineering Intern",
    "method": "Lever",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Lever receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-25",
@@ -1536,9 +1581,9 @@
    "company": "JobLeads GmbH",
    "role": "AI Engineer (Search & Matching), fully remote within Germany (m/f/d)",
    "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-25",
@@ -1734,9 +1779,9 @@
    "company": "eigenblue",
    "role": "Working Student (m/f/d) - Backend Development & Agentic AI",
    "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-23",
-   "note": "Receipt; will reply as soon as possible"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-23",
@@ -1761,9 +1806,9 @@
    "company": "Spread Group",
    "role": "Working Student - Commercial Planning (f/m/d)",
    "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-23",
-   "note": "Recruitee receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-23",
@@ -1842,9 +1887,9 @@
    "company": "DISH Digital Solutions",
    "role": "Working Student - Data Science & AI (m/f/d)",
    "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-23",
-   "note": "Personio receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-23",
@@ -2166,9 +2211,9 @@
    "company": "Boston Consulting Group",
    "role": "Working Student – Applied AI (all genders)",
    "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "BCG receipt"
+   "state": "Rejected",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-19",
