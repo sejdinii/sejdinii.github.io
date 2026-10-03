@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03 23:11",
+ "generated": "2026-10-03 23:38",
  "rows": [
   {
    "date": "2026-10-04",
@@ -69,6 +69,15 @@
    "company": "Deutsche Börse Group",
    "role": "Intern / Working Student, Cloud FinOps & Analytics (f/m/d)",
    "method": "Web form (SuccessFactors)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Cohere",
+   "role": "Forward Deployed Engineer, Agentic Platform (Europe) (second listing)",
+   "method": "Ashby",
    "state": "Waiting",
    "last": "",
    "note": ""
