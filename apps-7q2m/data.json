@@ -1,6 +1,24 @@
 {
- "generated": "2026-10-05 02:49",
+ "generated": "2026-10-06 14:09",
  "rows": [
+  {
+   "date": "2026-10-06",
+   "company": "METRO AG",
+   "role": "Working Student Pricing",
+   "method": "LinkedIn Easy Apply (SmartRecruiters)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-06",
+   "company": "Zander Labs",
+   "role": "Internship - Neurotechnology, Neuroscience, and Machine learning (6 months)",
+   "method": "Web form (Recruitee)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
   {
    "date": "2026-10-05",
    "company": "Cohere",
