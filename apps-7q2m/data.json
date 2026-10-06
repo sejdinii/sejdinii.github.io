@@ -1,11 +1,74 @@
 {
- "generated": "2026-10-06 14:09",
+ "generated": "2026-10-07 00:48",
  "rows": [
   {
-   "date": "2026-10-06",
-   "company": "METRO AG",
-   "role": "Working Student Pricing",
-   "method": "LinkedIn Easy Apply (SmartRecruiters)",
+   "date": "2026-10-07",
+   "company": "Samsung SDS Cello Square",
+   "role": "Working Student KPI",
+   "method": "LinkedIn Easy Apply (JOIN)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "Phlair",
+   "role": "Working Student / Intern, Control Team (Systems & Data Infrastructure)",
+   "method": "Web form (Ashby)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "Kiel Institute",
+   "role": "Student Research Assistant (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "JSP",
+   "role": "Machine Learning Engineer",
+   "method": "StepStone",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "Encavis",
+   "role": "Market Analyst Modelling & Pricing",
+   "method": "Web form (d.vinci)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "CQSE",
+   "role": "Working Student for Software Quality Consulting",
+   "method": "Web form (softgarden)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "ACCURE",
+   "role": "Working Student Project Analytics",
+   "method": "Web form (Personio)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "360T",
+   "role": "Working Student Software Test Automation",
+   "method": "Web form (Personio)",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -15,6 +78,15 @@
    "company": "Zander Labs",
    "role": "Internship - Neurotechnology, Neuroscience, and Machine learning (6 months)",
    "method": "Web form (Recruitee)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-06",
+   "company": "METRO AG",
+   "role": "Working Student Pricing",
+   "method": "LinkedIn Easy Apply (SmartRecruiters)",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -30,80 +102,8 @@
   },
   {
    "date": "2026-10-04",
-   "company": "Cohere",
-   "role": "Forward Deployed Engineer, Agentic Platform (Europe) (second listing)",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "BSH Group",
-   "role": "Working Student Digital Quality Management & AI (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "BSH Group",
-   "role": "Praktikant/in KI-gestützte Analyse von App-Store-Feedback (m/w/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "Deutsche Börse Group",
-   "role": "Intern / Working Student, Cloud FinOps & Analytics (f/m/d)",
-   "method": "Web form (SuccessFactors)",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "BMW Group",
-   "role": "Working Student Data Science (f/m/x)",
-   "method": "Web form (SuccessFactors)",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "BorgWarner",
-   "role": "Working Student Data Management, Aftermarket",
-   "method": "Web form (Workday)",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "KLA",
-   "role": "Working Student Physics / EE / Signal Processing",
-   "method": "Web form (Workday)",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "Aptiv",
-   "role": "Working Student Interior Sensing ML",
-   "method": "Web form (Workday)",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "Flix",
-   "role": "Working Student Data Analytics (m/f/d)",
+   "company": "trivago",
+   "role": "Working Student Data & Insights",
    "method": "Web form (Greenhouse)",
    "state": "Waiting",
    "last": "",
@@ -111,18 +111,9 @@
   },
   {
    "date": "2026-10-04",
-   "company": "BFS health finance",
-   "role": "Working Student Data & Analytics (m/f/d)",
-   "method": "Web form (SmartRecruiters)",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-10-04",
-   "company": "Management Solutions",
-   "role": "Data Science Consultant, Frankfurt/Düsseldorf",
-   "method": "LinkedIn Easy Apply",
+   "company": "manova",
+   "role": "Working Student Data & AI Projects",
+   "method": "Web form (Personio)",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -147,9 +138,45 @@
   },
   {
    "date": "2026-10-04",
-   "company": "manova",
-   "role": "Working Student Data & AI Projects",
-   "method": "Web form (Personio)",
+   "company": "Management Solutions",
+   "role": "Data Science Consultant, Frankfurt/Düsseldorf",
+   "method": "LinkedIn Easy Apply",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "KLA",
+   "role": "Working Student Physics / EE / Signal Processing",
+   "method": "Web form (Workday)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Flix",
+   "role": "Working Student Data Analytics (m/f/d)",
+   "method": "Web form (Greenhouse)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Deutsche Börse Group",
+   "role": "Intern / Working Student, Cloud FinOps & Analytics (f/m/d)",
+   "method": "Web form (SuccessFactors)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Cohere",
+   "role": "Forward Deployed Engineer, Agentic Platform (Europe) (second listing)",
+   "method": "Ashby",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -165,18 +192,54 @@
   },
   {
    "date": "2026-10-04",
-   "company": "trivago",
-   "role": "Working Student Data & Insights",
-   "method": "Web form (Greenhouse)",
+   "company": "BorgWarner",
+   "role": "Working Student Data Management, Aftermarket",
+   "method": "Web form (Workday)",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-10-02",
-   "company": "Digital Charging Solutions",
-   "role": "Intern Data Analyst (Berlin)",
-   "method": "Personio",
+   "date": "2026-10-04",
+   "company": "BSH Group",
+   "role": "Working Student Digital Quality Management & AI (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "BSH Group",
+   "role": "Praktikant/in KI-gestützte Analyse von App-Store-Feedback (m/w/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "BMW Group",
+   "role": "Working Student Data Science (f/m/x)",
+   "method": "Web form (SuccessFactors)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "BFS health finance",
+   "role": "Working Student Data & Analytics (m/f/d)",
+   "method": "Web form (SmartRecruiters)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Aptiv",
+   "role": "Working Student Interior Sensing ML",
+   "method": "Web form (Workday)",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -254,13 +317,13 @@
    "note": ""
   },
   {
-   "date": "2026-10-01",
-   "company": "Deutsche Bank",
-   "role": "Technology, Data and Innovation Internship 2027 (Frankfurt)",
-   "method": "Career portal",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
+   "date": "2026-10-02",
+   "company": "Digital Charging Solutions",
+   "role": "Intern Data Analyst (Berlin)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-10-01",
@@ -272,55 +335,19 @@
    "note": ""
   },
   {
-   "date": "2026-09-30",
-   "company": "Volkswagen Group (CARIAD)",
-   "role": "Internship - Development of Innovative Driving Dynamics Functions (29366)",
-   "method": "VW SuccessFactors",
+   "date": "2026-10-01",
+   "company": "Deutsche Bank",
+   "role": "Technology, Data and Innovation Internship 2027 (Frankfurt)",
+   "method": "Career portal",
    "state": "Rejected",
    "last": "2026-10-02",
    "note": "Rejection email (checked 2 Oct)"
   },
   {
    "date": "2026-09-30",
-   "company": "CARIAD",
-   "role": "Internship - AI-Based Semantic Mapping for Autonomous Driving (29017)",
-   "method": "VW SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-30",
-   "company": "CARIAD",
-   "role": "Intern - Learning-based Radar-Camera Fusion for SLAM (29016)",
-   "method": "VW SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-30",
-   "company": "BCG",
-   "role": "Working Student - BCG Vantage, Industrial Goods (Duesseldorf)",
-   "method": "BCG career portal",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-30",
-   "company": "Procter and Gamble",
-   "role": "Working Student IT (m/f/d)",
-   "method": "Workday",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-30",
-   "company": "ATOSS Software SE",
-   "role": "Working Student Software Engineer m/f/d",
-   "method": "Greenhouse",
+   "company": "dormakaba",
+   "role": "Working Student (w/m/d) IT Service Integration, Ennepetal or Villingen-Schwenningen",
+   "method": "Career portal",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -336,6 +363,15 @@
   },
   {
    "date": "2026-09-30",
+   "company": "Volkswagen Group (CARIAD)",
+   "role": "Internship - Development of Innovative Driving Dynamics Functions (29366)",
+   "method": "VW SuccessFactors",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-30",
    "company": "Vattenfall",
    "role": "Working Student in Renewables Customer and Contract Management (f/m/d), Hamburg",
    "method": "SmartRecruiters",
@@ -345,8 +381,8 @@
   },
   {
    "date": "2026-09-30",
-   "company": "Airbus Defence and Space",
-   "role": "Working student (d/f/m) in the area of Flight Dynamics, Manching",
+   "company": "Procter and Gamble",
+   "role": "Working Student IT (m/f/d)",
    "method": "Workday",
    "state": "Waiting",
    "last": "",
@@ -372,6 +408,24 @@
   },
   {
    "date": "2026-09-30",
+   "company": "CARIAD",
+   "role": "Internship - AI-Based Semantic Mapping for Autonomous Driving (29017)",
+   "method": "VW SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
+   "company": "CARIAD",
+   "role": "Intern - Learning-based Radar-Camera Fusion for SLAM (29016)",
+   "method": "VW SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-30",
    "company": "Bayer",
    "role": "Internship Analytics Advisory and Data Democratization / SC&L Analytics (all genders), Leverkusen",
    "method": "SuccessFactors",
@@ -381,90 +435,27 @@
   },
   {
    "date": "2026-09-30",
-   "company": "dormakaba",
-   "role": "Working Student (w/m/d) IT Service Integration, Ennepetal or Villingen-Schwenningen",
-   "method": "Career portal",
+   "company": "BCG",
+   "role": "Working Student - BCG Vantage, Industrial Goods (Duesseldorf)",
+   "method": "BCG career portal",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-29",
-   "company": "MTU Aero Engines",
-   "role": "Intern Digital Method Development and Data Engineering (all genders), Munich",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-29",
-   "company": "MTU Aero Engines",
-   "role": "Intern GUI development for mechanical predesign calculations (all genders), Munich",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-29",
-   "company": "Rohde & Schwarz",
-   "role": "Intern EMC Software Development (m/f/d), Munich",
-   "method": "R\\&S career portal",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-29",
-   "company": "Rohde & Schwarz",
-   "role": "Intern Wireless Coexistence System Development (m/f/d), Munich",
-   "method": "R\\&S career portal",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-29",
-   "company": "SAP",
-   "role": "Working Student (f/m/d) - Policy-as-Code Consultant in Hyperspace",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-29",
-   "company": "SAP",
-   "role": "Working Student (f/m/d) - IT Portfolio",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-29",
-   "company": "Rohde & Schwarz",
-   "role": "Intern Artificial Intelligence & Machine Learning (m/f/d), Munich",
-   "method": "R\\&S career portal",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-29",
-   "company": "Magna International",
-   "role": "Working Student (m/f/x) Perception & Customer Functions Development (Munich)",
+   "date": "2026-09-30",
+   "company": "Airbus Defence and Space",
+   "role": "Working student (d/f/m) in the area of Flight Dynamics, Manching",
    "method": "Workday",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
+   "state": "Waiting",
+   "last": "",
+   "note": ""
   },
   {
-   "date": "2026-09-29",
-   "company": "SAP",
-   "role": "PhD Internship (f/m/d) - AI Research - Foundation Models on Structured Data (Berlin)",
-   "method": "Web form",
+   "date": "2026-09-30",
+   "company": "ATOSS Software SE",
+   "role": "Working Student Software Engineer m/f/d",
+   "method": "Greenhouse",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -642,6 +633,78 @@
   },
   {
    "date": "2026-09-29",
+   "company": "ZEISS",
+   "role": "Internship - Next-Generation System Interaction with Eye-Tracking and Robotics (f/m/x)",
+   "method": "Workday",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-29",
+   "company": "Stryker",
+   "role": "Internship Data Analytics & Process Improvement - 6 Months, Start Spring 2027",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "SAP",
+   "role": "Working Student (f/m/d) - Policy-as-Code Consultant in Hyperspace",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "SAP",
+   "role": "Working Student (f/m/d) - IT Portfolio",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "SAP",
+   "role": "PhD Internship (f/m/d) - AI Research - Foundation Models on Structured Data (Berlin)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "Rohde & Schwarz",
+   "role": "Intern EMC Software Development (m/f/d), Munich",
+   "method": "R\\&S career portal",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "Rohde & Schwarz",
+   "role": "Intern Wireless Coexistence System Development (m/f/d), Munich",
+   "method": "R\\&S career portal",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "Rohde & Schwarz",
+   "role": "Intern Artificial Intelligence & Machine Learning (m/f/d), Munich",
+   "method": "R\\&S career portal",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
    "company": "NXP Semiconductors",
    "role": "Working Student (f/m/d) NPU Physical Security Testing",
    "method": "Workday",
@@ -678,8 +741,8 @@
   },
   {
    "date": "2026-09-29",
-   "company": "ZEISS",
-   "role": "Internship - Next-Generation System Interaction with Eye-Tracking and Robotics (f/m/x)",
+   "company": "Magna International",
+   "role": "Working Student (m/f/x) Perception & Customer Functions Development (Munich)",
    "method": "Workday",
    "state": "Rejected",
    "last": "2026-10-02",
@@ -687,9 +750,18 @@
   },
   {
    "date": "2026-09-29",
-   "company": "Stryker",
-   "role": "Internship Data Analytics & Process Improvement - 6 Months, Start Spring 2027",
-   "method": "Workday",
+   "company": "MTU Aero Engines",
+   "role": "Intern Digital Method Development and Data Engineering (all genders), Munich",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-29",
+   "company": "MTU Aero Engines",
+   "role": "Intern GUI development for mechanical predesign calculations (all genders), Munich",
+   "method": "SuccessFactors",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -702,6 +774,276 @@
    "state": "Waiting",
    "last": "",
    "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "planqc",
+   "role": "Working Student - IT Support & Systems",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "over99",
+   "role": "Working Student - Web3 Product & Tech",
+   "method": "Teamtailor",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "mc Group",
+   "role": "Intern / Trainee IT System Administrator (m/f/d)",
+   "method": "LinkedIn Easy Apply",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "ilert GmbH",
+   "role": "Working Student / Intern: Offensive Security Engineer (Red Team & AppSec) (f/m/x)",
+   "method": "JOIN",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "goaudio",
+   "role": "Working Student: Full-Stack & AI Engineering (all genders)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "eRC System",
+   "role": "Working Student / Intern - Product Development (all genders)",
+   "method": "Personio",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-28",
+   "company": "distil labs",
+   "role": "Machine Learning Science Intern",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Terra One",
+   "role": "Working Student - Data & Analytics",
+   "method": "Factorial",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Snke",
+   "role": "Working Student - Release Support and Automation",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Scaled Asset Services",
+   "role": "Intern - Fund Operations & Technology (m/f/d)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Scalable Capital",
+   "role": "Working Student Product Management (m/f/x)",
+   "method": "SmartRecruiters",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "STARK",
+   "role": "Working Student - Flight Software Engineering (PX4 / Autopilot) (all genders)",
+   "method": "Personio",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-28",
+   "company": "SGB-SMIT Group",
+   "role": "Working Student IT Service Management & Governance (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Reonic",
+   "role": "Go-to-Market AI & Data Intern (AI x Greentech) (m/f/d)",
+   "method": "Ashby",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Preventis GmbH",
+   "role": "Working Student Product Management (m/f/d)",
+   "method": "JOIN",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Over99",
+   "role": "Working Student - Web3 Ventures & Product",
+   "method": "Teamtailor",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "NavVis",
+   "role": "Working Student - Product Analytics (F/M/D)",
+   "method": "Greenhouse",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-28",
+   "company": "MOBIS Parts Europe",
+   "role": "Computer Vision Engineer Intern (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Keyfactor",
+   "role": "Student QA Engineer (Working Student)",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "KINEXON",
+   "role": "Internship Product Management & AI Automation",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Helsing",
+   "role": "AI Research Intern (PhD) - 3D Computer Vision",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Goodly Technologies",
+   "role": "Working Student / Master's Thesis, Ophthalmic AI (m/f/d)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Front Row Group",
+   "role": "Working Student Technology Specialist (f/m/d)",
+   "method": "Teamtailor",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Ferroelectric Memory Company",
+   "role": "Working Student IT",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "ECDB",
+   "role": "Working Student - Research eCommerce (m/f/d)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "DocuWare",
+   "role": "Working Student (m/f/d) - Data Labeling (Vietnamese)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Continental",
+   "role": "Internship - Data Management of Chemical Tire Test Results / Material Development (REF99687I)",
+   "method": "SmartRecruiters",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Constructor TECH",
+   "role": "Frontend Engineer (Intern)",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Constructor TECH",
+   "role": "QA Intern",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-28",
+   "company": "Climate Analytics",
+   "role": "Student Assistant - IT Administration (f/m/d)",
+   "method": "Personio",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
   },
   {
    "date": "2026-09-28",
@@ -759,72 +1101,18 @@
   },
   {
    "date": "2026-09-28",
-   "company": "KINEXON",
-   "role": "Internship Product Management & AI Automation",
-   "method": "Greenhouse",
+   "company": "Aqarios",
+   "role": "Optimization Engineer, Working Student (m/f/d)",
+   "method": "Web form",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
    "date": "2026-09-28",
-   "company": "Scaled Asset Services",
-   "role": "Intern - Fund Operations & Technology (m/f/d)",
+   "company": "ACCURE Battery Intelligence",
+   "role": "Internship Platform Engineering (all genders)",
    "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "over99",
-   "role": "Working Student - Web3 Product & Tech",
-   "method": "Teamtailor",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Helsing",
-   "role": "AI Research Intern (PhD) - 3D Computer Vision",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "MOBIS Parts Europe",
-   "role": "Computer Vision Engineer Intern (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "SGB-SMIT Group",
-   "role": "Working Student IT Service Management & Governance (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Terra One",
-   "role": "Working Student - Data & Analytics",
-   "method": "Factorial",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Scalable Capital",
-   "role": "Working Student Product Management (m/f/x)",
-   "method": "SmartRecruiters",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -839,225 +1127,180 @@
    "note": "Rejection email (checked 2 Oct)"
   },
   {
-   "date": "2026-09-28",
-   "company": "Reonic",
-   "role": "Go-to-Market AI & Data Intern (AI x Greentech) (m/f/d)",
+   "date": "2026-09-27",
+   "company": "voize",
+   "role": "Working Student - Language Specialist UK English (m/f/d)",
    "method": "Ashby",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Aqarios",
-   "role": "Optimization Engineer, Working Student (m/f/d)",
-   "method": "Web form",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-28",
-   "company": "Over99",
-   "role": "Working Student - Web3 Ventures & Product",
-   "method": "Teamtailor",
+   "date": "2026-09-27",
+   "company": "thermondo",
+   "role": "Working Student Analytics Engineering",
+   "method": "Personio",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-28",
-   "company": "Continental",
-   "role": "Internship - Data Management of Chemical Tire Test Results / Material Development (REF99687I)",
-   "method": "SmartRecruiters",
+   "date": "2026-09-27",
+   "company": "telli",
+   "role": "Founder's Associate - Product",
+   "method": "Ashby",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-28",
-   "company": "mc Group",
-   "role": "Intern / Trainee IT System Administrator (m/f/d)",
+   "date": "2026-09-27",
+   "company": "Zauber",
+   "role": "Agent Deployment Manager",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "THRYVE",
+   "role": "Working Student Developer Experience Engineer",
    "method": "LinkedIn Easy Apply",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "goaudio",
-   "role": "Working Student: Full-Stack & AI Engineering (all genders)",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Goodly Technologies",
-   "role": "Working Student / Master's Thesis, Ophthalmic AI (m/f/d)",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "distil labs",
-   "role": "Machine Learning Science Intern",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Ferroelectric Memory Company",
-   "role": "Working Student IT",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Climate Analytics",
-   "role": "Student Assistant - IT Administration (f/m/d)",
-   "method": "Personio",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-28",
-   "company": "ACCURE Battery Intelligence",
-   "role": "Internship Platform Engineering (all genders)",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Snke",
-   "role": "Working Student - Release Support and Automation",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "eRC System",
-   "role": "Working Student / Intern - Product Development (all genders)",
-   "method": "Personio",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-28",
-   "company": "ECDB",
-   "role": "Working Student - Research eCommerce (m/f/d)",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Constructor TECH",
-   "role": "Frontend Engineer (Intern)",
-   "method": "Greenhouse",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Constructor TECH",
-   "role": "QA Intern",
-   "method": "Greenhouse",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "NavVis",
-   "role": "Working Student - Product Analytics (F/M/D)",
-   "method": "Greenhouse",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Keyfactor",
-   "role": "Student QA Engineer (Working Student)",
-   "method": "Greenhouse",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "STARK",
-   "role": "Working Student - Flight Software Engineering (PX4 / Autopilot) (all genders)",
-   "method": "Personio",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-28",
-   "company": "DocuWare",
-   "role": "Working Student (m/f/d) - Data Labeling (Vietnamese)",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "planqc",
-   "role": "Working Student - IT Support & Systems",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Preventis GmbH",
-   "role": "Working Student Product Management (m/f/d)",
-   "method": "JOIN",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-28",
-   "company": "ilert GmbH",
-   "role": "Working Student / Intern: Offensive Security Engineer (Red Team & AppSec) (f/m/x)",
-   "method": "JOIN",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-28",
-   "company": "Front Row Group",
-   "role": "Working Student Technology Specialist (f/m/d)",
-   "method": "Teamtailor",
    "state": "Rejected",
    "last": "2026-10-02",
    "note": "Rejection email (checked 2 Oct)"
   },
   {
    "date": "2026-09-27",
-   "company": "voize",
-   "role": "Working Student - Language Specialist UK English (m/f/d)",
+   "company": "Perplexity",
+   "role": "Internship - Machine Learning Research Engineer (Berlin)",
+   "method": "Web form (Ashby)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Oviva",
+   "role": "Working Student - AI & Operations",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "NinjaOne",
+   "role": "Solutions Engineering Intern - EMEA",
+   "method": "Jobvite",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "MAVIANCE PLC",
+   "role": "Web Designers and Developers Internship (Leipzig)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Lyceum",
+   "role": "Technical Founders Associate",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "LIQID",
+   "role": "Intern CTO Office (f/m/d)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Knowunity",
+   "role": "Engineering Intern",
+   "method": "Ashby",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-27",
+   "company": "KUGU Home",
+   "role": "Working Student Energy Management",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "GLS/NXT",
+   "role": "Customer Solutions Engineer",
+   "method": "JOIN",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Fraunhofer SIT",
+   "role": "Working Student in the Field of NLP (Ref. 81228)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Enpal",
+   "role": "Intern Venture Development (w/m/d)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Corning",
+   "role": "IT Working Student (Documentation, Data Analytics & Project Management) (77932)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Constructor TECH",
+   "role": "Software Engineer (Intern, C#)",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Chaos",
+   "role": "Working Student, Growth & Strategy",
+   "method": "Recruitee",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-27",
+   "company": "Bettermile",
+   "role": "Working Student User Operations & Insights",
    "method": "Ashby",
    "state": "Waiting",
    "last": "",
@@ -1082,199 +1325,127 @@
    "note": ""
   },
   {
-   "date": "2026-09-27",
-   "company": "telli",
-   "role": "Founder's Associate - Product",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "LIQID",
-   "role": "Intern CTO Office (f/m/d)",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "Enpal",
-   "role": "Intern Venture Development (w/m/d)",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "Knowunity",
-   "role": "Engineering Intern",
+   "date": "2026-09-26",
+   "company": "n8n",
+   "role": "Forward Deployed Engineer - EMEA",
    "method": "Ashby",
    "state": "Rejected",
    "last": "2026-10-02",
    "note": "Rejection email (checked 2 Oct)"
   },
   {
-   "date": "2026-09-27",
-   "company": "Constructor TECH",
-   "role": "Software Engineer (Intern, C#)",
-   "method": "Greenhouse",
+   "date": "2026-09-26",
+   "company": "dexter health",
+   "role": "AI Engineer (LLM) - Remote",
+   "method": "join.com",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "JOIN receipt"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "UVC Partners (UnternehmerTUM)",
+   "role": "Data & AI Internship",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "UnternehmerTUM receipt; review needs more time"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "USU Solutions",
+   "role": "Working Student Developer Relations & Integrations",
+   "method": "Web form",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-27",
-   "company": "MAVIANCE PLC",
-   "role": "Web Designers and Developers Internship (Leipzig)",
+   "date": "2026-09-26",
+   "company": "Taktile",
+   "role": "Forward Deployed Engineer (Ops)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Ashby receipt"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "TU Berlin (FG Innovationsökonomie)",
+   "role": "Student Assistant, VELOCITY project (VII-SB-0035-2026)",
    "method": "Email",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-27",
-   "company": "Perplexity",
-   "role": "Internship - Machine Learning Research Engineer (Berlin)",
-   "method": "Web form (Ashby)",
+   "date": "2026-09-26",
+   "company": "TU Berlin (DIMA)",
+   "role": "Student Assistant, Database Systems and Information Management (IV-SB-0015-2026D)",
+   "method": "Email",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-27",
-   "company": "NinjaOne",
-   "role": "Solutions Engineering Intern - EMEA",
-   "method": "Jobvite",
+   "date": "2026-09-26",
+   "company": "TU Berlin (Aerodynamics, CityWind)",
+   "role": "Student Assistant, CityWind project (V-SB-0116-2026)",
+   "method": "Email",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-27",
-   "company": "GLS/NXT",
-   "role": "Customer Solutions Engineer",
-   "method": "JOIN",
+   "date": "2026-09-26",
+   "company": "TK Home Solutions",
+   "role": "Working Student Digital Operations & Data Analytics",
+   "method": "TK Elevator portal",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-27",
-   "company": "thermondo",
-   "role": "Working Student Analytics Engineering",
-   "method": "Personio",
+   "date": "2026-09-26",
+   "company": "TK Elevator",
+   "role": "Working Student Project Management and Business Analytics",
+   "method": "TK Elevator portal",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-27",
-   "company": "Oviva",
-   "role": "Working Student - AI & Operations",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "Lyceum",
-   "role": "Technical Founders Associate",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "Zauber",
-   "role": "Agent Deployment Manager",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "Corning",
-   "role": "IT Working Student (Documentation, Data Analytics & Project Management) (77932)",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-16",
-   "company": "Manex AI",
-   "role": "AI Quality Engineer - Working Student",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-16",
-   "company": "Munich Electrification",
-   "role": "Working Student - Battery Algorithm Development",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "2026-09-16",
-   "note": "Ashby receipt; no decision yet"
-  },
-  {
-   "date": "2026-09-17",
-   "company": "TNG Technology Consulting",
-   "role": "Robotics AI Intern",
+   "date": "2026-09-26",
+   "company": "Siemens Gamesa",
+   "role": "Working Student Reliability Data Science (f/m/d)",
    "method": "Web form",
    "state": "Rejected",
    "last": "2026-10-02",
    "note": "Rejection email (checked 2 Oct)"
   },
   {
-   "date": "2026-09-20",
-   "company": "Open Health Technologies",
-   "role": "Data Analyst (Analytics Engineering)",
-   "method": "LinkedIn Easy Apply",
+   "date": "2026-09-26",
+   "company": "SINE Foundation",
+   "role": "Research Engineer - AI Advantage Evaluation",
+   "method": "Email",
    "state": "Waiting",
-   "last": "",
-   "note": ""
+   "last": "2026-09-25",
+   "note": "Recruiter replied: still accepting applications, will get back soon"
   },
   {
-   "date": "2026-09-27",
-   "company": "THRYVE",
-   "role": "Working Student Developer Experience Engineer",
-   "method": "LinkedIn Easy Apply",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-27",
-   "company": "KUGU Home",
-   "role": "Working Student Energy Management",
-   "method": "Personio",
+   "date": "2026-09-26",
+   "company": "SAP Fioneer",
+   "role": "Graduate AI Engineer (Banking Solutions)",
+   "method": "Workable",
    "state": "Waiting",
-   "last": "",
-   "note": ""
+   "last": "2026-09-25",
+   "note": "Workable receipt; recruiting team reviewing"
   },
   {
-   "date": "2026-09-27",
-   "company": "Chaos",
-   "role": "Working Student, Growth & Strategy",
-   "method": "Recruitee",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "Bettermile",
-   "role": "Working Student User Operations & Insights",
-   "method": "Ashby",
+   "date": "2026-09-26",
+   "company": "SAP",
+   "role": "Working Student (f/m/d) - Autonomous Suite Transformation Office (459436)",
+   "method": "SuccessFactors",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -1299,33 +1470,6 @@
   },
   {
    "date": "2026-09-26",
-   "company": "Fraunhofer ENAS",
-   "role": "Students: Artificial Intelligence in Semiconductor Technology (73236)",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "Danfoss",
-   "role": "Working student (m/f/d) Technology Scouting & Trends",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "Siemens Gamesa",
-   "role": "Working Student Reliability Data Science (f/m/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-26",
    "company": "PowerCo SE",
    "role": "Working Student Risk Management AI Solutions (all genders)",
    "method": "SuccessFactors",
@@ -1335,57 +1479,39 @@
   },
   {
    "date": "2026-09-26",
-   "company": "Knorr-Bremse",
-   "role": "Working Student Strategic Transformation & AI (m/f/d)",
+   "company": "Picnic",
+   "role": "Analytics - Future Leaders Graduate Program (Hamburg)",
+   "method": "Greenhouse",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "ParshipMeet Group",
+   "role": "(Junior) Machine Learning Engineer",
    "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "SAP",
-   "role": "Working Student (f/m/d) - Autonomous Suite Transformation Office (459436)",
-   "method": "SuccessFactors",
    "state": "Waiting",
-   "last": "",
-   "note": ""
+   "last": "2026-09-25",
+   "note": "Receipt; review will take some time"
   },
   {
    "date": "2026-09-26",
-   "company": "KWS SAAT",
-   "role": "Working Student Global IT, AI & LLM Solutions",
-   "method": "SuccessFactors",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
+   "company": "Pandata",
+   "role": "Software Development Intern",
+   "method": "Web form",
+   "state": "Action needed",
+   "last": "2026-09-26",
+   "note": "Record a 60-second intro video (personal link in email); link open 4 weeks, by 24 Oct"
   },
   {
    "date": "2026-09-26",
-   "company": "TU Berlin (Aerodynamics, CityWind)",
-   "role": "Student Assistant, CityWind project (V-SB-0116-2026)",
-   "method": "Email",
+   "company": "Pandata",
+   "role": "(Junior) Data Consultant",
+   "method": "Web form",
    "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "TU Berlin (DIMA)",
-   "role": "Student Assistant, Database Systems and Information Management (IV-SB-0015-2026D)",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "DSA Daten- und Systemtechnik",
-   "role": "Student Assistant, Operation and Automation of AI Infrastructure",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
+   "last": "2026-09-25",
+   "note": "Application received by Pandata"
   },
   {
    "date": "2026-09-26",
@@ -1398,21 +1524,39 @@
   },
   {
    "date": "2026-09-26",
-   "company": "COBACK",
-   "role": "Working Student AI Engineering",
-   "method": "Email",
+   "company": "Merantix Capital",
+   "role": "Visiting Analyst: AI Automations & Content",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Personio receipt"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Knorr-Bremse",
+   "role": "Working Student Strategic Transformation & AI (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Knauf Digital",
+   "role": "Working Student Customer Experience & Insights",
+   "method": "Teamtailor",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
    "date": "2026-09-26",
-   "company": "COBACK",
-   "role": "Working Student Full Stack Engineering",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
+   "company": "KWS SAAT",
+   "role": "Working Student Global IT, AI & LLM Solutions",
+   "method": "SuccessFactors",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
   },
   {
    "date": "2026-09-26",
@@ -1443,84 +1587,12 @@
   },
   {
    "date": "2026-09-26",
-   "company": "Knauf Digital",
-   "role": "Working Student Customer Experience & Insights",
-   "method": "Teamtailor",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "USU Solutions",
-   "role": "Working Student Developer Relations & Integrations",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "TK Home Solutions",
-   "role": "Working Student Digital Operations & Data Analytics",
-   "method": "TK Elevator portal",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "TK Elevator",
-   "role": "Working Student Project Management and Business Analytics",
-   "method": "TK Elevator portal",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-26",
-   "company": "Dataleap",
-   "role": "Working Student Integrations",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Ashby receipt; will be contacted if there are next steps"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "Picnic",
-   "role": "Analytics - Future Leaders Graduate Program (Hamburg)",
+   "company": "IONOS",
+   "role": "AI Developer with Python, Customer Care AI Platform",
    "method": "Greenhouse",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "Pandata",
-   "role": "Software Development Intern",
-   "method": "Web form",
-   "state": "Action needed",
-   "last": "2026-09-26",
-   "note": "Record a 60-second intro video (personal link in email); link open 4 weeks, by 24 Oct"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "Pandata",
-   "role": "(Junior) Data Consultant",
-   "method": "Web form",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "Application received by Pandata"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "GeneralMind",
-   "role": "AI Engineering - Intern",
-   "method": "Needle",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
+   "note": "Receipt from IONOS Romania (Bucharest); CV forwarded to hiring team"
   },
   {
    "date": "2026-09-26",
@@ -1533,48 +1605,12 @@
   },
   {
    "date": "2026-09-26",
-   "company": "Arctis AI",
-   "role": "Intern - AI Engineer",
-   "method": "Needle",
+   "company": "HelloFresh",
+   "role": "Supply Chain Planning Working Student",
+   "method": "Greenhouse",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "Needle receipt; will share next steps"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "UVC Partners (UnternehmerTUM)",
-   "role": "Data & AI Internship",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "UnternehmerTUM receipt; review needs more time"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "dexter health",
-   "role": "AI Engineer (LLM) - Remote",
-   "method": "join.com",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "JOIN receipt"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "GlassFlow",
-   "role": "AI Engineer",
-   "method": "join.com",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "JOIN receipt"
-  },
-  {
-   "date": "2026-09-26",
-   "company": "SINE Foundation",
-   "role": "Research Engineer - AI Advantage Evaluation",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Recruiter replied: still accepting applications, will get back soon"
+   "note": "HelloFresh receipt"
   },
   {
    "date": "2026-09-26",
@@ -1587,39 +1623,75 @@
   },
   {
    "date": "2026-09-26",
-   "company": "Albatross",
-   "role": "Deployment Strategist",
-   "method": "Workable",
+   "company": "GlassFlow",
+   "role": "AI Engineer",
+   "method": "join.com",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "Workable receipt"
+   "note": "JOIN receipt"
   },
   {
    "date": "2026-09-26",
-   "company": "SAP Fioneer",
-   "role": "Graduate AI Engineer (Banking Solutions)",
-   "method": "Workable",
+   "company": "GeneralMind",
+   "role": "AI Engineering - Intern",
+   "method": "Needle",
    "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Workable receipt; recruiting team reviewing"
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-26",
-   "company": "HelloFresh",
-   "role": "Supply Chain Planning Working Student",
-   "method": "Greenhouse",
+   "company": "GESIS",
+   "role": "Graduate Student Research Assistant, Assessing Survey Data Quality (SHK_SDM_2026_024)",
+   "method": "Personio",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "HelloFresh receipt"
+   "note": "GESIS receipt; processing ongoing"
   },
   {
    "date": "2026-09-26",
-   "company": "IONOS",
-   "role": "AI Developer with Python, Customer Care AI Platform",
-   "method": "Greenhouse",
+   "company": "Fraunhofer ENAS",
+   "role": "Students: Artificial Intelligence in Semiconductor Technology (73236)",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "ElevenLabs",
+   "role": "Engineering - Internal AI Transformation",
+   "method": "Ashby",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "Receipt from IONOS Romania (Bucharest); CV forwarded to hiring team"
+   "note": "Ashby receipt"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Dataleap",
+   "role": "Working Student Integrations",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Ashby receipt; will be contacted if there are next steps"
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Danfoss",
+   "role": "Working student (m/f/d) Technology Scouting & Trends",
+   "method": "SuccessFactors",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "DSA Daten- und Systemtechnik",
+   "role": "Student Assistant, Operation and Automation of AI Infrastructure",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-26",
@@ -1632,21 +1704,30 @@
   },
   {
    "date": "2026-09-26",
-   "company": "n8n",
-   "role": "Forward Deployed Engineer - EMEA",
-   "method": "Ashby",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
+   "company": "COBACK",
+   "role": "Working Student AI Engineering",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-26",
-   "company": "ElevenLabs",
-   "role": "Engineering - Internal AI Transformation",
-   "method": "Ashby",
+   "company": "COBACK",
+   "role": "Working Student Full Stack Engineering",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-26",
+   "company": "Arctis AI",
+   "role": "Intern - AI Engineer",
+   "method": "Needle",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "Ashby receipt"
+   "note": "Needle receipt; will share next steps"
   },
   {
    "date": "2026-09-26",
@@ -1668,48 +1749,201 @@
   },
   {
    "date": "2026-09-26",
-   "company": "Taktile",
-   "role": "Forward Deployed Engineer (Ops)",
+   "company": "Albatross",
+   "role": "Deployment Strategist",
+   "method": "Workable",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Workable receipt"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "ellamind",
+   "role": "Member of Technical Staff - Agent Engineer",
+   "method": "Ashby",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "deepset",
+   "role": "Value Engineer",
    "method": "Ashby",
    "state": "Waiting",
    "last": "2026-09-25",
    "note": "Ashby receipt"
   },
   {
-   "date": "2026-09-26",
-   "company": "TU Berlin (FG Innovationsökonomie)",
-   "role": "Student Assistant, VELOCITY project (VII-SB-0035-2026)",
+   "date": "2026-09-25",
+   "company": "acemate.ai",
+   "role": "Software Engineer (Intern / Working Student)",
+   "method": "join.com",
+   "state": "Rejected",
+   "last": "2026-09-25",
+   "note": "Rejected by co-founder; other candidates chosen"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Zuse Institute Berlin (ZIB)",
+   "role": "Student Research Assistant (f/m/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Personio receipt; documents being reviewed"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "WaveSix Labs",
+   "role": "Intern - AI Strategy Consultant",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Receipt; reply promised within a week"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Toloka",
+   "role": "Freelance Technical Consultant",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Greenhouse receipt"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "TU Berlin, Machine Learning Group",
+   "role": "Student Assistant, Machine Learning (Ref. IV-SB-0001-2025D)",
    "method": "Email",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
-   "date": "2026-09-26",
-   "company": "ParshipMeet Group",
-   "role": "(Junior) Machine Learning Engineer",
+   "date": "2026-09-25",
+   "company": "ShopFully",
+   "role": "AI Engineer",
+   "method": "Greenhouse",
+   "state": "Rejected",
+   "last": "2026-09-25",
+   "note": "Rejected same day; moving forward with other candidates"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Sensape GmbH",
+   "role": "Machine Learning & AI Internship / Working Student (f/m/d)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Auto-reply receipt to emailed application"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Reonic",
+   "role": "Software Engineering Intern (AI x Greentech)",
+   "method": "Ashby",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "QuantCo",
+   "role": "AI Engineering Intern",
+   "method": "Lever",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "NXP Semiconductors",
+   "role": "Working Student (f/m/d) AI-Enabled Knowledge and Work Systems (R-10064063)",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Workday receipt; under review"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Mixedbread",
+   "role": "Research Intern (retrieval)",
    "method": "Web form",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "Receipt; review will take some time"
+   "note": "Application received"
   },
   {
-   "date": "2026-09-26",
-   "company": "Merantix Capital",
-   "role": "Visiting Analyst: AI Automations & Content",
-   "method": "Personio",
+   "date": "2026-09-25",
+   "company": "MBition GmbH (Mercedes-Benz)",
+   "role": "Working Student AI/ML & Data Science (all genders), Ref. 2782362",
+   "method": "Web form",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "Personio receipt"
+   "note": "Receipt"
   },
   {
-   "date": "2026-09-26",
-   "company": "GESIS",
-   "role": "Graduate Student Research Assistant, Assessing Survey Data Quality (SHK_SDM_2026_024)",
-   "method": "Personio",
+   "date": "2026-09-25",
+   "company": "Lucid Labs",
+   "role": "AI Engineer (m/f/d)",
+   "method": "join.com",
    "state": "Waiting",
    "last": "2026-09-25",
-   "note": "GESIS receipt; processing ongoing"
+   "note": "JOIN receipt"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Lancaster University Leipzig",
+   "role": "Lab Demonstrator 2026/27",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Kombo",
+   "role": "Developer Support Engineer",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Juna AI GmbH",
+   "role": "Forward Deployed Engineer",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-25",
+   "company": "JobLeads GmbH",
+   "role": "AI Engineer (Search & Matching), fully remote within Germany (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "HiPeople",
+   "role": "Applied AI Engineer - Systems & Reliability",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Helmholtz-Zentrum Dresden-Rossendorf (HZDR)",
+   "role": "Student Assistant: Numerical methods for strongly correlated quantum many-body systems (Offer 494)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-25",
@@ -1731,171 +1965,9 @@
   },
   {
    "date": "2026-09-25",
-   "company": "4flow",
-   "role": "Student Assistant in Supply Chain Science",
-   "method": "Workday",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Enzo",
-   "role": "AI Engineer Intern",
-   "method": "join.com",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "JOIN receipt"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Aleph Alpha",
-   "role": "Intern/WS to Chief of Staff",
-   "method": "Ashby",
-   "state": "Rejected",
-   "last": "2026-09-25",
-   "note": "Not moving forward after review"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "QuantCo",
-   "role": "AI Engineering Intern",
-   "method": "Lever",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Reonic",
-   "role": "Software Engineering Intern (AI x Greentech)",
-   "method": "Ashby",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Kombo",
-   "role": "Developer Support Engineer",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Toloka",
-   "role": "Freelance Technical Consultant",
-   "method": "Greenhouse",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Greenhouse receipt"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "ShopFully",
-   "role": "AI Engineer",
-   "method": "Greenhouse",
-   "state": "Rejected",
-   "last": "2026-09-25",
-   "note": "Rejected same day; moving forward with other candidates"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Arize AI",
-   "role": "AI Sales Engineer, EMEA",
-   "method": "Greenhouse",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Greenhouse receipt"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Amazon Development Center Germany",
-   "role": "2026 Applied Scientist Intern (Job ID 3115016)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-27",
-   "company": "Fraunhofer SIT",
-   "role": "Working Student in the Field of NLP (Ref. 81228)",
-   "method": "SuccessFactors",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Beam AI",
-   "role": "Forward Deployed Engineer (m/w/d)",
-   "method": "Workable",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Workable receipt; next steps promised in coming days"
-  },
-  {
-   "date": "2026-09-25",
    "company": "Haensel AMS",
    "role": "Data Quality Engineer Working Student (f/m/d)",
    "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-25",
-   "company": "ellamind",
-   "role": "Member of Technical Staff - Agent Engineer",
-   "method": "Ashby",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Juna AI GmbH",
-   "role": "Forward Deployed Engineer",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-25",
-   "company": "WaveSix Labs",
-   "role": "Intern - AI Strategy Consultant",
-   "method": "Personio",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Receipt; reply promised within a week"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "deepset",
-   "role": "Value Engineer",
-   "method": "Ashby",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Ashby receipt"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Mixedbread",
-   "role": "Research Intern (retrieval)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Application received"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "HiPeople",
-   "role": "Applied AI Engineer - Systems & Reliability",
-   "method": "Ashby",
    "state": "Waiting",
    "last": "",
    "note": ""
@@ -1911,102 +1983,12 @@
   },
   {
    "date": "2026-09-25",
-   "company": "NXP Semiconductors",
-   "role": "Working Student (f/m/d) AI-Enabled Knowledge and Work Systems (R-10064063)",
-   "method": "Workday",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Workday receipt; under review"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "CTS EVENTIM",
-   "role": "Working Student Software Engineering, AI (m/f/d)",
-   "method": "Workday",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Workday receipt; under review"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Lucid Labs",
-   "role": "AI Engineer (m/f/d)",
+   "company": "Enzo",
+   "role": "AI Engineer Intern",
    "method": "join.com",
    "state": "Waiting",
    "last": "2026-09-25",
    "note": "JOIN receipt"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "JobLeads GmbH",
-   "role": "AI Engineer (Search & Matching), fully remote within Germany (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "MBition GmbH (Mercedes-Benz)",
-   "role": "Working Student AI/ML & Data Science (all genders), Ref. 2782362",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Receipt"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Zuse Institute Berlin (ZIB)",
-   "role": "Student Research Assistant (f/m/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Personio receipt; documents being reviewed"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "acemate.ai",
-   "role": "Software Engineer (Intern / Working Student)",
-   "method": "join.com",
-   "state": "Rejected",
-   "last": "2026-09-25",
-   "note": "Rejected by co-founder; other candidates chosen"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "TU Berlin, Machine Learning Group",
-   "role": "Student Assistant, Machine Learning (Ref. IV-SB-0001-2025D)",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Sensape GmbH",
-   "role": "Machine Learning & AI Internship / Working Student (f/m/d)",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "2026-09-25",
-   "note": "Auto-reply receipt to emailed application"
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Helmholtz-Zentrum Dresden-Rossendorf (HZDR)",
-   "role": "Student Assistant: Numerical methods for strongly correlated quantum many-body systems (Offer 494)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-25",
-   "company": "Lancaster University Leipzig",
-   "role": "Lab Demonstrator 2026/27",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
   },
   {
    "date": "2026-09-25",
@@ -2027,6 +2009,60 @@
    "note": ""
   },
   {
+   "date": "2026-09-25",
+   "company": "CTS EVENTIM",
+   "role": "Working Student Software Engineering, AI (m/f/d)",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Workday receipt; under review"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Beam AI",
+   "role": "Forward Deployed Engineer (m/w/d)",
+   "method": "Workable",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Workable receipt; next steps promised in coming days"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Arize AI",
+   "role": "AI Sales Engineer, EMEA",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "2026-09-25",
+   "note": "Greenhouse receipt"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Amazon Development Center Germany",
+   "role": "2026 Applied Scientist Intern (Job ID 3115016)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-25",
+   "company": "Aleph Alpha",
+   "role": "Intern/WS to Chief of Staff",
+   "method": "Ashby",
+   "state": "Rejected",
+   "last": "2026-09-25",
+   "note": "Not moving forward after review"
+  },
+  {
+   "date": "2026-09-25",
+   "company": "4flow",
+   "role": "Student Assistant in Supply Chain Science",
+   "method": "Workday",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
    "date": "2026-09-24",
    "company": "Wildstyle Network GmbH",
    "role": "Working Student Automation & System Thinker (m/f/d)",
@@ -2034,6 +2070,15 @@
    "state": "Waiting",
    "last": "2026-09-24",
    "note": "Receipt; still collecting applications"
+  },
+  {
+   "date": "2026-09-24",
+   "company": "KLA",
+   "role": "Working Student for Data Analysis (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-24",
+   "note": "Workday receipt (req 2638365)"
   },
   {
    "date": "2026-09-24",
@@ -2046,15 +2091,6 @@
   },
   {
    "date": "2026-09-24",
-   "company": "Barkhausen Institut",
-   "role": "Student Assistant - Wireless Signal Processing (m/f/d)",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "2026-09-24",
-   "note": "Automatic receipt reply to emailed application"
-  },
-  {
-   "date": "2026-09-24",
    "company": "EKFZ for Digital Health, TU Dresden",
    "role": "Student Assistant (HiWi), Clinical Artificial Intelligence group",
    "method": "Email",
@@ -2064,48 +2100,21 @@
   },
   {
    "date": "2026-09-24",
+   "company": "Barkhausen Institut",
+   "role": "Student Assistant - Wireless Signal Processing (m/f/d)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "2026-09-24",
+   "note": "Automatic receipt reply to emailed application"
+  },
+  {
+   "date": "2026-09-24",
    "company": "Amamedis GmbH",
    "role": "Werkstudent Data Analytics (m/w/d)",
    "method": "Email",
    "state": "Waiting",
    "last": "",
    "note": ""
-  },
-  {
-   "date": "2026-09-24",
-   "company": "KLA",
-   "role": "Working Student for Data Analysis (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-24",
-   "note": "Workday receipt (req 2638365)"
-  },
-  {
-   "date": "2026-09-23",
-   "company": "TUD Dresden University of Technology",
-   "role": "Research Assistant (m/f/x), Chair of Big Data Analytics in Transportation",
-   "method": "Email",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-23",
-   "company": "KLA",
-   "role": "Working Student Foundry Analytics & SW Development (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-23",
-   "note": "Workday receipt (req 2638557)"
-  },
-  {
-   "date": "2026-09-23",
-   "company": "DISH Digital Solutions",
-   "role": "Working Student - Data Science & AI (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
   },
   {
    "date": "2026-09-23",
@@ -2118,21 +2127,39 @@
   },
   {
    "date": "2026-09-23",
-   "company": "Max Planck Institute for Innovation and Competition",
-   "role": "Student Research Assistant (m/w/d), Dept. Innovation and Entrepreneurship Research",
+   "company": "dida Datenschmiede",
+   "role": "Machine Learning Working Student (all genders)",
    "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "Rejected 23 Sep; a later receipt that evening looks like a resubmission"
+  },
+  {
+   "date": "2026-09-23",
+   "company": "TUD Dresden University of Technology",
+   "role": "Research Assistant (m/f/x), Chair of Big Data Analytics in Transportation",
+   "method": "Email",
    "state": "Waiting",
    "last": "",
    "note": ""
   },
   {
    "date": "2026-09-23",
-   "company": "Fraunhofer Heinrich Hertz Institute HHI",
-   "role": "Student Research Assistants Medical Sensing, Communications, and Modeling",
+   "company": "Spread Group",
+   "role": "Working Student - Commercial Planning (f/m/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-23",
+   "company": "Retorio",
+   "role": "Working Student: AI Engineer, Agentic Systems (m/f/d)",
    "method": "Web form",
    "state": "Waiting",
-   "last": "",
-   "note": ""
+   "last": "2026-09-23",
+   "note": "JOIN receipt"
   },
   {
    "date": "2026-09-23",
@@ -2145,12 +2172,12 @@
   },
   {
    "date": "2026-09-23",
-   "company": "Max Planck Institute for Demographic Research",
-   "role": "Student Assistant (Laboratory of Population Health)",
-   "method": "Email",
-   "state": "Rejected",
-   "last": "2026-09-24",
-   "note": "Declined: job is on-site in Rostock, not remote"
+   "company": "Max Planck Institute of Geoanthropology",
+   "role": "Student Assistant, Data Evaluation Pipeline InSEEDS (f/m/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-23",
+   "note": "Receipt from MPI GEA"
   },
   {
    "date": "2026-09-23",
@@ -2160,6 +2187,51 @@
    "state": "Waiting",
    "last": "",
    "note": ""
+  },
+  {
+   "date": "2026-09-23",
+   "company": "Max Planck Institute for Innovation and Competition",
+   "role": "Student Research Assistant (m/w/d), Dept. Innovation and Entrepreneurship Research",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-23",
+   "company": "Max Planck Institute for Demographic Research",
+   "role": "Student Assistant (Laboratory of Population Health)",
+   "method": "Email",
+   "state": "Rejected",
+   "last": "2026-09-24",
+   "note": "Declined: job is on-site in Rostock, not remote"
+  },
+  {
+   "date": "2026-09-23",
+   "company": "KLA",
+   "role": "Working Student Foundry Analytics & SW Development (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-23",
+   "note": "Workday receipt (req 2638557)"
+  },
+  {
+   "date": "2026-09-23",
+   "company": "Fraunhofer Heinrich Hertz Institute HHI",
+   "role": "Student Research Assistants Medical Sensing, Communications, and Modeling",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-23",
+   "company": "DISH Digital Solutions",
+   "role": "Working Student - Data Science & AI (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
   },
   {
    "date": "2026-09-23",
@@ -2180,42 +2252,6 @@
    "note": "JOIN receipt"
   },
   {
-   "date": "2026-09-23",
-   "company": "Retorio",
-   "role": "Working Student: AI Engineer, Agentic Systems (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-23",
-   "note": "JOIN receipt"
-  },
-  {
-   "date": "2026-09-23",
-   "company": "Spread Group",
-   "role": "Working Student - Commercial Planning (f/m/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-23",
-   "company": "Max Planck Institute of Geoanthropology",
-   "role": "Student Assistant, Data Evaluation Pipeline InSEEDS (f/m/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-23",
-   "note": "Receipt from MPI GEA"
-  },
-  {
-   "date": "2026-09-23",
-   "company": "dida Datenschmiede",
-   "role": "Machine Learning Working Student (all genders)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "Rejected 23 Sep; a later receipt that evening looks like a resubmission"
-  },
-  {
    "date": "2026-09-22",
    "company": "Symanto",
    "role": "Data Science Consultant (m/f/x/d)",
@@ -2223,6 +2259,15 @@
    "state": "Waiting",
    "last": "2026-09-22",
    "note": "HRworks receipt; delays expected"
+  },
+  {
+   "date": "2026-09-20",
+   "company": "Open Health Technologies",
+   "role": "Data Analyst (Analytics Engineering)",
+   "method": "LinkedIn Easy Apply",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-20",
@@ -2235,30 +2280,30 @@
   },
   {
    "date": "2026-09-19",
-   "company": "Huawei Research Center Germany",
-   "role": "Intern – AI Systems Research",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Teamtailor receipt"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Huawei Research Center Germany",
-   "role": "Intern – SPEC Driven Development",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Teamtailor receipt"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "KNIME AG",
-   "role": "Working Student, Data & Analytics (m/f/d)",
+   "company": "statworx",
+   "role": "Working Student AI Support & Operations",
    "method": "Web form",
    "state": "Rejected",
    "last": "2026-09-23",
-   "note": "Not moving forward with candidacy"
+   "note": "Rejected via Personio"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "planqc",
+   "role": "AI & Automation Working Student (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-19",
+   "company": "ilert",
+   "role": "Working Student / Intern: Software Engineer (Frontend & Backend) (f/m/x)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-19",
+   "note": "JOIN receipt"
   },
   {
    "date": "2026-09-19",
@@ -2271,120 +2316,21 @@
   },
   {
    "date": "2026-09-19",
-   "company": "GetMOW",
-   "role": "Backend Engineer Intern | AI Systems (m/f/d)",
+   "company": "Solactive",
+   "role": "Working Student (m/f/d) Indexing Platform",
    "method": "Web form",
    "state": "Waiting",
    "last": "2026-09-19",
-   "note": "JOIN receipt"
+   "note": "Solactive receipt"
   },
   {
    "date": "2026-09-19",
-   "company": "50Hertz Transmission GmbH",
-   "role": "Working Student – Digital In-House Incubator (f/m/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-19",
-   "company": "statworx",
-   "role": "Working Student AI Support & Operations",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "Rejected via Personio"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "CHAPTERS Group AG",
-   "role": "AI Platform Working Student",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Not moving forward"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "European Energy Exchange AG",
-   "role": "Working Student (f/m/d) Group Accounting",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Boston Consulting Group",
-   "role": "Working Student – Applied AI (all genders)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-10-02",
-   "note": "Rejection email (checked 2 Oct)"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "NORITUAL LAB",
-   "role": "Engineer Intern",
+   "company": "Solactive",
+   "role": "Working Student (m/f/d) Quantitative Development",
    "method": "Web form",
    "state": "Waiting",
    "last": "2026-09-19",
-   "note": "LinkedIn: application sent; no company reply yet"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "JD.COM",
-   "role": "Business Analyst Intern",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-22",
-   "note": "LinkedIn rejection notice"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Allianz Services",
-   "role": "Working Student (m/f/d) – AI Transformation Engineering",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Allianz receipt"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Aqarios",
-   "role": "Software Engineer, Working Student (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Receipt; now with team for review"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Munich Electrification",
-   "role": "Working Student – Software Development (f/m/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Not progressing after initial review"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "DCMN",
-   "role": "Working Student Data Engineer (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-25",
-   "note": "Not progressing; generic fit criteria listed"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Cheil Germany",
-   "role": "Data Engineer Working Student",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Personio receipt"
+   "note": "Solactive receipt"
   },
   {
    "date": "2026-09-19",
@@ -2394,15 +2340,6 @@
    "state": "Rejected",
    "last": "2026-09-29",
    "note": "Rejected 29 Sep, the day after the Chakra voice interview (28 Sep); coding test was never taken, though the email template mentions it"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "OKAPI:Orbits",
-   "role": "Working Student / Intern AI & Automation (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Rejected (second application; first also rejected 17 Sep)"
   },
   {
    "date": "2026-09-19",
@@ -2433,93 +2370,12 @@
   },
   {
    "date": "2026-09-19",
-   "company": "Infineon Technologies",
-   "role": "Working Student AI-assisted optimization of analog circuits (f/m/div)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "Not moving forward"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "planqc",
-   "role": "AI & Automation Working Student (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
-  },
-  {
-   "date": "2026-09-19",
    "company": "SAP",
    "role": "Working Student (f/m/d) Machine Translation / NLP",
    "method": "Web form",
    "state": "Rejected",
    "last": "2026-09-21",
    "note": "SAP chose other candidates"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "E.ON Drive Infrastructure",
-   "role": "Working Student AI Enablement (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Receipt; applications being reviewed"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "ACCURE Battery Intelligence",
-   "role": "Internship (all genders) Battery Analytics",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-22",
-   "note": "Not moving forward"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Solactive",
-   "role": "Working Student (m/f/d) Indexing Platform",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Solactive receipt"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Solactive",
-   "role": "Working Student (m/f/d) Quantitative Development",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-19",
-   "note": "Solactive receipt"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Clera",
-   "role": "Founders Associate Intern",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-20",
-   "note": "Clera will not pitch him to Zauber for this role"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Amazon Web Services",
-   "role": "Software Dev Engineer Internship",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Does not meet Amazon student-program criteria (ID 3130528)"
-  },
-  {
-   "date": "2026-09-19",
-   "company": "Infineon Technologies",
-   "role": "Working Student Digitalization Solutions (f/m/div)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-25",
-   "note": "Not moving forward (HRC1801655)"
   },
   {
    "date": "2026-09-19",
@@ -2532,15 +2388,6 @@
   },
   {
    "date": "2026-09-19",
-   "company": "Isar Aerospace",
-   "role": "Working Student Software Engineer (f/m/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "Not proceeding with application"
-  },
-  {
-   "date": "2026-09-19",
    "company": "QIAGEN",
    "role": "Working Student System Development (m/f/d)",
    "method": "Web form",
@@ -2550,53 +2397,206 @@
   },
   {
    "date": "2026-09-19",
-   "company": "ilert",
-   "role": "Working Student / Intern: Software Engineer (Frontend & Backend) (f/m/x)",
+   "company": "OKAPI:Orbits",
+   "role": "Working Student / Intern AI & Automation (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Rejected (second application; first also rejected 17 Sep)"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "NORITUAL LAB",
+   "role": "Engineer Intern",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-19",
+   "note": "LinkedIn: application sent; no company reply yet"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Munich Electrification",
+   "role": "Working Student – Software Development (f/m/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Not progressing after initial review"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "KNIME AG",
+   "role": "Working Student, Data & Analytics (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "Not moving forward with candidacy"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "JD.COM",
+   "role": "Business Analyst Intern",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-22",
+   "note": "LinkedIn rejection notice"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Isar Aerospace",
+   "role": "Working Student Software Engineer (f/m/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "Not proceeding with application"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Infineon Technologies",
+   "role": "Working Student AI-assisted optimization of analog circuits (f/m/div)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "Not moving forward"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Infineon Technologies",
+   "role": "Working Student Digitalization Solutions (f/m/div)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-25",
+   "note": "Not moving forward (HRC1801655)"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Huawei Research Center Germany",
+   "role": "Intern – AI Systems Research",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-19",
+   "note": "Teamtailor receipt"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Huawei Research Center Germany",
+   "role": "Intern – SPEC Driven Development",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-19",
+   "note": "Teamtailor receipt"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "GetMOW",
+   "role": "Backend Engineer Intern | AI Systems (m/f/d)",
    "method": "Web form",
    "state": "Waiting",
    "last": "2026-09-19",
    "note": "JOIN receipt"
   },
   {
-   "date": "2026-09-18",
-   "company": "CLAAS",
-   "role": "Werkstudent (m/w/d) Softwareentwicklung Path Planning Landwirtschaft",
+   "date": "2026-09-19",
+   "company": "European Energy Exchange AG",
+   "role": "Working Student (f/m/d) Group Accounting",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-19",
+   "company": "E.ON Drive Infrastructure",
+   "role": "Working Student AI Enablement (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-19",
+   "note": "Receipt; applications being reviewed"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "DCMN",
+   "role": "Working Student Data Engineer (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-25",
+   "note": "Not progressing; generic fit criteria listed"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Clera",
+   "role": "Founders Associate Intern",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-20",
+   "note": "Clera will not pitch him to Zauber for this role"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Cheil Germany",
+   "role": "Data Engineer Working Student",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-19",
+   "note": "Personio receipt"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "CHAPTERS Group AG",
+   "role": "AI Platform Working Student",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Not moving forward"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "Boston Consulting Group",
+   "role": "Working Student – Applied AI (all genders)",
    "method": "Web form",
    "state": "Rejected",
    "last": "2026-10-02",
    "note": "Rejection email (checked 2 Oct)"
   },
   {
-   "date": "2026-09-18",
-   "company": "The International Council on Clean Transportation",
-   "role": "Model Development Student Assistant, Berlin",
+   "date": "2026-09-19",
+   "company": "Aqarios",
+   "role": "Software Engineer, Working Student (m/f/d)",
    "method": "Web form",
    "state": "Waiting",
-   "last": "2026-09-18",
-   "note": "BambooHR receipt"
+   "last": "2026-09-19",
+   "note": "Receipt; now with team for review"
   },
   {
-   "date": "2026-09-18",
-   "company": "LIQID",
-   "role": "Intern Quantitative Investment Analyst (f/m/d)",
+   "date": "2026-09-19",
+   "company": "Amazon Web Services",
+   "role": "Software Dev Engineer Internship",
    "method": "Web form",
    "state": "Rejected",
    "last": "2026-09-21",
-   "note": "Moving forward with other candidates"
+   "note": "Does not meet Amazon student-program criteria (ID 3130528)"
   },
   {
-   "date": "2026-09-18",
-   "company": "Compass Lexecon",
-   "role": "Intern | Competition Practice | Berlin",
+   "date": "2026-09-19",
+   "company": "Allianz Services",
+   "role": "Working Student (m/f/d) – AI Transformation Engineering",
    "method": "Web form",
    "state": "Waiting",
-   "last": "2026-09-18",
-   "note": "Workday receipt"
+   "last": "2026-09-19",
+   "note": "Allianz receipt"
   },
   {
-   "date": "2026-09-18",
-   "company": "Healy World",
-   "role": "Working Student – Business Intelligence (m/f/d)",
+   "date": "2026-09-19",
+   "company": "ACCURE Battery Intelligence",
+   "role": "Internship (all genders) Battery Analytics",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-22",
+   "note": "Not moving forward"
+  },
+  {
+   "date": "2026-09-19",
+   "company": "50Hertz Transmission GmbH",
+   "role": "Working Student – Digital In-House Incubator (f/m/d)",
    "method": "Web form",
    "state": "Waiting",
    "last": "",
@@ -2604,12 +2604,12 @@
   },
   {
    "date": "2026-09-18",
-   "company": "Kaymogyn GmbH",
-   "role": "Werkstudent Business Intelligence (m/w/d)",
+   "company": "cronos Unternehmensberatung",
+   "role": "Werkstudent | RPA & AI (all genders)",
    "method": "Web form",
    "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "LinkedIn rejection notice"
+   "last": "2026-09-25",
+   "note": "Rejected after he answered their visa/availability questions"
   },
   {
    "date": "2026-09-18",
@@ -2622,12 +2622,30 @@
   },
   {
    "date": "2026-09-18",
+   "company": "The International Council on Clean Transportation",
+   "role": "Model Development Student Assistant, Berlin",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-18",
+   "note": "BambooHR receipt"
+  },
+  {
+   "date": "2026-09-18",
    "company": "Tenpal",
    "role": "Software Engineering Intern / Working Student",
    "method": "Web form",
    "state": "Waiting",
    "last": "2026-09-21",
    "note": "LinkedIn: application viewed by Tenpal"
+  },
+  {
+   "date": "2026-09-18",
+   "company": "Sopra Steria",
+   "role": "Werkstudent Java Entwicklung (m/w/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "No suitable position currently"
   },
   {
    "date": "2026-09-18",
@@ -2640,12 +2658,21 @@
   },
   {
    "date": "2026-09-18",
-   "company": "Fraunhofer IPK",
-   "role": "Studentische Hilfskraft (m,w,d) Softwareentwicklung – Medizintechnik und Robotik",
+   "company": "LIQID",
+   "role": "Intern Quantitative Investment Analyst (f/m/d)",
    "method": "Web form",
-   "state": "Waiting",
-   "last": "",
-   "note": ""
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Moving forward with other candidates"
+  },
+  {
+   "date": "2026-09-18",
+   "company": "Kaymogyn GmbH",
+   "role": "Werkstudent Business Intelligence (m/w/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "LinkedIn rejection notice"
   },
   {
    "date": "2026-09-18",
@@ -2655,6 +2682,33 @@
    "state": "Rejected",
    "last": "2026-09-20",
    "note": "Focusing on other candidates"
+  },
+  {
+   "date": "2026-09-18",
+   "company": "Healy World",
+   "role": "Working Student – Business Intelligence (m/f/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-18",
+   "company": "Fraunhofer IPK",
+   "role": "Studentische Hilfskraft (m,w,d) Softwareentwicklung – Medizintechnik und Robotik",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-09-18",
+   "company": "Deutsche Bahn",
+   "role": "Werkstudent:in Data Engineering & Data Management",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "Rejected; profile not a close enough fit"
   },
   {
    "date": "2026-09-18",
@@ -2676,48 +2730,21 @@
   },
   {
    "date": "2026-09-18",
-   "company": "cronos Unternehmensberatung",
-   "role": "Werkstudent | RPA & AI (all genders)",
+   "company": "Compass Lexecon",
+   "role": "Intern | Competition Practice | Berlin",
    "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-25",
-   "note": "Rejected after he answered their visa/availability questions"
+   "state": "Waiting",
+   "last": "2026-09-18",
+   "note": "Workday receipt"
   },
   {
    "date": "2026-09-18",
-   "company": "Deutsche Bahn",
-   "role": "Werkstudent:in Data Engineering & Data Management",
+   "company": "CLAAS",
+   "role": "Werkstudent (m/w/d) Softwareentwicklung Path Planning Landwirtschaft",
    "method": "Web form",
    "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "Rejected; profile not a close enough fit"
-  },
-  {
-   "date": "2026-09-18",
-   "company": "Sopra Steria",
-   "role": "Werkstudent Java Entwicklung (m/w/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "No suitable position currently"
-  },
-  {
-   "date": "2026-09-17",
-   "company": "adesso SE",
-   "role": "Werkstudent/-in Microsoft Data & AI Innovation (all genders)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-17",
-   "note": "Cannot consider: German below C1 (reply only if actually C1+)"
-  },
-  {
-   "date": "2026-09-17",
-   "company": "Rohde & Schwarz",
-   "role": "Werkstudent/in im Bereich Data Science (w/d/m)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-25",
-   "note": "Rejected (Absage) for position 2242"
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
   },
   {
    "date": "2026-09-17",
@@ -2730,12 +2757,39 @@
   },
   {
    "date": "2026-09-17",
-   "company": "Deloitte",
-   "role": "Werkstudent Technology Strategy & Transformation – Agile Transformation (m/w/d)",
+   "company": "adesso SE",
+   "role": "Werkstudent/-in Microsoft Data & AI Innovation (all genders)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-17",
+   "note": "Cannot consider: German below C1 (reply only if actually C1+)"
+  },
+  {
+   "date": "2026-09-17",
+   "company": "TNG Technology Consulting",
+   "role": "Robotics AI Intern",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-10-02",
+   "note": "Rejection email (checked 2 Oct)"
+  },
+  {
+   "date": "2026-09-17",
+   "company": "Rohde & Schwarz",
+   "role": "Werkstudent/in im Bereich Data Science (w/d/m)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-25",
+   "note": "Rejected (Absage) for position 2242"
+  },
+  {
+   "date": "2026-09-17",
+   "company": "Planet",
+   "role": "Working Student, Professional Services",
    "method": "Web form",
    "state": "Waiting",
-   "last": "",
-   "note": ""
+   "last": "2026-09-17",
+   "note": "Greenhouse receipt (after security code)"
   },
   {
    "date": "2026-09-17",
@@ -2757,66 +2811,30 @@
   },
   {
    "date": "2026-09-17",
-   "company": "Planet",
-   "role": "Working Student, Professional Services",
+   "company": "Deloitte",
+   "role": "Werkstudent Technology Strategy & Transformation – Agile Transformation (m/w/d)",
    "method": "Web form",
    "state": "Waiting",
-   "last": "2026-09-17",
-   "note": "Greenhouse receipt (after security code)"
+   "last": "",
+   "note": ""
   },
   {
-   "date": "2026-09-15",
-   "company": "Stern Stewart & Co.",
-   "role": "Working Student – AI & Tech Engineering",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Application no longer considered"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "Isar Aerospace SE",
-   "role": "Working Student – AI Platform and Enablement (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-20",
-   "note": "Not proceeding with application"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "Constructor TECH",
-   "role": "ML Research Intern in Agentic Runtime Systems",
-   "method": "Web form",
+   "date": "2026-09-16",
+   "company": "Munich Electrification",
+   "role": "Working Student - Battery Algorithm Development",
+   "method": "Ashby",
    "state": "Waiting",
-   "last": "2026-09-15",
-   "note": "Receipt"
+   "last": "2026-09-16",
+   "note": "Ashby receipt; no decision yet"
   },
   {
-   "date": "2026-09-15",
-   "company": "Solaris",
-   "role": "Marketing Data Analytics Working Student",
-   "method": "Web form",
+   "date": "2026-09-16",
+   "company": "Manex AI",
+   "role": "AI Quality Engineer - Working Student",
+   "method": "Ashby",
    "state": "Waiting",
-   "last": "2026-09-15",
-   "note": "Greenhouse receipt"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "Cohere",
-   "role": "Machine Learning Intern/Co-op (Winter 2027)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-15",
-   "note": "Ashby receipt"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "AutoScout24",
-   "role": "Intern AI Transformation & Automation (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "Decided not to move forward"
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-15",
@@ -2829,57 +2847,39 @@
   },
   {
    "date": "2026-09-15",
-   "company": "Rohde & Schwarz",
-   "role": "Working Student Machine Learning Operations (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-23",
-   "note": "Cannot offer the position"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "OMMAX",
-   "role": "Intern – AI Engineering & Automation (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Skills/experience do not match requirements"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "1KOMMA5°",
-   "role": "Working Student – AI Process & Business Excellence (m/f/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Continuing with other candidates"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "LIQID",
-   "role": "Business Automation & AI Intern/Working Student (f/m/d)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "No match for the role"
-  },
-  {
-   "date": "2026-09-15",
-   "company": "Merantix Momentum",
-   "role": "Working Student AI Full Stack Engineer (m/f/d)",
-   "method": "Web form",
-   "state": "Waiting",
-   "last": "2026-09-18",
-   "note": "Personio receipt"
-  },
-  {
-   "date": "2026-09-15",
    "company": "Temedica",
    "role": "Working Student – AI Engineer (f/m/x)",
    "method": "Web form",
    "state": "Waiting",
    "last": "",
    "note": ""
+  },
+  {
+   "date": "2026-09-15",
+   "company": "Stern Stewart & Co.",
+   "role": "Working Student – AI & Tech Engineering",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Application no longer considered"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "Statista",
+   "role": "Working Student Modeled Data",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-15",
+   "note": "Ashby receipt"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "Solaris",
+   "role": "Marketing Data Analytics Working Student",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-15",
+   "note": "Greenhouse receipt"
   },
   {
    "date": "2026-09-15",
@@ -2892,6 +2892,15 @@
   },
   {
    "date": "2026-09-15",
+   "company": "Rohde & Schwarz",
+   "role": "Working Student Machine Learning Operations (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "Cannot offer the position"
+  },
+  {
+   "date": "2026-09-15",
    "company": "Retorio",
    "role": "Working Student: AI Product Engineering – Data (m/f/d)",
    "method": "Web form",
@@ -2901,12 +2910,12 @@
   },
   {
    "date": "2026-09-15",
-   "company": "Avelios Medical",
-   "role": "Working Student Machine Learning (all genders)",
-   "method": "Web form",
-   "state": "Rejected",
-   "last": "2026-09-18",
-   "note": "Decided to move forward with others"
+   "company": "QuoData",
+   "role": "Working Student / Internship, Data Scientist (m/f/d)",
+   "method": "Email",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
   },
   {
    "date": "2026-09-15",
@@ -2919,12 +2928,57 @@
   },
   {
    "date": "2026-09-15",
-   "company": "Statista",
-   "role": "Working Student Modeled Data",
+   "company": "OMMAX",
+   "role": "Intern – AI Engineering & Automation (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Skills/experience do not match requirements"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "OCM Management Consultants",
+   "role": "Working Student / Intern – AI Consultant: Supply Chain, Procurement & Logistics (w/m/d)",
+   "method": "Email",
+   "state": "Rejected",
+   "last": "2026-09-16",
+   "note": "Declined: role requires German C1"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "Merantix Momentum",
+   "role": "Working Student AI Full Stack Engineer (m/f/d)",
    "method": "Web form",
    "state": "Waiting",
-   "last": "2026-09-15",
-   "note": "Ashby receipt"
+   "last": "2026-09-18",
+   "note": "Personio receipt"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "MORESOPHY",
+   "role": "Working Student Machine Learning & AI (m/f/d)",
+   "method": "Email",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Could not be considered for the position"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "LIQID",
+   "role": "Business Automation & AI Intern/Working Student (f/m/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "No match for the role"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "Isar Aerospace SE",
+   "role": "Working Student – AI Platform and Enablement (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-20",
+   "note": "Not proceeding with application"
   },
   {
    "date": "2026-09-15",
@@ -2946,30 +3000,39 @@
   },
   {
    "date": "2026-09-15",
-   "company": "QuoData",
-   "role": "Working Student / Internship, Data Scientist (m/f/d)",
-   "method": "Email",
+   "company": "Constructor TECH",
+   "role": "ML Research Intern in Agentic Runtime Systems",
+   "method": "Web form",
    "state": "Waiting",
-   "last": "",
-   "note": ""
+   "last": "2026-09-15",
+   "note": "Receipt"
   },
   {
    "date": "2026-09-15",
-   "company": "MORESOPHY",
-   "role": "Working Student Machine Learning & AI (m/f/d)",
-   "method": "Email",
-   "state": "Rejected",
-   "last": "2026-09-21",
-   "note": "Could not be considered for the position"
+   "company": "Cohere",
+   "role": "Machine Learning Intern/Co-op (Winter 2027)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-09-15",
+   "note": "Ashby receipt"
   },
   {
    "date": "2026-09-15",
-   "company": "OCM Management Consultants",
-   "role": "Working Student / Intern – AI Consultant: Supply Chain, Procurement & Logistics (w/m/d)",
-   "method": "Email",
+   "company": "Avelios Medical",
+   "role": "Working Student Machine Learning (all genders)",
+   "method": "Web form",
    "state": "Rejected",
-   "last": "2026-09-16",
-   "note": "Declined: role requires German C1"
+   "last": "2026-09-18",
+   "note": "Decided to move forward with others"
+  },
+  {
+   "date": "2026-09-15",
+   "company": "AutoScout24",
+   "role": "Intern AI Transformation & Automation (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-23",
+   "note": "Decided not to move forward"
   },
   {
    "date": "2026-09-15",
@@ -2979,6 +3042,15 @@
    "state": "Waiting",
    "last": "",
    "note": ""
+  },
+  {
+   "date": "2026-09-15",
+   "company": "1KOMMA5°",
+   "role": "Working Student – AI Process & Business Excellence (m/f/d)",
+   "method": "Web form",
+   "state": "Rejected",
+   "last": "2026-09-21",
+   "note": "Continuing with other candidates"
   }
  ]
 }
