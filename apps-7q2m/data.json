@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07 00:48",
+ "generated": "2026-10-07 01:57",
  "rows": [
   {
    "date": "2026-10-07",
@@ -42,6 +42,15 @@
    "company": "Encavis",
    "role": "Market Analyst Modelling & Pricing",
    "method": "Web form (d.vinci)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-07",
+   "company": "Deutsche Bank",
+   "role": "Internship (f/m/x) in Technology, Data & Innovation 2027 (Berlin)",
+   "method": "Career portal (Yello)",
    "state": "Waiting",
    "last": "",
    "note": ""
