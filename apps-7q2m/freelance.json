@@ -1,0 +1,10 @@
+{
+ "generated": "2026-10-09T02:20:00",
+ "rows": [
+  {"date": "2026-10-08", "client": "Statistical Analysis and Data Visualization", "platform": "Upwork", "pay": "$15/hr (hourly)", "connects": 18, "state": "Sent", "note": "Statistics topics delivered in Excel with plain-English notes. Work sample and CV attached.", "url": "https://www.upwork.com/jobs/~022108158190010143581"},
+  {"date": "2026-10-09", "client": "R Studio Work Assistance Needed", "platform": "Upwork", "pay": "$110 fixed", "connects": 9, "state": "Sent", "note": "Client prefers Australia. If it turns out to be graded coursework, decline (Upwork rules).", "url": "https://www.upwork.com/jobs/~022107310049251292413"},
+  {"date": "2026-10-09", "client": "Review and improve a RAG pipeline", "platform": "Upwork", "pay": "$100 fixed", "connects": 14, "state": "Action needed", "note": "Ready to send. Blocked: verify your identity on Upwork first.", "url": "https://www.upwork.com/jobs/~022108323196393089689"},
+  {"date": "2026-10-09", "client": "Credit-risk and fraud model improvement", "platform": "Upwork", "pay": "Client range $20-70/hr", "connects": 26, "state": "Action needed", "note": "Ready to send. Blocked: verify your identity on Upwork first.", "url": "https://www.upwork.com/jobs/~022108180151816056345"},
+  {"date": "2026-10-09", "client": "AI Builder: Products, Agents & Automation (Rotterdam)", "platform": "Upwork", "pay": "$15-30/hr, ongoing", "connects": 21, "state": "Action needed", "note": "Needs a Loom video under 4 minutes showing something you built, plus identity verification.", "url": "https://www.upwork.com/jobs/~022108326304586263193"}
+ ]
+}

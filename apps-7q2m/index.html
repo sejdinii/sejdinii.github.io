@@ -148,6 +148,11 @@
   @media (min-width: 900px) { .app { max-width: 520px; } }
   #nextH { scroll-margin-top: 64px; }
   .moreBtn { display: block; width: 100%; margin-top: 12px; font: inherit; font-size: 17px; color: var(--accent); background: var(--card); border: 0; border-radius: 14px; padding: 13px; cursor: pointer; box-shadow: var(--shadow); }
+  .tabs { grid-template-columns: repeat(2, 1fr); margin: 0 0 8px; }
+  [hidden] { display: none !important; }
+  .stats.three { grid-template-columns: repeat(3, 1fr); margin-top: 20px; }
+  .row .meta { color: var(--sub); font-size: 13px; margin-top: 4px; display: flex; align-items: center; gap: 6px; }
+  .kv a { color: var(--accent); text-decoration: none; }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
@@ -160,6 +165,12 @@
     <h1>Applications</h1>
   </header>
 
+  <div class="seg tabs" id="tabs" role="tablist">
+    <button type="button" data-v="jobs" aria-pressed="true">Jobs</button>
+    <button type="button" data-v="fl" aria-pressed="false">Freelance</button>
+  </div>
+
+  <div id="jobsView">
   <section class="hero">
     <div class="ring">
       <svg viewBox="0 0 200 200" aria-hidden="true">
@@ -181,6 +192,14 @@
     <div class="cap" id="cap">&nbsp;</div>
     <div class="bars" id="bars"></div>
     <div class="axis"><span id="a0"></span><span>Today</span></div>
+  </div>
+  </div>
+
+  <div id="flView" hidden>
+    <div class="stats three" id="flStats"></div>
+    <h2>Proposals</h2>
+    <div class="card" id="flList"><div class="empty">Loading</div></div>
+    <div class="count" id="flCount"></div>
   </div>
 
   <footer id="updated">&nbsp;</footer>
@@ -267,13 +286,54 @@
     $("cap").innerHTML = "<b>" + tot + "</b> applications in the last two weeks";
   }
 
+  var fl = null, view = "jobs", upJobs = "", upFl = "";
+  var stamp = function (s) { var g = new Date(s); return isNaN(g) ? "" : "Updated " + g.toLocaleString("en-GB", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" }); };
+  var foot = function () { $("updated").textContent = view === "fl" ? upFl : upJobs; };
+  function flRender() {
+    var pri = function (x) { return x.state === "Action needed" || x.state === "Draft" ? 0 : 1; };
+    var r = fl.rows.slice().sort(function (a, b) { return pri(a) - pri(b) || (a.date < b.date ? 1 : a.date > b.date ? -1 : 0); });
+    var sent = r.filter(function (x) { return x.state !== "Action needed" && x.state !== "Draft"; });
+    var todo = r.filter(function (x) { return x.state === "Action needed" || x.state === "Draft"; });
+    var spent = sent.reduce(function (a, x) { return a + (+x.connects || 0); }, 0);
+    var s = [["Sent", sent.length, "Waiting"], ["To send", todo.length, "Action"], ["Connects used", spent, ""]];
+    $("flStats").innerHTML = s.map(function (i) {
+      return '<div class="stat"><div class="n">' + i[1] + '</div><div class="l">' + (i[2] ? '<span class="dot ' + i[2] + '"></span>' : "") + i[0] + "</div></div>";
+    }).join("");
+    if (!r.length) { $("flList").innerHTML = '<div class="empty">No proposals yet</div>'; return; }
+    $("flList").innerHTML = r.map(function (x) {
+      return '<button type="button" class="row"><div class="top"><span class="c">' + esc(x.client) + '</span></div>' +
+        '<div class="r">' + esc(x.note || "") + '</div>' +
+        '<div class="meta"><span class="dot ' + esc(cls(x.state)) + '"></span>' + esc(x.state) + " · " + esc(short(x.date)) + " · " + esc(x.platform) + "</div>" +
+        '<div class="more">' +
+        '<div class="kv"><span>Pay</span><span>' + esc(x.pay) + "</span></div>" +
+        '<div class="kv"><span>Connects</span><span>' + esc(x.connects) + "</span></div>" +
+        (x.url ? '<div class="kv"><span>Job post</span><span><a href="' + esc(x.url) + '" target="_blank" rel="noopener">Open on ' + esc(x.platform) + "</a></span></div>" : "") +
+        "</div></button>";
+    }).join("");
+    document.querySelectorAll("#flList .row").forEach(function (b) {
+      b.addEventListener("click", function (e) { if (e.target.tagName === "A") return; b.classList.toggle("open"); });
+    });
+    $("flCount").textContent = r.length + " freelance proposals";
+  }
+  function show(v) {
+    document.querySelectorAll("#tabs button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === v)); });
+    $("jobsView").hidden = v !== "jobs"; $("flView").hidden = v !== "fl";
+    document.querySelector("h1").textContent = v === "fl" ? "Freelance" : "Applications";
+    document.querySelector("#nav span").textContent = v === "fl" ? "Freelance" : "Applications";
+    view = v; foot();
+    if (history.replaceState) history.replaceState(null, "", v === "fl" ? "#freelance" : location.pathname);
+  }
+  document.querySelectorAll("#tabs button").forEach(function (b) { b.addEventListener("click", function () { show(b.getAttribute("data-v")); }); });
+  if (location.hash === "#freelance") show("fl");
+  fetch("freelance.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { fl = d; upFl = stamp(d.generated); flRender(); foot(); })
+    .catch(function () { $("flList").innerHTML = '<div class="empty">Could not load freelance data</div>'; });
+
   var nav = $("nav"), h1 = document.querySelector("h1");
   window.addEventListener("scroll", function () { nav.classList.toggle("on", h1.getBoundingClientRect().bottom < nav.offsetHeight); }, { passive: true });
 
   fetch("data.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) {
     data = d; hero(); next(); chart();
-    var g = new Date(d.generated);
-    $("updated").textContent = "Updated " + g.toLocaleString("en-GB", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+    upJobs = stamp(d.generated); foot();
   }).catch(function () { $("next").innerHTML = '<div class="empty">Could not load data</div>'; });
 })();
 </script>
