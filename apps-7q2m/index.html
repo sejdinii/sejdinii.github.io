@@ -148,7 +148,14 @@
   @media (min-width: 900px) { .app { max-width: 520px; } }
   #nextH { scroll-margin-top: 64px; }
   .moreBtn { display: block; width: 100%; margin-top: 12px; font: inherit; font-size: 17px; color: var(--accent); background: var(--card); border: 0; border-radius: 14px; padding: 13px; cursor: pointer; box-shadow: var(--shadow); }
-  .tabs { grid-template-columns: repeat(2, 1fr); margin: 0 0 8px; }
+  .tabs { grid-template-columns: repeat(3, 1fr); margin: 0 0 8px; }
+  .pill { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--fill); color: var(--sub); flex: none; }
+  .pill.Strong { color: var(--go); }
+  .pill.Stretch { color: var(--wait); }
+  .due { font-size: 13px; font-weight: 600; color: var(--sub); flex: none; }
+  .due.soon { color: var(--act); }
+  .phdnote { color: var(--sub); font-size: 15px; margin: 4px 4px 16px; }
+  .open-ad { display: inline-block; margin-top: 10px; color: var(--accent); text-decoration: none; font-weight: 600; }
   [hidden] { display: none !important; }
   .stats.three { grid-template-columns: repeat(3, 1fr); margin-top: 20px; }
   .row .meta { color: var(--sub); font-size: 13px; margin-top: 4px; display: flex; align-items: center; gap: 6px; }
@@ -168,6 +175,7 @@
   <div class="seg tabs" id="tabs" role="tablist">
     <button type="button" data-v="jobs" aria-pressed="true">Jobs</button>
     <button type="button" data-v="fl" aria-pressed="false">Freelance</button>
+    <button type="button" data-v="phd" aria-pressed="false">PhD</button>
   </div>
 
   <div id="jobsView">
@@ -200,6 +208,20 @@
     <h2>Proposals</h2>
     <div class="card" id="flList"><div class="empty">Loading</div></div>
     <div class="count" id="flCount"></div>
+  </div>
+
+  <div id="phdView" hidden>
+    <div class="stats three" id="phdStats"></div>
+    <h2>Potential PhD applications</h2>
+    <div class="phdnote">Full-time / 100% paid positions in Germany. Not applied yet unless marked.</div>
+    <div class="seg" id="phdSeg">
+      <button type="button" data-t="all" aria-pressed="true">All</button>
+      <button type="button" data-t="Strong" aria-pressed="false">Strong</button>
+      <button type="button" data-t="Good" aria-pressed="false">Good</button>
+      <button type="button" data-t="Stretch" aria-pressed="false">Stretch</button>
+    </div>
+    <div class="card" id="phdList"><div class="empty">Loading</div></div>
+    <div class="count" id="phdCount"></div>
   </div>
 
   <footer id="updated">&nbsp;</footer>
@@ -288,7 +310,7 @@
 
   var fl = null, view = "jobs", upJobs = "", upFl = "";
   var stamp = function (s) { var g = new Date(s); return isNaN(g) ? "" : "Updated " + g.toLocaleString("en-GB", { day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" }); };
-  var foot = function () { $("updated").textContent = view === "fl" ? upFl : upJobs; };
+  var foot = function () { $("updated").textContent = view === "fl" ? upFl : view === "phd" ? (typeof upPhd === "string" ? upPhd : "") : upJobs; };
   function flRender() {
     var pri = function (x) { return x.state === "Action needed" || x.state === "Draft" ? 0 : 1; };
     var r = fl.rows.slice().sort(function (a, b) { return pri(a) - pri(b) || (a.date < b.date ? 1 : a.date > b.date ? -1 : 0); });
@@ -315,16 +337,64 @@
     });
     $("flCount").textContent = r.length + " freelance proposals";
   }
+  var phd = null, upPhd = "", tier = "all";
+  function phdRender() {
+    var day = 864e5, t0 = parse(todayIso);
+    var left = function (x) { var d = parse(x.deadline); return d ? Math.round((d - t0) / day) : null; };
+    var r = phd.rows.filter(function (x) { var l = left(x); return l === null || l >= 0; });
+    r.sort(function (a, b) { var la = left(a), lb = left(b); if (la === null && lb === null) return a.n - b.n; if (la === null) return 1; if (lb === null) return -1; return la - lb || a.n - b.n; });
+    var soon = r.filter(function (x) { var l = left(x); return l !== null && l <= 14; }).length;
+    var applied = r.filter(function (x) { return x.state === "Applied"; }).length;
+    var s = [["Positions", r.length, ""], ["Close in 14 days", soon, "Action"], ["Applied", applied, "Waiting"]];
+    $("phdStats").innerHTML = s.map(function (i) {
+      return '<div class="stat"><div class="n">' + i[1] + '</div><div class="l">' + (i[2] ? '<span class="dot ' + i[2] + '"></span>' : "") + i[0] + "</div></div>";
+    }).join("");
+    var v = r.filter(function (x) { return tier === "all" || x.tier === tier; });
+    if (!v.length) { $("phdList").innerHTML = '<div class="empty">Nothing here</div>'; $("phdCount").textContent = ""; return; }
+    $("phdList").innerHTML = v.map(function (x) {
+      var l = left(x), dueTxt = l === null ? x.dtext : l === 0 ? "Today" : l === 1 ? "Tomorrow" : short(x.deadline);
+      return '<div class="row" role="button" tabindex="0"><div class="top"><span class="c">' + esc(x.org) + '</span><span class="due' + (l !== null && l <= 7 ? " soon" : "") + '">' + esc(dueTxt) + "</span></div>" +
+        '<div class="r">' + esc(x.title) + "</div>" +
+        '<div class="meta"><span class="pill ' + esc(x.tier) + '">' + esc(x.tier) + "</span>" + esc(x.city) + " · " + esc(x.pay) + "</div>" +
+        '<div class="more">' +
+        '<div class="kv"><span>Topic</span><span>' + esc(x.topic) + "</span></div>" +
+        '<div class="kv"><span>Pay</span><span>' + esc(x.pay) + "</span></div>" +
+        '<div class="kv"><span>Deadline</span><span>' + esc(x.dtext) + "</span></div>" +
+        '<div class="kv"><span>Documents</span><span>' + esc(x.docs) + "</span></div>" +
+        '<div class="kv"><span>Fit</span><span>' + esc(x.fit) + "</span></div>" +
+        '<div class="kv"><span>Gap</span><span>' + esc(x.gap) + "</span></div>" +
+        '<div class="kv"><span>Status</span><span>' + esc(x.state) + "</span></div>" +
+        '<a class="open-ad" href="' + esc(x.url) + '" target="_blank" rel="noopener">Open the ad</a>' +
+        "</div></div>";
+    }).join("");
+    document.querySelectorAll("#phdList .row").forEach(function (b) {
+      b.addEventListener("click", function (e) { if (e.target.tagName === "A") return; b.classList.toggle("open"); });
+    });
+    $("phdCount").textContent = v.length + (v.length === 1 ? " position" : " positions");
+  }
+  document.querySelectorAll("#phdSeg button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      tier = b.getAttribute("data-t");
+      document.querySelectorAll("#phdSeg button").forEach(function (o) { o.setAttribute("aria-pressed", String(o === b)); });
+      if (phd) phdRender();
+    });
+  });
+  fetch("phd.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { phd = d; upPhd = stamp(d.generated); phdRender(); foot(); })
+    .catch(function () { $("phdList").innerHTML = '<div class="empty">Could not load PhD data</div>'; });
+
+  var TITLES = { jobs: "Applications", fl: "Freelance", phd: "PhD" };
+  var HASH = { jobs: "", fl: "#freelance", phd: "#phd" };
   function show(v) {
     document.querySelectorAll("#tabs button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === v)); });
-    $("jobsView").hidden = v !== "jobs"; $("flView").hidden = v !== "fl";
-    document.querySelector("h1").textContent = v === "fl" ? "Freelance" : "Applications";
-    document.querySelector("#nav span").textContent = v === "fl" ? "Freelance" : "Applications";
+    $("jobsView").hidden = v !== "jobs"; $("flView").hidden = v !== "fl"; $("phdView").hidden = v !== "phd";
+    document.querySelector("h1").textContent = TITLES[v];
+    document.querySelector("#nav span").textContent = TITLES[v];
     view = v; foot();
-    if (history.replaceState) history.replaceState(null, "", v === "fl" ? "#freelance" : location.pathname);
+    if (history.replaceState) history.replaceState(null, "", HASH[v] || location.pathname);
   }
   document.querySelectorAll("#tabs button").forEach(function (b) { b.addEventListener("click", function () { show(b.getAttribute("data-v")); }); });
   if (location.hash === "#freelance") show("fl");
+  if (location.hash === "#phd") show("phd");
   fetch("freelance.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { fl = d; upFl = stamp(d.generated); flRender(); foot(); })
     .catch(function () { $("flList").innerHTML = '<div class="empty">Could not load freelance data</div>'; });
 

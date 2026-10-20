@@ -1,6 +1,474 @@
 {
- "generated": "2026-10-07 01:57",
+ "generated": "2026-10-20T09:45:00+02:00",
  "rows": [
+  {
+   "date": "2026-10-20",
+   "company": "IQVIA",
+   "role": "Data Scientist, GenAI & Advanced Analytics",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Desert Ant Labs",
+   "role": "Developer Relations Engineer",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Nextcloud",
+   "role": "Back-end Engineer Integration and AI (PHP/Python)",
+   "method": "JOIN",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "SAP Fioneer",
+   "role": "IT-Consultants Graduates (L.I.F.T. Graduate Program)",
+   "method": "Workable",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "RealAdvisor",
+   "role": "Data Scientist",
+   "method": "Workable",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Bayshore",
+   "role": "Forward Deployed Engineer (m/w/d)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Checkmk",
+   "role": "Python Software Engineer (m/f/d)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Aircall",
+   "role": "Forward Deployed Engineer (AI Solutions) - DACH Market",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "PAIR Finance",
+   "role": "Data Scientist (f/m/d)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Intersnack IT",
+   "role": "Data Scientist & ML Engineer - Predictive Analytics & Agentic AI",
+   "method": "Recruitee",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Pflegia",
+   "role": "Data Scientist, AI & Experimentation",
+   "method": "JOIN",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Nextcloud",
+   "role": "Sales Engineer/Consultant",
+   "method": "JOIN",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Kaufland e-commerce",
+   "role": "Data Scientist (GenAI Evals)",
+   "method": "Web form",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Distribusion Technologies",
+   "role": "Graduate Program (all genders)",
+   "method": "Recruitee",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "BIT Capital",
+   "role": "AI Engineer (m/f/d)",
+   "method": "Personio",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Mendix",
+   "role": "Solutions Engineer (Core AI)",
+   "method": "Lever",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Legora",
+   "role": "Technical Delivery Manager - Munich",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Harvey",
+   "role": "Customer Success Manager, Mid Market (Munich)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Almedia",
+   "role": "Junior Data Scientist",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Constructor",
+   "role": "Technical Integration Specialist (EMEA)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Artificial Labs",
+   "role": "Forward Deployed Engineer (Berlin)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Prior Labs",
+   "role": "Founder Associate (Berlin)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-20",
+   "company": "Neko Health",
+   "role": "AI Acceleration Specialist",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-20",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "SimCorp",
+   "role": "AI Solutions Consultant (Bad Homburg)",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Cursor",
+   "role": "Solutions Architect, Central Europe",
+   "method": "Web form (company site)",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "ClickHouse (Langfuse)",
+   "role": "Product Engineer, Integrations",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "ClickHouse",
+   "role": "Technical Customer Support Engineer, AI Infrastructure & Observability - EMEA",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Langdock",
+   "role": "AI Associate (m/f/d)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "PostHog",
+   "role": "Technical Customer Success Manager - EMEA",
+   "method": "Web form (company site)",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Constructor",
+   "role": "Integration Engineer (EMEA)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Zelara.ai",
+   "role": "Solutions Architect (Berlin)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "PATRIZIA SE",
+   "role": "AI Engineer (m/f/d), Augsburg",
+   "method": "Workday",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Canonical",
+   "role": "Graduate Customer Success Manager",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Allianz",
+   "role": "Working Student - Generative AI & Data Analytics (m/f/d)",
+   "method": "Career portal (SuccessFactors)",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Yardi",
+   "role": "Associate Technical Account Manager (Mainz)",
+   "method": "Career portal (Yardi)",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "n8n",
+   "role": "Deployment Strategist (Remote, Europe)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Lio",
+   "role": "Forward Deployed Engineer Intern (all genders)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Black Forest Labs",
+   "role": "Applied Research Engineer, Evaluation",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Merge",
+   "role": "Technical Support Engineer",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Lyceum",
+   "role": "Customer Success Associate",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Point11",
+   "role": "AI Engineer",
+   "method": "Web form (company site)",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Creatio",
+   "role": "AI Consultant",
+   "method": "Web form (company site)",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Soda",
+   "role": "AI Content Engineer",
+   "method": "Workable",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Addepar",
+   "role": "Solutions Consultant",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "EggAI",
+   "role": "AI Builder - Working Student (EggAI Labs, EvalOps)",
+   "method": "Greenhouse",
+   "state": "Waiting",
+   "last": "2026-10-19",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Lyceum",
+   "role": "Forward Deployed Engineer - AI Inference (Intern)",
+   "method": "Ashby",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Mixedbread",
+   "role": "Research Intern",
+   "method": "Web form (company site)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Tracium GmbH",
+   "role": "Working Student - AI Engineering and Document Intelligence",
+   "method": "Web form (Arbeitnow/JOIN)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Jina AI (Elastic)",
+   "role": "Internship Program, Berlin (embeddings and retrieval)",
+   "method": "Web form (Dover)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "Lufthansa Technik AG",
+   "role": "Internship Data Science & Business Analytics",
+   "method": "Career portal (Lufthansa Group)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "BMW Group",
+   "role": "Intern Agentic AI Applications for In-Car Voice Assistants (f/m/x)",
+   "method": "JobTeaser (BMW portal)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
+  {
+   "date": "2026-10-19",
+   "company": "TNG Technology Consulting",
+   "role": "Internship Software Development and AI (m/f/d)",
+   "method": "Web form (Personio)",
+   "state": "Waiting",
+   "last": "",
+   "note": ""
+  },
   {
    "date": "2026-10-07",
    "company": "Samsung SDS Cello Square",
