@@ -13,7 +13,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172447879",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen. Very small."
+      "note": "Long-term lease with fitted kitchen. Very small.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 32.5 m², fitted kitchen",
@@ -27,7 +28,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/155620877",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 24 m², fitted kitchen",
@@ -41,7 +43,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172568845",
       "source": "ImmoScout24",
-      "note": "Unfurnished (furniture can be bought from previous tenant). Bring self-disclosure, SCHUFA to viewing. Agency ORANGE."
+      "note": "Unfurnished (furniture can be bought from previous tenant). Bring self-disclosure, SCHUFA to viewing. Agency ORANGE.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 22 m², fitted kitchen",
@@ -55,7 +58,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172392747",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "1-room, 28 m², quiet",
@@ -69,21 +73,23 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/154484149",
       "source": "ImmoScout24",
-      "note": "Exactly 6 months from 1 Dec. Viewings only in the last week of November. Private landlord."
+      "note": "Exactly 6 months from 1 Dec. Viewings only in the last week of November. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 40 m² (basement)",
       "area": "Waldtrudering, München",
-      "rent": "€850 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€650 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "From 1 Jan",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172509390",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Basement flat. Private landlord."
+      "note": "Ms Katrin Koch. Basement flat, no pets.",
+      "group": "jan"
     },
     {
       "title": "Long-term · 1-room, 13 m², fitted kitchen",
@@ -97,7 +103,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172502230",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen. Very small."
+      "note": "Long-term lease with fitted kitchen. Very small.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 28.85 m², fitted kitchen",
@@ -111,7 +118,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172494205",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 15 m², fitted kitchen",
@@ -125,7 +133,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172558914",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen. Very small."
+      "note": "Long-term lease with fitted kitchen. Very small.",
+      "group": "soon"
     },
     {
       "title": "1-room, 47 m², furnished",
@@ -139,7 +148,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172133578",
       "source": "ImmoScout24",
-      "note": "Min 6, max 12 months."
+      "note": "Min 6, max 12 months.",
+      "group": "soon"
     },
     {
       "title": "2-room, 32 m², top floor",
@@ -153,7 +163,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/166942111",
       "source": "ImmoScout24",
-      "note": "Min 6, max 24 months."
+      "note": "Min 6, max 24 months.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 20 m², fitted kitchen",
@@ -167,7 +178,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172508230",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 43 m², fitted kitchen",
@@ -181,7 +193,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172490784",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 38 m², fitted kitchen",
@@ -195,7 +208,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172481993",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 42 m², fitted kitchen",
@@ -209,7 +223,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/126682750",
       "source": "ImmoScout24",
-      "note": "Agency Eberhard. Form asked for job type and income."
+      "note": "Agency Eberhard. Form asked for job type and income.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 30 m², fitted kitchen",
@@ -223,7 +238,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172365136",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 28 m², fitted kitchen",
@@ -237,7 +253,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/61327757",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 32 m², fitted kitchen",
@@ -251,7 +268,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/152943175",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 29 m², fitted kitchen",
@@ -265,7 +283,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/107482254",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "1-room, 30 m², furnished",
@@ -279,7 +298,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172241458",
       "source": "ImmoScout24",
-      "note": "Min 6, max 12 months. Private landlord."
+      "note": "Min 6, max 12 months. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 35 m², fitted kitchen",
@@ -293,21 +313,23 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172485081",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 41 m²",
       "area": "Altperlach, München",
-      "rent": "€1,070 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€850 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "Soon (ask)",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172116874",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Move-in 'soon': ask about 1 Jan. Private landlord."
+      "note": "From 1 Dec, date flexible. Asked about 1 Jan.",
+      "group": "jan"
     },
     {
       "title": "Long-term · 1.5-room, 30 m², fitted kitchen",
@@ -321,7 +343,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172398978",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 30 m², fitted kitchen",
@@ -335,7 +358,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172507942",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 28 m², fitted kitchen",
@@ -349,49 +373,53 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172416285",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1.5-room, 30 m², new build",
       "area": "Feldmoching, München",
-      "rent": "€1,100 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€900 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "From 1 Jan",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172504024",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Private landlord."
+      "note": "Mr Björn Heine. Wants self-disclosure, 3 payslips, SCHUFA, ID.",
+      "group": "jan"
     },
     {
       "title": "Long-term · 2-room, 56 m², two outdoor areas",
       "area": "Dachau (outside Munich)",
-      "rent": "€1,100 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€840 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "From 1 Jan",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172600152",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Outside the city, S-Bahn to Munich."
+      "note": "Zenker & Günsch (Mr Riedel). Outside Munich, conservatory and terrace.",
+      "group": "jan"
     },
     {
       "title": "Long-term · 1.5-room, 36 m², new build",
       "area": "Lochhausen, München",
-      "rent": "€1,110 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€980 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "From 1 Jan",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/171650410",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen."
+      "note": "KW Consult (Ms Horsthemke). New build, Meinraum München West.",
+      "group": "jan"
     },
     {
       "title": "1-room, 30 m², Alps view, pool",
@@ -405,7 +433,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172240416",
       "source": "ImmoScout24",
-      "note": "Max 6 months, until 30 Apr 2027. Pool and sauna. Private landlord."
+      "note": "Max 6 months, until 30 Apr 2027. Pool and sauna. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 33 m², fitted kitchen",
@@ -419,7 +448,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172564476",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "1-room, 20 m², furnished",
@@ -433,7 +463,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172442467",
       "source": "ImmoScout24",
-      "note": "Goes through HousingAnywhere: apply there yourself (needs an account)."
+      "note": "Goes through HousingAnywhere: apply there yourself (needs an account).",
+      "group": "soon"
     },
     {
       "title": "1-room, 18 m², furnished",
@@ -447,7 +478,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/150312652",
       "source": "ImmoScout24",
-      "note": "Min 6 months."
+      "note": "Min 6 months.",
+      "group": "soon"
     },
     {
       "title": "Studio, 32 m²",
@@ -461,21 +493,23 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172001367",
       "source": "ImmoScout24",
-      "note": "Min 6, max 12 months. Private landlord."
+      "note": "Min 6, max 12 months. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 45 m², balcony",
       "area": "Englschalking, München",
-      "rent": "€1,160 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€980 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "From 1 Jan",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/171989643",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen, underground parking. Private landlord."
+      "note": "Mr Christian Pfeiffer. Balcony, parking.",
+      "group": "jan"
     },
     {
       "title": "Long-term · 1-room, 30 m², fitted kitchen",
@@ -489,7 +523,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/154673897",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "1-room, 22 m², roof terrace",
@@ -503,7 +538,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/171241521",
       "source": "ImmoScout24",
-      "note": "Min 6, max 24 months. Private landlord."
+      "note": "Min 6, max 24 months. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "1-room, 30 m², furnished",
@@ -517,7 +553,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/167338313",
       "source": "ImmoScout24",
-      "note": "Min 1, max 6 months. Private landlord. Far east, by the trade fair."
+      "note": "Min 1, max 6 months. Private landlord. Far east, by the trade fair.",
+      "group": "soon"
     },
     {
       "title": "1-room, 38 m², quiet",
@@ -531,7 +568,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/123126984",
       "source": "ImmoScout24",
-      "note": "No longer available (Wunderflats)."
+      "note": "No longer available (Wunderflats).",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 30 m², fitted kitchen",
@@ -545,21 +583,23 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172552847",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 54 m², ground floor",
       "area": "Altaubing, München",
-      "rent": "€1,240 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€1,050 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "From 15 Dec",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172529102",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Ask if 1 Jan start is OK. Private landlord."
+      "note": "Ms Monika Liedl. Garden flat. From 15 Dec, asked about 1 Jan.",
+      "group": "jan"
     },
     {
       "title": "1.5-room, 37 m², sublet",
@@ -573,7 +613,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172310470",
       "source": "ImmoScout24",
-      "note": "Min 6, max 12 months. Private landlord."
+      "note": "Min 6, max 12 months. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 42 m², fitted kitchen",
@@ -587,7 +628,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172547230",
       "source": "ImmoScout24",
-      "note": "€1,250 is before extra costs and heating. Private landlord."
+      "note": "€1,250 is before extra costs and heating. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 48 m², fitted kitchen",
@@ -601,7 +643,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172539355",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 43 m², fitted kitchen",
@@ -615,35 +658,38 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/129804717",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 58 m²",
       "area": "Milbertshofen (Am Riesenfeld), München",
-      "rent": "€1,260 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€950 / month",
+      "extra": "+ extra costs",
       "deposit": "",
-      "dates": "Soon (ask)",
+      "dates": "From 1 Jan",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172546363",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Move-in 'soon': ask about 1 Jan. Private landlord."
+      "note": "Available 1 Jan. South terrace.",
+      "group": "jan"
     },
     {
       "title": "Long-term · 2-room, 60 m²",
       "area": "Moosach (by the station), München",
-      "rent": "€1,285 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€1,110 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "Soon (ask)",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172568274",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Move-in 'soon': ask about 1 Jan. Private landlord."
+      "note": "From 1 Dec, asked about 1 Jan. No pets.",
+      "group": "jan"
     },
     {
       "title": "2-room, 50 m², balcony",
@@ -657,21 +703,23 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172360235",
       "source": "ImmoScout24",
-      "note": "Min 6, max 12 months."
+      "note": "Min 6, max 12 months.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 50 m²",
       "area": "Feldmoching, München",
-      "rent": "€1,290 / month",
-      "extra": "total incl. extra costs",
+      "rent": "€1,040 / month",
+      "extra": "+ extra costs",
       "deposit": "",
       "dates": "Soon (ask)",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172302086",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Move-in 'soon': ask about 1 Jan. Private landlord."
+      "note": "From 15 Nov, asked about 1 Jan.",
+      "group": "jan"
     },
     {
       "title": "Long-term · 2-room, 51 m², fitted kitchen",
@@ -685,7 +733,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172505848",
       "source": "ImmoScout24",
-      "note": "Wants self-disclosure and SCHUFA with the application; send by email when he replies."
+      "note": "Wants self-disclosure and SCHUFA with the application; send by email when he replies.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 1-room, 30.65 m², fitted kitchen",
@@ -699,7 +748,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172423075",
       "source": "ImmoScout24",
-      "note": "Long-term lease with fitted kitchen."
+      "note": "Long-term lease with fitted kitchen.",
+      "group": "soon"
     },
     {
       "title": "Long-term · 2-room, 43 m²",
@@ -709,11 +759,12 @@
       "deposit": "",
       "dates": "Soon (ask)",
       "landlord": "",
-      "status": "To message",
-      "messaged": null,
+      "status": "Messaged",
+      "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172348964",
       "source": "ImmoScout24",
-      "note": "Long-term, fitted kitchen. Plus extra costs. Move-in 'soon'. Private landlord."
+      "note": "New build 2026. Asked about 1 Jan. Over budget with extra costs.",
+      "group": "jan"
     },
     {
       "title": "1-room, 28 m², furnished",
@@ -727,7 +778,8 @@
       "messaged": "2026-11-13",
       "url": "https://www.immobilienscout24.de/en/expose/172361969",
       "source": "ImmoScout24",
-      "note": "Not fully furnished (no bed listed). Wants Schufa, contract, payslips. Private landlord."
+      "note": "Not fully furnished (no bed listed). Wants Schufa, contract, payslips. Private landlord.",
+      "group": "soon"
     },
     {
       "title": "2-room flat, 65 m², furnished",
@@ -741,7 +793,8 @@
       "messaged": null,
       "url": "https://www.immobilienscout24.de/en/expose/172262758",
       "source": "ImmoScout24",
-      "note": "Video call booked for 14 Nov. Only until 4 Jan; asked about staying longer. No payment before seeing it."
+      "note": "Video call booked for 14 Nov. Only until 4 Jan; asked about staying longer. No payment before seeing it.",
+      "group": "soon"
     }
   ]
 }

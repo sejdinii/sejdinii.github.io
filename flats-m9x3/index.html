@@ -49,6 +49,14 @@
   }
   .seg button[aria-pressed="true"] { background: var(--segsel); box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
   .seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .tabs { display: flex; gap: 2px; background: var(--fill); border-radius: 10px; padding: 3px; margin-bottom: 18px; }
+  .tabs button {
+    flex: 1 1 0; min-width: 0; border: 0; background: transparent; color: var(--text); font: inherit; font-size: 15px;
+    font-weight: 600; padding: 8px 6px; border-radius: 8px; cursor: pointer; white-space: nowrap;
+  }
+  .tabs button span { color: var(--sub); font-weight: 500; font-variant-numeric: tabular-nums; }
+  .tabs button[aria-selected="true"] { background: var(--segsel); box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+  .tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
   .list { display: flex; flex-direction: column; gap: 12px; }
   .card { background: var(--card); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); }
   .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
@@ -71,6 +79,7 @@
 <main class="wrap">
   <h1>Munich Flats</h1>
   <p class="lede">Short-term places for the Lio internship.</p>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Move-in"></nav>
   <section class="tiles" id="tiles" aria-label="Summary"></section>
   <nav class="seg" id="seg" aria-label="Filter by status"></nav>
   <section class="list" id="list" aria-live="polite"><p class="empty">Loading…</p></section>
@@ -82,12 +91,19 @@ const STATUSES = [
   ["Viewing", "--view"], ["Got it", "--got"], ["No", "--no"]
 ];
 const color = s => (STATUSES.find(x => x[0] === s) || STATUSES[0])[1];
-let rows = [], filter = "All";
+const TABS = [["all", "All"], ["soon", "Very soon"], ["jan", "1 January"]];
+let all = [], rows = [], filter = "All";
+let tab = TABS.some(t => "#" + t[0] === location.hash) ? location.hash.slice(1) : "all";
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const fmtDate = d => d ? new Date(d + "T12:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "–";
 
 function render() {
+  rows = all.filter(r => tab === "all" || (r.group || "soon") === tab);
+  document.getElementById("tabs").innerHTML = TABS.map(([k, l]) => {
+    const n = all.filter(r => k === "all" || (r.group || "soon") === k).length;
+    return `<button type="button" role="tab" aria-selected="${k === tab}" data-t="${k}">${l} <span>${n}</span></button>`;
+  }).join("");
   const count = s => rows.filter(r => r.status === s).length;
   const active = rows.filter(r => !["Got it", "No"].includes(r.status)).length;
   document.getElementById("tiles").innerHTML = [
@@ -117,6 +133,18 @@ function render() {
     </article>`).join("") : `<p class="empty">No listings here yet.</p>`;
 }
 
+document.getElementById("tabs").addEventListener("click", e => {
+  const b = e.target.closest("button[data-t]");
+  if (!b) return;
+  tab = b.dataset.t; filter = "All";
+  history.replaceState(null, "", tab === "all" ? location.pathname : "#" + tab);
+  render();
+});
+window.addEventListener("hashchange", () => {
+  const h = location.hash.slice(1);
+  tab = TABS.some(t => t[0] === h) ? h : "all"; filter = "All"; render();
+});
+
 document.getElementById("seg").addEventListener("click", e => {
   const b = e.target.closest("button[data-f]");
   if (b) { filter = b.dataset.f; render(); }
@@ -125,7 +153,7 @@ document.getElementById("seg").addEventListener("click", e => {
 fetch("flats.json", { cache: "no-store" })
   .then(r => r.json())
   .then(d => {
-    rows = d.rows || [];
+    all = d.rows || [];
     document.getElementById("foot").textContent = "Updated " + fmtDate(d.generated);
     render();
   })
