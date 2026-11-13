@@ -2,62 +2,6 @@
   "generated": "2026-11-12",
   "rows": [
     {
-      "title": "2-room flat, 65 m², furnished",
-      "area": "Neuperlach, 81737 München",
-      "rent": "€1,500 / month",
-      "extra": "+ €200 extra costs",
-      "deposit": "€4,500",
-      "dates": "15 Nov – 4 Jan",
-      "landlord": "Private",
-      "status": "To message",
-      "messaged": null,
-      "url": "https://www.immobilienscout24.de/en/expose/172262758",
-      "source": "ImmoScout24",
-      "note": "Ad says €1,500 per day, probably per month. Asked about staying after 4 Jan. Don't pay anything before a viewing."
-    },
-    {
-      "title": "1-room, 20 m², furnished",
-      "area": "Lerchenau-Ost, München",
-      "rent": "€1,150 / month",
-      "extra": "",
-      "deposit": "€2,300",
-      "dates": "From 16 Nov",
-      "landlord": "",
-      "status": "To message",
-      "messaged": null,
-      "url": "https://www.immobilienscout24.de/en/expose/172442467",
-      "source": "ImmoScout24",
-      "note": "No minimum stated. Starts exactly on 16 Nov."
-    },
-    {
-      "title": "1-room, 30 m², Alps view, pool",
-      "area": "Mittersendling, München",
-      "rent": "€1,120 / month",
-      "extra": "+ €160 extra costs",
-      "deposit": "2 months' rent",
-      "dates": "From 5 Nov",
-      "landlord": "",
-      "status": "To message",
-      "messaged": null,
-      "url": "https://www.immobilienscout24.de/en/expose/172240416",
-      "source": "ImmoScout24",
-      "note": "Min 2, max 6 months. Private landlord. Most flexible."
-    },
-    {
-      "title": "1-room, 30 m², furnished",
-      "area": "Messestadt Riem, München",
-      "rent": "€1,200 / month",
-      "extra": "extra costs €0",
-      "deposit": "€1,200",
-      "dates": "From 1 Dec",
-      "landlord": "",
-      "status": "To message",
-      "messaged": null,
-      "url": "https://www.immobilienscout24.de/en/expose/167338313",
-      "source": "ImmoScout24",
-      "note": "Min 1, max 6 months. Private landlord. Far east, by the trade fair."
-    },
-    {
       "title": "1-room, 28 m², quiet",
       "area": "Münchner Freiheit, Schwabing, München",
       "rent": "€850 / month",
@@ -84,6 +28,34 @@
       "url": "https://www.immobilienscout24.de/en/expose/172133578",
       "source": "ImmoScout24",
       "note": "Min 6, max 12 months."
+    },
+    {
+      "title": "1-room, 20 m², furnished",
+      "area": "Lerchenau-Ost, München",
+      "rent": "€1,150 / month",
+      "extra": "",
+      "deposit": "€2,300",
+      "dates": "From 16 Nov",
+      "landlord": "",
+      "status": "To message",
+      "messaged": null,
+      "url": "https://www.immobilienscout24.de/en/expose/172442467",
+      "source": "ImmoScout24",
+      "note": "No minimum stated. Starts exactly on 16 Nov."
+    },
+    {
+      "title": "1-room, 18 m², furnished",
+      "area": "Milbertshofen (Am Riesenfeld), München",
+      "rent": "€1,150 / month",
+      "extra": "",
+      "deposit": "€2,500",
+      "dates": "From 15 Nov",
+      "landlord": "",
+      "status": "To message",
+      "messaged": null,
+      "url": "https://www.immobilienscout24.de/en/expose/150312652",
+      "source": "ImmoScout24",
+      "note": "Min 6 months."
     },
     {
       "title": "2-room, 32 m², top floor",
@@ -128,18 +100,18 @@
       "note": "Min 6, max 12 months. Private landlord."
     },
     {
-      "title": "Studio, 32 m²",
-      "area": "Am Luitpoldpark, Schwabing, München",
-      "rent": "€1,150 / month",
-      "extra": "+ €100 extra costs",
-      "deposit": "€3,450",
-      "dates": "From 7 Nov",
+      "title": "1-room, 30 m², furnished",
+      "area": "Messestadt Riem, München",
+      "rent": "€1,200 / month",
+      "extra": "extra costs €0",
+      "deposit": "€1,200",
+      "dates": "From 1 Dec",
       "landlord": "",
       "status": "To message",
       "messaged": null,
-      "url": "https://www.immobilienscout24.de/en/expose/172001367",
+      "url": "https://www.immobilienscout24.de/en/expose/167338313",
       "source": "ImmoScout24",
-      "note": "Min 6, max 12 months. Private landlord."
+      "note": "Min 1, max 6 months. Private landlord. Far east, by the trade fair."
     },
     {
       "title": "1-room, 38 m², quiet",
@@ -156,18 +128,18 @@
       "note": "Min 6 months."
     },
     {
-      "title": "1-room, 18 m², furnished",
-      "area": "Milbertshofen (Am Riesenfeld), München",
+      "title": "Studio, 32 m²",
+      "area": "Am Luitpoldpark, Schwabing, München",
       "rent": "€1,150 / month",
-      "extra": "",
-      "deposit": "€2,500",
-      "dates": "From 15 Nov",
+      "extra": "+ €100 extra costs",
+      "deposit": "€3,450",
+      "dates": "From 7 Nov",
       "landlord": "",
       "status": "To message",
       "messaged": null,
-      "url": "https://www.immobilienscout24.de/en/expose/150312652",
+      "url": "https://www.immobilienscout24.de/en/expose/172001367",
       "source": "ImmoScout24",
-      "note": "Min 6 months."
+      "note": "Min 6, max 12 months. Private landlord."
     },
     {
       "title": "1.5-room, 37 m², sublet",
@@ -182,6 +154,20 @@
       "url": "https://www.immobilienscout24.de/en/expose/172310470",
       "source": "ImmoScout24",
       "note": "Min 6, max 12 months. Private landlord."
+    },
+    {
+      "title": "1-room, 30 m², Alps view, pool",
+      "area": "Mittersendling, München",
+      "rent": "€1,120 / month",
+      "extra": "+ €160 extra costs",
+      "deposit": "2 months' rent",
+      "dates": "From 5 Nov",
+      "landlord": "",
+      "status": "To message",
+      "messaged": null,
+      "url": "https://www.immobilienscout24.de/en/expose/172240416",
+      "source": "ImmoScout24",
+      "note": "Min 2, max 6 months. Private landlord. Most flexible."
     },
     {
       "title": "2-room, 50 m², balcony",
@@ -210,6 +196,20 @@
       "url": "https://www.immobilienscout24.de/en/expose/172361969",
       "source": "ImmoScout24",
       "note": "Min 6 months. Private landlord. Over €1,300 with extra costs."
+    },
+    {
+      "title": "2-room flat, 65 m², furnished",
+      "area": "Neuperlach, 81737 München",
+      "rent": "€1,500 / month",
+      "extra": "+ €200 extra costs",
+      "deposit": "€4,500",
+      "dates": "15 Nov – 4 Jan",
+      "landlord": "Private",
+      "status": "To message",
+      "messaged": null,
+      "url": "https://www.immobilienscout24.de/en/expose/172262758",
+      "source": "ImmoScout24",
+      "note": "Ad says €1,500 per day, probably per month. Asked about staying after 4 Jan. Don't pay anything before a viewing."
     }
   ]
 }
