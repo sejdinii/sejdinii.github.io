@@ -879,11 +879,11 @@
    "deposit": "",
    "dates": "Free 7 Dec",
    "landlord": "Alexander Stücklen (agency)",
-   "status": "Messaged",
+   "status": "Replied",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172816041",
    "source": "ImmoScout",
-   "note": "Asked for 1 Jan start.",
+   "note": "WSB Bayern via Everreal (22 Nov): fill in missing applicant details via the link in their email before they offer a viewing. Asked for 1 Jan start.",
    "group": "jan"
   },
   {
@@ -894,11 +894,11 @@
    "deposit": "",
    "dates": "Free 14 Dec",
    "landlord": "Alexander Stücklen (agency)",
-   "status": "Messaged",
+   "status": "Replied",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172854225",
    "source": "ImmoScout",
-   "note": "Asked for 1 Jan start.",
+   "note": "WSB Bayern via Everreal (22 Nov): fill in missing applicant details via the link in their email before they offer a viewing. Asked for 1 Jan start.",
    "group": "jan"
   },
   {
@@ -909,11 +909,11 @@
    "deposit": "",
    "dates": "Free 1 Dec",
    "landlord": "Elena Dobrev (agency)",
-   "status": "Messaged",
+   "status": "Replied",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172821117",
    "source": "ImmoScout",
-   "note": "Asked for 1 Jan start.",
+   "note": "WSB Bayern via Everreal (22 Nov): fill in missing applicant details via the link in their email before they offer a viewing. Asked for 1 Jan start.",
    "group": "jan"
   },
   {
@@ -924,11 +924,11 @@
    "deposit": "",
    "dates": "Free 16 Jan",
    "landlord": "Müller Merkle Immobilien (agency)",
-   "status": "Messaged",
+   "status": "Replied",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172777773",
    "source": "ImmoScout",
-   "note": "",
+   "note": "Müller Merkle (22 Nov): book a viewing slot online via the link in their email (Appenzeller Str. 123). Limited slots, book soon.",
    "group": "jan"
   },
   {
@@ -969,11 +969,11 @@
    "deposit": "",
    "dates": "Free 1 Dec",
    "landlord": "Elena Dobrev (agency)",
-   "status": "Messaged",
+   "status": "Replied",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172820918",
    "source": "ImmoScout",
-   "note": "Second flat at same agency.",
+   "note": "WSB Bayern via Everreal (22 Nov): fill in missing applicant details via the link in their email before they offer a viewing. Same building as 172821117.",
    "group": "jan"
   },
   {
@@ -984,11 +984,11 @@
    "deposit": "",
    "dates": "Free 14 Dec",
    "landlord": "Alexander Stücklen (agency)",
-   "status": "Messaged",
+   "status": "Replied",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172855248",
    "source": "ImmoScout",
-   "note": "With fiancée text. Same agency as 172854225.",
+   "note": "WSB Bayern via Everreal (22 Nov): fill in missing applicant details via the link in their email before they offer a viewing. With fiancée text.",
    "group": "jan"
   },
   {
@@ -999,11 +999,11 @@
    "deposit": "",
    "dates": "From now",
    "landlord": "Sandra List (agency)",
-   "status": "Messaged",
+   "status": "No",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172096461",
    "source": "ImmoScout",
-   "note": "",
+   "note": "22 Nov: they are already drawing up a lease with someone else; will get back if it falls through.",
    "group": "jan"
   },
   {
@@ -1179,11 +1179,11 @@
    "deposit": "",
    "dates": "By agreement",
    "landlord": "ohne-makler.net (private)",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172793745",
    "source": "ImmoScout",
-   "note": "Two sends did not register (ohne-makler). Try again later yourself.",
+   "note": "With fiancée text. Sent on the third try.",
    "group": "jan"
   }
  ]
