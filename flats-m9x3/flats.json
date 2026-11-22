@@ -1074,11 +1074,11 @@
    "deposit": "",
    "dates": "From now",
    "landlord": "Petra Blunck, Dall'Armi (agency)",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172777494",
    "source": "ImmoScout",
-   "note": "Form filled; captcha blocked the send.",
+   "note": "Sent by Enes after captcha.",
    "group": "jan"
   },
   {
@@ -1089,11 +1089,11 @@
    "deposit": "",
    "dates": "From now",
    "landlord": "Fabian Goßner (agency)",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172872548",
    "source": "ImmoScout",
-   "note": "Captcha. Deposit €2,970, fixed 2 years.",
+   "note": "Sent by Enes after captcha. Deposit €2,970, fixed 2 years.",
    "group": "jan"
   },
   {
@@ -1104,11 +1104,11 @@
    "deposit": "",
    "dates": "Free 1 Jan",
    "landlord": "Celina Nutto, Boos",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172798054",
    "source": "ImmoScout",
-   "note": "Captcha.",
+   "note": "",
    "group": "jan"
   },
   {
@@ -1119,11 +1119,11 @@
    "deposit": "",
    "dates": "Free 1 Jan",
    "landlord": "Celina Nutto, Boos",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172796558",
    "source": "ImmoScout",
-   "note": "Captcha.",
+   "note": "",
    "group": "jan"
   },
   {
@@ -1134,11 +1134,11 @@
    "deposit": "",
    "dates": "From now",
    "landlord": "Sabrina Hörmann (agency)",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172798218",
    "source": "ImmoScout",
-   "note": "Captcha. Unbefristet, 1-year minimum.",
+   "note": "Unbefristet, 1-year minimum.",
    "group": "jan"
   },
   {
@@ -1149,11 +1149,11 @@
    "deposit": "",
    "dates": "From now",
    "landlord": "ohne-makler.net (private)",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172906203",
    "source": "ImmoScout",
-   "note": "Captcha.",
+   "note": "",
    "group": "jan"
   },
   {
@@ -1164,11 +1164,11 @@
    "deposit": "",
    "dates": "From now",
    "landlord": "ohne-makler.net (private)",
-   "status": "To message",
-   "messaged": "",
+   "status": "Messaged",
+   "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172902945",
    "source": "ImmoScout",
-   "note": "Captcha.",
+   "note": "",
    "group": "jan"
   },
   {
@@ -1183,7 +1183,7 @@
    "messaged": "",
    "url": "https://www.immobilienscout24.de/expose/172793745",
    "source": "ImmoScout",
-   "note": "Captcha. With fiancée text.",
+   "note": "Two sends did not register (ohne-makler). Try again later yourself.",
    "group": "jan"
   }
  ]
