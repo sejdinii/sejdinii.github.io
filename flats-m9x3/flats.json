@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22",
+ "generated": "2026-11-23",
  "rows": [
   {
    "title": "1-room flat, renovated, U1 3 min",
@@ -8,12 +8,12 @@
    "extra": "",
    "deposit": "",
    "dates": "1 Jan",
-   "landlord": "Private",
-   "status": "Messaged",
+   "landlord": "Peter Konrad, Konrad & Dedic Immobilien (agency)",
+   "status": "Replied",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172940761",
    "source": "ImmoScout",
-   "note": "Sent 22 Nov (confirmed 'Nachricht gesendet', contact P. Konrad). Fixed-term.",
+   "note": "Peter Konrad (Konrad & Dedic Immobilien) replied 22 Nov: asks your net income and if you can view next week. Fixed-term, furnished.",
    "group": "jan"
   },
   {
@@ -1044,11 +1044,11 @@
    "deposit": "",
    "dates": "From now",
    "landlord": "Lisa M. Niedermayer (agency)",
-   "status": "Viewing",
+   "status": "No",
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172830903",
    "source": "ImmoScout",
-   "note": "Replied 22 Nov: asked for Mon 23 Nov 17:30 (or 17:15). Net income (~€2,000) sent 22 Nov. Waiting for confirmation. Landlord speaks only German. Bring: Selbstauskunft, contract, ID; they also want liability insurance proof, 3 payslips, SCHUFA.",
+   "note": "23 Nov: all viewing slots taken (200+ requests). She will write if a slot frees up.",
    "group": "jan"
   },
   {
@@ -1093,7 +1093,7 @@
    "messaged": "2026-11-22",
    "url": "https://www.immobilienscout24.de/expose/172096461",
    "source": "ImmoScout",
-   "note": "22 Nov: they are already drawing up a lease with someone else; will get back if it falls through.",
+   "note": "22 Nov: lease being drawn up with someone else; they will write if it falls through.",
    "group": "jan"
   },
   {
