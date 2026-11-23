@@ -543,17 +543,17 @@
   },
   {
    "title": "1-room new build, fitted kitchen",
-   "area": "Feldmoching",
+   "area": "Feldmoching (Lilli-Kurowski-Str.)",
    "rent": "€1,210 warm",
    "extra": "",
    "deposit": "",
    "dates": "1 Dec",
-   "landlord": "Private",
-   "status": "To message",
-   "messaged": "",
+   "landlord": "Lukas R.",
+   "status": "Messaged",
+   "messaged": "2026-11-23",
    "url": "https://www.immobilienscout24.de/expose/172864826",
    "source": "ImmoScout",
-   "note": "SuchenPlus-locked on 22 Nov; daily 19:00 task sends when unlocked.",
+   "note": "Unlocked; sent 23 Nov evening, confirmed in messenger.",
    "group": "jan"
   },
   {
@@ -564,11 +564,11 @@
    "deposit": "",
    "dates": "15 Dec",
    "landlord": "Private",
-   "status": "To message",
+   "status": "No",
    "messaged": "",
    "url": "https://www.immobilienscout24.de/expose/172934837",
    "source": "ImmoScout",
-   "note": "SuchenPlus-locked on 22 Nov; daily 19:00 task sends when unlocked (fiancée text).",
+   "note": "Listing gone (23 Nov).",
    "group": "jan"
   },
   {
@@ -1833,17 +1833,17 @@
   },
   {
    "title": "1-room flat",
-   "area": "Trudering",
+   "area": "Trudering (Kreillerstr.)",
    "rent": "€715 warm",
    "extra": "",
    "deposit": "",
    "dates": "15 Dec",
-   "landlord": "Private",
-   "status": "To message",
-   "messaged": "",
+   "landlord": "Lorena Böhm",
+   "status": "Messaged",
+   "messaged": "2026-11-23",
    "url": "https://www.immobilienscout24.de/expose/172857565",
    "source": "ImmoScout",
-   "note": "SuchenPlus-locked since ~20 Nov; daily 19:00 task sends when unlocked.",
+   "note": "Unlocked; sent 23 Nov evening, confirmed in messenger.",
    "group": "jan"
   },
   {
@@ -1854,11 +1854,11 @@
    "deposit": "",
    "dates": "15 Dec",
    "landlord": "Private",
-   "status": "To message",
+   "status": "No",
    "messaged": "",
    "url": "https://www.immobilienscout24.de/expose/154739939",
    "source": "ImmoScout",
-   "note": "SuchenPlus-locked since ~20 Nov; daily 19:00 task sends when unlocked.",
+   "note": "Listing gone (23 Nov).",
    "group": "jan"
   },
   {
@@ -1913,12 +1913,12 @@
    "extra": "",
    "deposit": "",
    "dates": "1 Jan",
-   "landlord": "Private",
-   "status": "To message",
-   "messaged": "",
+   "landlord": "Marco Engelbrecht",
+   "status": "Messaged",
+   "messaged": "2026-11-23",
    "url": "https://www.immobilienscout24.de/expose/172780045",
    "source": "ImmoScout",
-   "note": "SuchenPlus-locked since ~20 Nov; daily 19:00 task sends when unlocked.",
+   "note": "Unlocked; sent 23 Nov evening, confirmed in messenger.",
    "group": "jan"
   }
  ]
